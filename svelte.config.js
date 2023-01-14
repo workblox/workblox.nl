@@ -1,5 +1,5 @@
 import preprocess from 'svelte-preprocess';
-import adapter from '@sveltejs/adapter-static';
+import adapter from '@sveltejs/adapter-netlify';
 import { vitePreprocess } from '@sveltejs/kit/vite';
 
 /** @type {import('@sveltejs/kit').Config} */
@@ -12,16 +12,11 @@ const config = {
 			postcss: true
 		})
 	],
-
 	kit: {
-
-		adapter: adapter({
-			// default options are shown
-			fallback: '200.html',
-			pages: 'build',
-			assets: 'build',
-		}),
-		prerender: { entries: [] },
+		adapter: adapter(),
+		alias: {
+			'@storyblok/svelte': './node_modules/@storyblok/svelte'
+		}
 	}
 };
 
