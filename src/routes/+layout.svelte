@@ -1,9 +1,11 @@
 <script>
 	import '../app.postcss';
-    export const ssr = false;
-    export const trailingSlash = 'ignore';
+  import Navigation from './components/navigation.svelte'
+  export const ssr = false;
+  export const trailingSlash = 'ignore';
 </script>
 
+<Navigation />
 <slot />
 
 <!-- ====== Back To Top Start -->

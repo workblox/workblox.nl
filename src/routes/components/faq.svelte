@@ -1,5 +1,6 @@
 <!-- ====== Faq Section Start -->
 <section
+	id='faq'
 	class="relative z-20 overflow-hidden bg-[#f3f4ff] pt-20 pb-12 lg:pt-[120px] lg:pb-[90px]"
 >
 	<div class="container">

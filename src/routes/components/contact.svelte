@@ -8,12 +8,12 @@
 			<div class="w-full px-4 lg:w-7/12 xl:w-8/12">
 				<div class="ud-contact-content-wrapper">
 					<div class="ud-contact-title mb-12 lg:mb-[150px]">
-                <span class="mb-5 text-base font-semibold text-dark">
-                  CONTACT US
-                </span>
+						<span class="mb-5 text-base font-semibold text-dark">
+							Neem contact op
+						</span>
 						<h2 class="text-[35px] font-semibold">
-							Let's talk about <br />
-							Love to hear from you!
+							We horen graag hoe we u <br />
+							van dienst kunnen zijn!
 						</h2>
 					</div>
 					<div class="mb-12 flex flex-wrap justify-between lg:mb-0">
@@ -34,9 +34,9 @@
 								</svg>
 							</div>
 							<div>
-								<h5 class="mb-6 text-lg font-semibold">Our Location</h5>
+								<h5 class="mb-6 text-lg font-semibold">Onze locatie</h5>
 								<p class="text-base text-body-color">
-									401 Broadway, 24th Floor, Orchard Cloud View, London
+									Wilhelminastraat 21B, 4811AC, Breda
 								</p>
 							</div>
 						</div>
@@ -54,11 +54,9 @@
 								</svg>
 							</div>
 							<div>
-								<h5 class="mb-6 text-lg font-semibold">How Can We Help?</h5>
-								<p class="text-base text-body-color">info@yourdomain.com</p>
-								<p class="text-base text-body-color">
-									contact@yourdomain.com
-								</p>
+								<h5 class="mb-6 text-lg font-semibold">Neem contact op</h5>
+								<a href='mailto:info@workblox.nl'>info@workblox.nl</a> <br />
+								<a href='tel:+31168481123' class="text-base text-body-color">+31 (0168) 481123</a>
 							</div>
 						</div>
 					</div>
@@ -71,18 +69,20 @@
               "
 				>
 					<h3 class="mb-8 text-2xl font-semibold md:text-[26px]">
-						Send us a Message
+						Neem contact op
 					</h3>
-					<form>
+					<form name='contact' method='POST' data-netlify="true">
 						<div class="mb-6">
 							<label for="fullName" class="block text-xs text-dark"
-							>Full Name*</label
+							>Voor en achternaam*</label
 							>
 							<input
 								type="text"
+								id='fullName'
 								name="fullName"
-								placeholder="Adam Gelius"
+								placeholder="Voor en achternaam"
 								class="w-full border-0 border-b border-[#f1f1f1] py-4 focus:border-primary focus:outline-none"
+								required
 							/>
 						</div>
 						<div class="mb-6">
@@ -91,31 +91,37 @@
 							>
 							<input
 								type="email"
+								id="email"
 								name="email"
-								placeholder="example@yourmail.com"
+								placeholder="voorbeeld@email.nl"
 								class="w-full border-0 border-b border-[#f1f1f1] py-4 focus:border-primary focus:outline-none"
+								required
 							/>
 						</div>
 						<div class="mb-6">
 							<label for="phone" class="block text-xs text-dark"
-							>Phone*</label
+							>Telefoon*</label
 							>
 							<input
 								type="text"
+								id="phone"
 								name="phone"
-								placeholder="+885 1254 5211 552"
+								placeholder="06 12345678"
 								class="w-full border-0 border-b border-[#f1f1f1] py-4 focus:border-primary focus:outline-none"
+								required
 							/>
 						</div>
 						<div class="mb-6">
 							<label for="message" class="block text-xs text-dark"
-							>Message*</label
+							>Bericht*</label
 							>
 							<textarea
+								id="message"
 								name="message"
 								rows="1"
-								placeholder="type your message here"
+								placeholder="Typ hier uw bericht"
 								class="w-full resize-none border-0 border-b border-[#f1f1f1] py-4 focus:border-primary focus:outline-none"
+								required
 							></textarea>
 						</div>
 						<div class="mb-0">
@@ -123,7 +129,7 @@
 								type="submit"
 								class="inline-flex items-center justify-center rounded bg-primary py-4 px-6 text-base font-medium text-white transition duration-300 ease-in-out hover:bg-dark"
 							>
-								Send Message
+								Verstuur
 							</button>
 						</div>
 					</form>

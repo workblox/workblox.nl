@@ -5,7 +5,7 @@
 	<div class="container">
 		<div class="relative -mx-4 flex items-center justify-between">
 			<div class="w-60 max-w-full px-4">
-				<a href="index.html" class="navbar-logo block w-full py-5">
+				<a href="/" class="navbar-logo block w-full py-5">
 					<img
 						src="assets/images/logo/logo-white.svg"
 						alt="logo"
@@ -44,18 +44,18 @@
 							</li>
 							<li class="group relative">
 								<a
-									href="/#about"
+									href="/#features"
 									class="ud-menu-scroll mx-8 flex py-2 text-base text-dark group-hover:text-primary lg:mr-0 lg:ml-7 lg:inline-flex lg:py-6 lg:px-0 lg:text-white lg:group-hover:text-white lg:group-hover:opacity-70 xl:ml-12"
 								>
-									About
+									Functionaliteiten
 								</a>
 							</li>
 							<li class="group relative">
 								<a
-									href="/#pricing"
+									href="/#faq"
 									class="ud-menu-scroll mx-8 flex py-2 text-base text-dark group-hover:text-primary lg:mr-0 lg:ml-7 lg:inline-flex lg:py-6 lg:px-0 lg:text-white lg:group-hover:text-white lg:group-hover:opacity-70 xl:ml-12"
 								>
-									Pricing
+									Faq
 								</a>
 							</li>
 							<li class="group relative">
@@ -77,20 +77,20 @@
 						</ul>
 					</nav>
 				</div>
-				<div class="hidden justify-end pr-16 sm:flex lg:pr-0">
-					<a
-						href="signin.html"
-						class="loginBtn py-3 px-7 text-base font-medium text-white hover:opacity-70"
-					>
-						Sign In
-					</a>
-					<a
-						href="signup.html"
-						class="signUpBtn rounded-lg bg-white bg-opacity-20 py-3 px-6 text-base font-medium text-white duration-300 ease-in-out hover:bg-opacity-100 hover:text-dark"
-					>
-						Sign Up
-					</a>
-				</div>
+<!--				<div class="hidden justify-end pr-16 sm:flex lg:pr-0">-->
+<!--					<a-->
+<!--						href="signin.html"-->
+<!--						class="loginBtn py-3 px-7 text-base font-medium text-white hover:opacity-70"-->
+<!--					>-->
+<!--						Sign In-->
+<!--					</a>-->
+<!--					<a-->
+<!--						href="signup.html"-->
+<!--						class="signUpBtn rounded-lg bg-white bg-opacity-20 py-3 px-6 text-base font-medium text-white duration-300 ease-in-out hover:bg-opacity-100 hover:text-dark"-->
+<!--					>-->
+<!--						Sign Up-->
+<!--					</a>-->
+<!--				</div>-->
 			</div>
 		</div>
 	</div>

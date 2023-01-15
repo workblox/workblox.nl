@@ -1,5 +1,5 @@
 <!-- ====== Features Section Start -->
-<section class="pt-20 pb-8 lg:pt-[120px] lg:pb-[70px]">
+<section id='features' class="pt-20 pb-8 lg:pt-[120px] lg:pb-[70px]">
 	<div class="container">
 		<div class="-mx-4 flex flex-wrap">
 			<div class="w-full px-4">
@@ -10,7 +10,7 @@
 					<h2
 						class="mb-4 text-3xl font-bold text-dark sm:text-4xl md:text-[42px]"
 					>
-						Wat Streamline voor u kan betekenen
+						Wat Workblox voor u kan betekenen
 					</h2>
 					<p
 						class="text-lg leading-relaxed text-body-color sm:text-xl sm:leading-relaxed"
@@ -194,7 +194,7 @@
 					<h2
 						class="mb-4 text-3xl font-bold text-dark sm:text-4xl md:text-[42px]"
 					>
-						Hoe Streamline werkt
+						Hoe Workblox werkt
 					</h2>
 					<p
 						class="text-lg leading-relaxed text-body-color sm:text-xl sm:leading-relaxed"
