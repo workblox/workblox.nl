@@ -71,7 +71,8 @@
 					<h3 class="mb-8 text-2xl font-semibold md:text-[26px]">
 						Neem contact op
 					</h3>
-					<form name='contact' netlify>
+					<form name="netlify-form-example" method="POST" netlify-honeypot="bot-field" data-netlify="true">
+						<input type="hidden" name="form-name" value="netlify-form-example" />
 						<div class="mb-6">
 							<label for="fullName" class="block text-xs text-dark"
 							>Voor en achternaam*</label
