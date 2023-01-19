@@ -1,3 +1,7 @@
+<script lang='ts'>
+	import { LL } from '$lib/i18n/i18n-svelte';
+</script>
+
 <!-- ====== Hero Section Start -->
 <div
 	id="home"
@@ -13,7 +17,7 @@
 					<h1
 						class="mb-8 text-3xl font-bold leading-snug text-white sm:text-4xl sm:leading-snug md:text-[45px] md:leading-snug"
 					>
-						On-point dienstverlening, automatiseer alledaagse processen.
+						{$LL.payoffs.automise()}
 					</h1>
 					<p
 						class="mx-auto mb-10 max-w-[600px] text-base text-[#e4e4e4] sm:text-lg sm:leading-relaxed md:text-xl md:leading-relaxed"

@@ -1,6 +1,6 @@
-<script>
+<script lang="ts">
 	import '../app.postcss';
-  import Navigation from './components/navigation.svelte'
+  import Navigation from '$lib/components/navigation.svelte'
   export const ssr = false;
   export const trailingSlash = 'ignore';
 </script>
