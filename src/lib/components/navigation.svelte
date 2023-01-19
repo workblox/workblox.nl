@@ -1,3 +1,8 @@
+<script lang="ts">
+	import LanguageSwitcher from '$lib/components/templates/languageSwitcher.svelte';
+	import { LL } from '$lib/i18n/i18n-svelte';
+</script>
+
 <!-- ====== Navbar Section Start -->
 <div
 	class="ud-header absolute top-0 left-0 z-40 flex w-full items-center bg-transparent"
@@ -44,7 +49,7 @@
 							</li>
 							<li class="group relative">
 								<a
-									href="/#features"
+									href={$LL.LINK('#features')}
 									class="ud-menu-scroll mx-8 flex py-2 text-base text-dark group-hover:text-primary lg:mr-0 lg:ml-7 lg:inline-flex lg:py-6 lg:px-0 lg:text-white lg:group-hover:text-white lg:group-hover:opacity-70 xl:ml-12"
 								>
 									Functionaliteiten
@@ -68,11 +73,14 @@
 							</li>
 							<li class="group relative">
 								<a
-									href="/#contact"
+									href={$LL.LINK('#contact')}
 									class="ud-menu-scroll mx-8 flex py-2 text-base text-dark group-hover:text-primary lg:mr-0 lg:ml-7 lg:inline-flex lg:py-6 lg:px-0 lg:text-white lg:group-hover:text-white lg:group-hover:opacity-70 xl:ml-12"
 								>
 									Contact
 								</a>
+							</li>
+							<li class="group relative">
+								<LanguageSwitcher />
 							</li>
 						</ul>
 					</nav>
