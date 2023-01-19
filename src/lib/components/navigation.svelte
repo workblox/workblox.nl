@@ -1,3 +1,7 @@
+<script lang="ts">
+	import Dropdown from '$lib/components/dropdown.svelte';
+</script>
+
 <!-- ====== Navbar Section Start -->
 <div
 	class="ud-header absolute top-0 left-0 z-40 flex w-full items-center bg-transparent"
@@ -74,6 +78,7 @@
 									Contact
 								</a>
 							</li>
+							<Dropdown />
 						</ul>
 					</nav>
 				</div>

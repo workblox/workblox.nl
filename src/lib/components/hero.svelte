@@ -1,3 +1,6 @@
+<script>
+	import { t } from '$lib/translations';
+</script>
 <!-- ====== Hero Section Start -->
 <div
 	id="home"
@@ -13,12 +16,12 @@
 					<h1
 						class="mb-8 text-3xl font-bold leading-snug text-white sm:text-4xl sm:leading-snug md:text-[45px] md:leading-snug"
 					>
-						On-point dienstverlening, automatiseer alledaagse processen.
+						{$t('wb.home.payoff')}
 					</h1>
 					<p
 						class="mx-auto mb-10 max-w-[600px] text-base text-[#e4e4e4] sm:text-lg sm:leading-relaxed md:text-xl md:leading-relaxed"
 					>
-						Zet eenvoudig uw processen om in workflows en bied uw klant een transparant en soepele ervaring.
+						{$t('wb.home.subtitle')}
 					</p>
 					<ul class="mb-10 flex flex-wrap items-center justify-center">
 						<li>
