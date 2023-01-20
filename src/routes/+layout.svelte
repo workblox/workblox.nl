@@ -2,6 +2,8 @@
 	import '../app.postcss';
   import Navigation from '$lib/components/navigation.svelte'
   export const ssr = false;
+
+  export const prerender = true;
   export const trailingSlash = 'ignore';
 </script>
 
