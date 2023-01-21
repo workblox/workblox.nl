@@ -71,7 +71,7 @@
 					<h3 class="mb-8 text-2xl font-semibold md:text-[26px]">
 						Neem contact op
 					</h3>
-					<form name="contact-form" method="POST" netlify data-netlify="true" netlify-honeypot="bot-field">
+					<form name="contact-form" method="POST" data-netlify="true" netlify-honeypot="bot-field">
 						<input type="hidden" name="form-name" value="contact-form" />
 						<input type="hidden" name="bot-field" />
 
