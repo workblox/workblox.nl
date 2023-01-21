@@ -18,7 +18,7 @@
 					<ul class="flex flex-wrap justify-center">
 						<li>
 							<a
-								href="javascript:void(0)"
+								href="/"
 								class="mx-2 my-1 inline-block rounded-md bg-[#f5f8ff] py-3 px-6 text-base font-medium text-dark hover:bg-primary hover:text-white"
 							>
 								Home
@@ -26,7 +26,7 @@
 						</li>
 						<li>
 							<a
-								href="javascript:void(0)"
+								href="/"
 								class="mx-2 my-1 inline-block rounded-md bg-[#f5f8ff] py-3 px-6 text-base font-medium text-dark hover:bg-primary hover:text-white"
 							>
 								FAQ
@@ -34,7 +34,7 @@
 						</li>
 						<li>
 							<a
-								href="javascript:void(0)"
+								href="/"
 								class="mx-2 my-1 inline-block rounded-md bg-[#f5f8ff] py-3 px-6 text-base font-medium text-dark hover:bg-primary hover:text-white"
 							>
 								Contact

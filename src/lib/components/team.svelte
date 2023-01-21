@@ -459,7 +459,7 @@
 						</p>
 						<div class="flex items-center justify-center">
 							<a
-								href="javascript:void(0)"
+								href="/"
 								class="mx-2 flex h-8 w-8 items-center justify-center text-[#cdced6] hover:text-primary"
 							>
 								<svg
@@ -474,7 +474,7 @@
 								</svg>
 							</a>
 							<a
-								href="javascript:void(0)"
+								href="/"
 								class="mx-2 flex h-8 w-8 items-center justify-center text-[#cdced6] hover:text-primary"
 							>
 								<svg
@@ -489,7 +489,7 @@
 								</svg>
 							</a>
 							<a
-								href="javascript:void(0)"
+								href="/"
 								class="mx-2 flex h-8 w-8 items-center justify-center text-[#cdced6] hover:text-primary"
 							>
 								<svg
@@ -947,7 +947,7 @@
 						</p>
 						<div class="flex items-center justify-center">
 							<a
-								href="javascript:void(0)"
+								href="/"
 								class="mx-2 flex h-8 w-8 items-center justify-center text-[#cdced6] hover:text-primary"
 							>
 								<svg
@@ -962,7 +962,7 @@
 								</svg>
 							</a>
 							<a
-								href="javascript:void(0)"
+								href="/"
 								class="mx-2 flex h-8 w-8 items-center justify-center text-[#cdced6] hover:text-primary"
 							>
 								<svg
@@ -977,7 +977,7 @@
 								</svg>
 							</a>
 							<a
-								href="javascript:void(0)"
+								href="/"
 								class="mx-2 flex h-8 w-8 items-center justify-center text-[#cdced6] hover:text-primary"
 							>
 								<svg

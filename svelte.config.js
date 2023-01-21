@@ -16,11 +16,8 @@ const config = {
 		adapter: adapter(),
 		prerender: {
 			crawl: true,
-			entries: ['*'],
+			entries: ['/', '/contact'],
 		},
-		alias: {
-			'@storyblok/svelte': './node_modules/@storyblok/svelte'
-		}
 	}
 };
 

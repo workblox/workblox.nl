@@ -20,11 +20,17 @@ const Navigation = create_ssr_component(($$result, $$props, $$bindings, slots) =
 								</a></li>
 							<li class="${"group relative"}"><a${add_attribute("href", $LL.LINK("#features"), 0)} class="${"ud-menu-scroll mx-8 flex py-2 text-base text-dark group-hover:text-primary lg:mr-0 lg:ml-7 lg:inline-flex lg:py-6 lg:px-0 lg:text-white lg:group-hover:text-white lg:group-hover:opacity-70 xl:ml-12"}">Functionaliteiten
 								</a></li>
-							<li class="${"group relative"}"><a href="${"/#faq"}" class="${"ud-menu-scroll mx-8 flex py-2 text-base text-dark group-hover:text-primary lg:mr-0 lg:ml-7 lg:inline-flex lg:py-6 lg:px-0 lg:text-white lg:group-hover:text-white lg:group-hover:opacity-70 xl:ml-12"}">Faq
-								</a></li>
+
+
+
+
+
+
+
+
 							<li class="${"group relative"}"><a href="${"/#team"}" class="${"ud-menu-scroll mx-8 flex py-2 text-base text-dark group-hover:text-primary lg:mr-0 lg:ml-7 lg:inline-flex lg:py-6 lg:px-0 lg:text-white lg:group-hover:text-white lg:group-hover:opacity-70 xl:ml-12"}">Team
 								</a></li>
-							<li class="${"group relative"}"><a${add_attribute("href", $LL.LINK("#contact"), 0)} class="${"ud-menu-scroll mx-8 flex py-2 text-base text-dark group-hover:text-primary lg:mr-0 lg:ml-7 lg:inline-flex lg:py-6 lg:px-0 lg:text-white lg:group-hover:text-white lg:group-hover:opacity-70 xl:ml-12"}">Contact
+							<li class="${"group relative"}"><a${add_attribute("href", $LL.LINK("contact"), 0)} class="${"ud-menu-scroll mx-8 flex py-2 text-base text-dark group-hover:text-primary lg:mr-0 lg:ml-7 lg:inline-flex lg:py-6 lg:px-0 lg:text-white lg:group-hover:text-white lg:group-hover:opacity-70 xl:ml-12"}">Contact
 								</a></li>
 							<li class="${"group relative"}">${validate_component(LanguageSwitcher, "LanguageSwitcher").$$render($$result, {}, {}, {})}</li></ul></nav></div>
 
@@ -44,17 +50,11 @@ const Navigation = create_ssr_component(($$result, $$props, $$bindings, slots) =
 `;
 });
 const Layout = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-  const ssr = false;
-  const trailingSlash = "ignore";
-  if ($$props.ssr === void 0 && $$bindings.ssr && ssr !== void 0)
-    $$bindings.ssr(ssr);
-  if ($$props.trailingSlash === void 0 && $$bindings.trailingSlash && trailingSlash !== void 0)
-    $$bindings.trailingSlash(trailingSlash);
   return `${validate_component(Navigation, "Navigation").$$render($$result, {}, {}, {})}
 ${slots.default ? slots.default({}) : ``}
 
 
-<a href="${"javascript:void(0)"}" class="${"back-to-top fixed bottom-8 right-8 left-auto z-[999] hidden h-10 w-10 items-center justify-center rounded-md bg-primary text-white shadow-md transition duration-300 ease-in-out hover:bg-dark"}"><span class="${"mt-[6px] h-3 w-3 rotate-45 border-t border-l border-white"}"></span></a>
+<a href="${"/"}" class="${"back-to-top fixed bottom-8 right-8 left-auto z-[999] hidden h-10 w-10 items-center justify-center rounded-md bg-primary text-white shadow-md transition duration-300 ease-in-out hover:bg-dark"}"><span class="${"mt-[6px] h-3 w-3 rotate-45 border-t border-l border-white"}"></span></a>
 `;
 });
 export {

@@ -1,8 +1,6 @@
 <script lang="ts">
 	import '../app.postcss';
   import Navigation from '$lib/components/navigation.svelte'
-  export const ssr = false;
-  export const trailingSlash = 'ignore';
 </script>
 
 <Navigation />
@@ -10,7 +8,7 @@
 
 <!-- ====== Back To Top Start -->
 <a
-  href="javascript:void(0)"
+  href="/"
   class="back-to-top fixed bottom-8 right-8 left-auto z-[999] hidden h-10 w-10 items-center justify-center rounded-md bg-primary text-white shadow-md transition duration-300 ease-in-out hover:bg-dark"
 >
   <span

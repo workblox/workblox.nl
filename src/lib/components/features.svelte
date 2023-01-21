@@ -1,5 +1,5 @@
 <!-- ====== Features Section Start -->
-<section id='features ' class="pt-20 pb-8 lg:pt-[120px] lg:pb-[70px]">
+<section id='features' class="pt-20 pb-8 lg:pt-[120px] lg:pb-[70px]">
 	<div class="container">
 		<div class="-mx-4 flex flex-wrap">
 			<div class="w-full px-4">
@@ -49,7 +49,7 @@
 						Bespaar tijd door uw werkproces te digitaliseren
 					</p>
 					<a
-						href="javascript:void(0)"
+						href="/"
 						class="text-base font-medium text-body-color hover:text-primary"
 					>
 						Learn More
@@ -87,7 +87,7 @@
 						Uw klant weet wat te verwachten
 					</p>
 					<a
-						href="javascript:void(0)"
+						href="/"
 						class="text-base font-medium text-body-color hover:text-primary"
 					>
 						Learn More
@@ -134,7 +134,7 @@
 						Besteed uw tijd waar u uw tijd het liefst aan besteed
 					</p>
 					<a
-						href="javascript:void(0)"
+						href="/"
 						class="text-base font-medium text-body-color hover:text-primary"
 					>
 						Learn More
@@ -172,7 +172,7 @@
 						Eén plek waar u altijd op terug kunt vallen
 					</p>
 					<a
-						href="javascript:void(0)"
+						href="/"
 						class="text-base font-medium text-body-color hover:text-primary"
 					>
 						Learn More
@@ -233,7 +233,7 @@
 						Automatiseer en vereenvoudig werkprocessen
 					</p>
 					<a
-						href="javascript:void(0)"
+						href="/"
 						class="text-base font-medium text-body-color hover:text-primary"
 					>
 						Learn More
@@ -271,7 +271,7 @@
 						Uw klant ervaart een transparanter en duidelijker proces
 					</p>
 					<a
-						href="javascript:void(0)"
+						href="/"
 						class="text-base font-medium text-body-color hover:text-primary"
 					>
 						Learn More
@@ -318,7 +318,7 @@
 						Zet eenvoudig uw werkproces om naar een beheerbare workflow
 					</p>
 					<a
-						href="javascript:void(0)"
+						href="/"
 						class="text-base font-medium text-body-color hover:text-primary"
 					>
 						Learn More
@@ -356,7 +356,7 @@
 						Optimaliseer het klantcontact, een heldere en transparante klantervaring
 					</p>
 					<a
-						href="javascript:void(0)"
+						href="/"
 						class="text-base font-medium text-body-color hover:text-primary"
 					>
 						Learn More

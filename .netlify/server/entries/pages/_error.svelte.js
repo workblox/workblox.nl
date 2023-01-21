@@ -5,11 +5,11 @@ const _404 = create_ssr_component(($$result, $$props, $$bindings, slots) => {
 					</h2>
 					<h3 class="${"mb-8 text-xl font-normal text-dark-700 md:text-2xl"}">Misschien vind je hier wat je nodig hebt?
 					</h3>
-					<ul class="${"flex flex-wrap justify-center"}"><li><a href="${"javascript:void(0)"}" class="${"mx-2 my-1 inline-block rounded-md bg-[#f5f8ff] py-3 px-6 text-base font-medium text-dark hover:bg-primary hover:text-white"}">Home
+					<ul class="${"flex flex-wrap justify-center"}"><li><a href="${"/"}" class="${"mx-2 my-1 inline-block rounded-md bg-[#f5f8ff] py-3 px-6 text-base font-medium text-dark hover:bg-primary hover:text-white"}">Home
 							</a></li>
-						<li><a href="${"javascript:void(0)"}" class="${"mx-2 my-1 inline-block rounded-md bg-[#f5f8ff] py-3 px-6 text-base font-medium text-dark hover:bg-primary hover:text-white"}">FAQ
+						<li><a href="${"/"}" class="${"mx-2 my-1 inline-block rounded-md bg-[#f5f8ff] py-3 px-6 text-base font-medium text-dark hover:bg-primary hover:text-white"}">FAQ
 							</a></li>
-						<li><a href="${"javascript:void(0)"}" class="${"mx-2 my-1 inline-block rounded-md bg-[#f5f8ff] py-3 px-6 text-base font-medium text-dark hover:bg-primary hover:text-white"}">Contact
+						<li><a href="${"/"}" class="${"mx-2 my-1 inline-block rounded-md bg-[#f5f8ff] py-3 px-6 text-base font-medium text-dark hover:bg-primary hover:text-white"}">Contact
 							</a></li></ul></div></div></div></div></section>
 `;
 });

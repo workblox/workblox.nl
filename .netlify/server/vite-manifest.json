@@ -1,13 +1,11 @@
 {
-  ".svelte-kit/build/index.js": {
+  "node_modules/@sveltejs/kit/src/runtime/server/index.js": {
     "file": "index.js",
-    "src": ".svelte-kit/build/index.js",
+    "src": "node_modules/@sveltejs/kit/src/runtime/server/index.js",
     "isEntry": true,
     "imports": [
-      "_index.js"
-    ],
-    "dynamicImports": [
-      ".svelte-kit/build/hooks.js"
+      "_index.js",
+      "_server-internal.js"
     ]
   },
   "src/routes/+layout.svelte": {
@@ -52,6 +50,11 @@
       "_i18n-svelte.js"
     ]
   },
+  "src/routes/[[lang=langCode]]/+page.server.ts": {
+    "file": "entries/pages/__lang_langCode__/_page.server.ts.js",
+    "src": "src/routes/[[lang=langCode]]/+page.server.ts",
+    "isEntry": true
+  },
   "src/routes/[[lang=langCode]]/contact/+page.svelte": {
     "file": "entries/pages/__lang_langCode__/contact/_page.svelte.js",
     "src": "src/routes/[[lang=langCode]]/contact/+page.svelte",
@@ -68,13 +71,22 @@
       "_i18n-util.js"
     ]
   },
-  ".svelte-kit/build/hooks.js": {
-    "file": "chunks/hooks.js",
-    "src": ".svelte-kit/build/hooks.js",
-    "isDynamicEntry": true
+  ".svelte-kit/generated/server-internal.js": {
+    "file": "internal.js",
+    "src": ".svelte-kit/generated/server-internal.js",
+    "isEntry": true,
+    "imports": [
+      "_server-internal.js"
+    ]
   },
   "_index.js": {
     "file": "chunks/index.js"
+  },
+  "_server-internal.js": {
+    "file": "chunks/server-internal.js",
+    "imports": [
+      "_index.js"
+    ]
   },
   "_i18n-svelte.js": {
     "file": "chunks/i18n-svelte.js",

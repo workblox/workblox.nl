@@ -1,5 +1,4 @@
 import { c as create_ssr_component } from "../../../../chunks/index.js";
-const prerender = true;
 const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   return `<h1>SvelteKit + Netlify Forms demo</h1>
 <p>View <a href="${"https://github.com/sw-yx/sveltekitnetlifyforms"}">https://github.com/sw-yx/sveltekitnetlifyforms</a> for source</p>
@@ -13,6 +12,5 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
 	<p><button type="${"submit"}">Send</button></p></form>`;
 });
 export {
-  Page as default,
-  prerender
+  Page as default
 };

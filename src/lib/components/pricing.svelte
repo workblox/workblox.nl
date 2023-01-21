@@ -75,7 +75,7 @@
 					</div>
 					<div class="w-full">
 						<a
-							href="javascript:void(0)"
+							href="/"
 							class="inline-block rounded-full border border-[#D4DEFF] bg-transparent py-4 px-11 text-center text-base font-medium text-primary transition duration-300 ease-in-out hover:border-primary hover:bg-primary hover:text-white"
 						>
 							Purchase Now
@@ -129,7 +129,7 @@
 					</div>
 					<div class="w-full">
 						<a
-							href="javascript:void(0)"
+							href="/"
 							class="inline-block rounded-full border border-white bg-white py-4 px-11 text-center text-base font-medium text-dark transition duration-300 ease-in-out hover:border-dark hover:bg-dark hover:text-white"
 						>
 							Purchase Now
@@ -186,7 +186,7 @@
 					</div>
 					<div class="w-full">
 						<a
-							href="javascript:void(0)"
+							href="/"
 							class="inline-block rounded-full border border-[#D4DEFF] bg-transparent py-4 px-11 text-center text-base font-medium text-primary transition duration-300 ease-in-out hover:border-primary hover:bg-primary hover:text-white"
 						>
 							Purchase Now

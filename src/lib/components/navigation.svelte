@@ -55,14 +55,14 @@
 									Functionaliteiten
 								</a>
 							</li>
-							<li class="group relative">
-								<a
-									href="/#faq"
-									class="ud-menu-scroll mx-8 flex py-2 text-base text-dark group-hover:text-primary lg:mr-0 lg:ml-7 lg:inline-flex lg:py-6 lg:px-0 lg:text-white lg:group-hover:text-white lg:group-hover:opacity-70 xl:ml-12"
-								>
-									Faq
-								</a>
-							</li>
+<!--							<li class="group relative">-->
+<!--								<a-->
+<!--									href="/#faq"-->
+<!--									class="ud-menu-scroll mx-8 flex py-2 text-base text-dark group-hover:text-primary lg:mr-0 lg:ml-7 lg:inline-flex lg:py-6 lg:px-0 lg:text-white lg:group-hover:text-white lg:group-hover:opacity-70 xl:ml-12"-->
+<!--								>-->
+<!--									Faq-->
+<!--								</a>-->
+<!--							</li>-->
 							<li class="group relative">
 								<a
 									href="/#team"
@@ -73,7 +73,7 @@
 							</li>
 							<li class="group relative">
 								<a
-									href={$LL.LINK('#contact')}
+									href={$LL.LINK('contact')}
 									class="ud-menu-scroll mx-8 flex py-2 text-base text-dark group-hover:text-primary lg:mr-0 lg:ml-7 lg:inline-flex lg:py-6 lg:px-0 lg:text-white lg:group-hover:text-white lg:group-hover:opacity-70 xl:ml-12"
 								>
 									Contact

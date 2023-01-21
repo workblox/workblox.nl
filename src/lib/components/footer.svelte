@@ -8,7 +8,7 @@
 			<div class="w-full px-4 sm:w-1/2 md:w-1/2 lg:w-4/12 xl:w-3/12">
 				<div class="mb-10 w-full">
 					<a
-						href="javascript:void(0)"
+						href="/"
 						class="mb-6 inline-block max-w-[160px]"
 					>
 						<img
@@ -23,7 +23,7 @@
 					</p>
 					<div class="-mx-3 flex items-center">
 						<a
-							href="javascript:void(0)"
+							href="/"
 							class="px-3 text-[#dddddd] hover:text-white"
 						>
 							<svg
@@ -38,7 +38,7 @@
 							</svg>
 						</a>
 						<a
-							href="javascript:void(0)"
+							href="/"
 							class="px-3 text-[#dddddd] hover:text-white"
 						>
 							<svg
@@ -53,7 +53,7 @@
 							</svg>
 						</a>
 						<a
-							href="javascript:void(0)"
+							href="/"
 							class="px-3 text-[#dddddd] hover:text-white"
 						>
 							<svg
@@ -74,7 +74,7 @@
 							</svg>
 						</a>
 						<a
-							href="javascript:void(0)"
+							href="/"
 							class="px-3 text-[#dddddd] hover:text-white"
 						>
 							<svg
@@ -97,7 +97,7 @@
 					<ul>
 						<li>
 							<a
-								href="javascript:void(0)"
+								href="/"
 								class="mb-2 inline-block text-base leading-loose text-[#f3f4fe] hover:text-primary"
 							>
 								Home
@@ -105,7 +105,7 @@
 						</li>
 						<li>
 							<a
-								href="javascript:void(0)"
+								href="/"
 								class="mb-2 inline-block text-base leading-loose text-[#f3f4fe] hover:text-primary"
 							>
 								Features
@@ -113,7 +113,7 @@
 						</li>
 						<li>
 							<a
-								href="javascript:void(0)"
+								href="/"
 								class="mb-2 inline-block text-base leading-loose text-[#f3f4fe] hover:text-primary"
 							>
 								About
@@ -121,7 +121,7 @@
 						</li>
 						<li>
 							<a
-								href="javascript:void(0)"
+								href="/"
 								class="mb-2 inline-block text-base leading-loose text-[#f3f4fe] hover:text-primary"
 							>
 								Testimonial
@@ -136,7 +136,7 @@
 					<ul>
 						<li>
 							<a
-								href="javascript:void(0)"
+								href="/"
 								class="mb-2 inline-block text-base leading-loose text-[#f3f4fe] hover:text-primary"
 							>
 								How it works
@@ -144,7 +144,7 @@
 						</li>
 						<li>
 							<a
-								href="javascript:void(0)"
+								href="/"
 								class="mb-2 inline-block text-base leading-loose text-[#f3f4fe] hover:text-primary"
 							>
 								Privacy policy
@@ -152,7 +152,7 @@
 						</li>
 						<li>
 							<a
-								href="javascript:void(0)"
+								href="/"
 								class="mb-2 inline-block text-base leading-loose text-[#f3f4fe] hover:text-primary"
 							>
 								Terms of Service
@@ -160,7 +160,7 @@
 						</li>
 						<li>
 							<a
-								href="javascript:void(0)"
+								href="/"
 								class="mb-2 inline-block text-base leading-loose text-[#f3f4fe] hover:text-primary"
 							>
 								Refund policy
@@ -177,7 +177,7 @@
 					<ul>
 						<li>
 							<a
-								href="javascript:void(0)"
+								href="/"
 								class="mb-2 inline-block text-base leading-loose text-[#f3f4fe] hover:text-primary"
 							>
 								LineIcons
@@ -185,7 +185,7 @@
 						</li>
 						<li>
 							<a
-								href="javascript:void(0)"
+								href="/"
 								class="mb-2 inline-block text-base leading-loose text-[#f3f4fe] hover:text-primary"
 							>
 								Ecommerce HTML
@@ -193,7 +193,7 @@
 						</li>
 						<li>
 							<a
-								href="javascript:void(0)"
+								href="/"
 								class="mb-2 inline-block text-base leading-loose text-[#f3f4fe] hover:text-primary"
 							>
 								Ayro UI
@@ -201,7 +201,7 @@
 						</li>
 						<li>
 							<a
-								href="javascript:void(0)"
+								href="/"
 								class="mb-2 inline-block text-base leading-loose text-[#f3f4fe] hover:text-primary"
 							>
 								PlainAdmin
@@ -307,19 +307,19 @@
 							class="-mx-3 flex items-center justify-center md:justify-start"
 						>
 							<a
-								href="javascript:void(0)"
+								href="/"
 								class="px-3 text-base text-[#f3f4fe] hover:text-primary"
 							>
 								Privacy policy
 							</a>
 							<a
-								href="javascript:void(0)"
+								href="/"
 								class="px-3 text-base text-[#f3f4fe] hover:text-primary"
 							>
 								Legal notice
 							</a>
 							<a
-								href="javascript:void(0)"
+								href="/"
 								class="px-3 text-base text-[#f3f4fe] hover:text-primary"
 							>
 								Terms of service

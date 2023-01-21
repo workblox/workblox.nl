@@ -1,6 +1,4 @@
-<script context="module">
-	export const prerender = true;
-</script>
+
 
 <h1>SvelteKit + Netlify Forms demo</h1>
 <p>View <a href="https://github.com/sw-yx/sveltekitnetlifyforms">https://github.com/sw-yx/sveltekitnetlifyforms</a> for source</p>
