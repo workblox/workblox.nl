@@ -52,6 +52,14 @@
       "_i18n-svelte.js"
     ]
   },
+  "src/routes/[[lang=langCode]]/contact/+page.svelte": {
+    "file": "entries/pages/__lang_langCode__/contact/_page.svelte.js",
+    "src": "src/routes/[[lang=langCode]]/contact/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index.js"
+    ]
+  },
   "src/params/langCode.ts": {
     "file": "entries/matchers/langCode.js",
     "src": "src/params/langCode.ts",

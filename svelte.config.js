@@ -14,6 +14,10 @@ const config = {
 	],
 	kit: {
 		adapter: adapter(),
+		prerender: {
+			crawl: true,
+			entries: ['*'],
+		},
 		alias: {
 			'@storyblok/svelte': './node_modules/@storyblok/svelte'
 		}

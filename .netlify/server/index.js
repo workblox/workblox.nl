@@ -2587,7 +2587,7 @@ function set_paths(paths) {
   base = paths.base;
   assets = paths.assets || base;
 }
-const app_template = ({ head, body, assets: assets2, nonce }) => '<!DOCTYPE html>\n<html lang="en">\n	<head>\n		<meta charset="utf-8" />\n		<link rel="icon" href=' + assets2 + '/favicon.png" />\n		<link rel="apple-touch-icon" sizes="180x180" href="' + assets2 + '/apple-touch-icon.png">\n		<link rel="icon" type="image/png" sizes="32x32" href="' + assets2 + '/favicon-32x32.png">\n		<link rel="icon" type="image/png" sizes="16x16" href="' + assets2 + '/favicon-16x16.png">\n		<link rel="manifest" href="' + assets2 + '/site.webmanifest">\n		<link rel="mask-icon" href="' + assets2 + '/safari-pinned-tab.svg" color="#5bbad5">\n		<meta name="msapplication-TileColor" content="#da532c">\n		<meta name="theme-color" content="#ffffff">\n		<meta name="viewport" content="width=device-width" />\n		' + head + '\n		<!-- ==== WOW JS ==== -->\n		<script src="assets/js/wow.min.js"><\/script>\n		<script>\n			new WOW().init();\n		<\/script>\n	</head>\n	<body data-sveltekit-preload-data="hover">\n		<div style="display: contents">' + body + "</div>\n	</body>\n</html>\n";
+const app_template = ({ head, body, assets: assets2, nonce }) => '<!DOCTYPE html>\n<html lang="en">\n	<head>\n		<meta charset="utf-8" />\n		<link rel="icon" href=' + assets2 + '/favicon.png" />\n		<link rel="apple-touch-icon" sizes="180x180" href="' + assets2 + '/apple-touch-icon.png">\n		<link rel="icon" type="image/png" sizes="32x32" href="' + assets2 + '/favicon-32x32.png">\n		<link rel="icon" type="image/png" sizes="16x16" href="' + assets2 + '/favicon-16x16.png">\n		<link rel="manifest" href="' + assets2 + '/site.webmanifest">\n		<link rel="mask-icon" href="' + assets2 + '/safari-pinned-tab.svg" color="#5bbad5">\n		<meta name="msapplication-TileColor" content="#da532c">\n		<meta name="theme-color" content="#ffffff">\n		<meta name="viewport" content="width=device-width" />\n		' + head + '\n	</head>\n	<body data-sveltekit-preload-data="hover">\n		<div style="display: contents">' + body + '</div>\n\n		<!-- "/static/netlify-form-helper.html" -->\n		<form name="test" netlify netlify-honeypot="bot-field" hidden>\n			<input type="text" name="name" />\n			<input type="email" name="email" />\n			<textarea name="message"></textarea>\n		</form>\n	</body>\n</html>\n';
 const error_template = ({ status, message }) => '<!DOCTYPE html>\n<html lang="en">\n	<head>\n		<meta charset="utf-8" />\n		<title>' + message + `</title>
 
 		<style>
@@ -2667,7 +2667,7 @@ class Server {
       app_template,
       app_template_contains_nonce: false,
       error_template,
-      version: "1674317891725"
+      version: "1674320054378"
     };
   }
   /**

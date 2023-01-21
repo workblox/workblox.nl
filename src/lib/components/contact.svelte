@@ -1,9 +1,3 @@
-	<script context="module" lang="ts">
-		export const hydrate = true;
-		export const router = true;
-		export const prerender = true;
-</script>
-
 <!-- ====== Contact Start ====== -->
 <section id="contact" class="relative py-20 md:py-[120px]">
 	<div
@@ -77,9 +71,10 @@
 					<h3 class="mb-8 text-2xl font-semibold md:text-[26px]">
 						Neem contact op
 					</h3>
-					<form name="contact-form" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+					<form name="contact-form" method="POST" netlify data-netlify="true" netlify-honeypot="bot-field">
 						<input type="hidden" name="form-name" value="contact-form" />
 						<input type="hidden" name="bot-field" />
+
 						<div class="mb-6">
 							<label for="fullName" class="block text-xs text-dark"
 							>Voor en achternaam*</label
