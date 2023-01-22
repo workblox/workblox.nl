@@ -51,7 +51,7 @@ ${components[1] ? `${validate_component(components[0] || missing_component, "sve
 ${``}`;
 });
 set_paths({ "base": "", "assets": "" });
-set_version("1674321366883");
+set_version("1674413106200");
 const options = {
   csp: { "mode": "auto", "directives": { "upgrade-insecure-requests": false, "block-all-mixed-content": false }, "reportOnly": { "upgrade-insecure-requests": false, "block-all-mixed-content": false } },
   csrf_check_origin: true,
@@ -62,7 +62,10 @@ const options = {
   root: Root,
   service_worker: false,
   templates: {
-    app: ({ head, body, assets: assets2, nonce, env }) => '<!DOCTYPE html>\n<html lang="en">\n	<head>\n		<meta charset="utf-8" />\n<!--		<link rel="icon" href=' + assets2 + '/favicon.png" />-->\n		<link rel="apple-touch-icon" sizes="180x180" href="' + assets2 + '/apple-touch-icon.png">\n		<link rel="icon" type="image/png" sizes="32x32" href="' + assets2 + '/favicon-32x32.png">\n		<link rel="icon" type="image/png" sizes="16x16" href="' + assets2 + '/favicon-16x16.png">\n		<link rel="manifest" href="' + assets2 + '/site.webmanifest">\n		<link rel="mask-icon" href="' + assets2 + '/safari-pinned-tab.svg" color="#5bbad5">\n		<meta name="msapplication-TileColor" content="#da532c">\n		<meta name="theme-color" content="#ffffff">\n		<meta name="viewport" content="width=device-width" />\n		' + head + '\n	</head>\n	<body data-sveltekit-preload-data="hover">\n		<div style="display: contents">' + body + '</div>\n\n		<!-- "/static/netlify-form-helper.html" -->\n		<form name="test" netlify netlify-honeypot="bot-field" hidden>\n			<input type="text" name="name" />\n			<input type="email" name="email" />\n			<textarea name="message"></textarea>\n		</form>\n	</body>\n</html>\n',
+    app: ({ head, body, assets: assets2, nonce, env }) => '<!DOCTYPE html>\n<html lang="en">\n	<head>\n		<meta charset="utf-8" />\n<!--		<link rel="icon" href=' + assets2 + '/favicon.png" />-->\n		<link rel="apple-touch-icon" sizes="180x180" href="' + assets2 + '/apple-touch-icon.png">\n		<link rel="icon" type="image/png" sizes="32x32" href="' + assets2 + '/favicon-32x32.png">\n		<link rel="icon" type="image/png" sizes="16x16" href="' + assets2 + '/favicon-16x16.png">\n		<link rel="manifest" href="' + assets2 + '/site.webmanifest">\n		<link rel="mask-icon" href="' + assets2 + '/safari-pinned-tab.svg" color="#5bbad5">\n		<meta name="msapplication-TileColor" content="#da532c">\n		<meta name="theme-color" content="#ffffff">\n		<meta name="viewport" content="width=device-width" />\n		' + head + `
+	</head>
+	<body class='bg-rum-swizzle' data-sveltekit-preload-data="hover">
+		<div style="display: contents">` + body + "</div>\n		<!-- Hotjar Tracking Code for https://workblox.netlify.app -->\n		<script>\n			(function(h,o,t,j,a,r){\n				h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};\n				h._hjSettings={hjid:3332521,hjsv:6};\n				a=o.getElementsByTagName('head')[0];\n				r=o.createElement('script');r.async=1;\n				r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;\n				a.appendChild(r);\n			})(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');\n		<\/script>\n	</body>\n</html>\n",
     error: ({ status, message }) => '<!DOCTYPE html>\n<html lang="en">\n	<head>\n		<meta charset="utf-8" />\n		<title>' + message + `</title>
 
 		<style>
