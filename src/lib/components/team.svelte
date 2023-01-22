@@ -4,9 +4,9 @@
 		<div class="-mx-4 flex flex-wrap">
 			<div class="w-full px-4">
 				<div class="mx-auto mb-[60px] max-w-[620px] text-center">
-              <span class="mb-2 block text-lg font-semibold text-primary">
-                Ons team
-              </span>
+						<span class="mb-2 block text-lg font-semibold text-primary">
+							Ons team
+						</span>
 					<h2
 						class="mb-4 text-3xl font-bold text-dark sm:text-4xl md:text-[42px]"
 					>
@@ -30,7 +30,7 @@
 					>
 						<img
 							src="assets/images/team/team-01.png"
-							alt="image"
+							alt="photo1"
 							class="w-full rounded-full"
 						/>
 						<span class="absolute top-0 left-0 z-[-1]">
@@ -520,7 +520,7 @@
 					>
 						<img
 							src="assets/images/team/team-02.png"
-							alt="image"
+							alt="photo2"
 							class="w-full rounded-full"
 						/>
 						<span class="absolute top-0 left-0 z-[-1]">

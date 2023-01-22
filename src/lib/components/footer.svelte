@@ -216,8 +216,8 @@
 					<ul class="flex flex-wrap items-center">
 						<li>
 							<a
-								href="https://tailgrids.com"
-								rel="nofollow noopner"
+								href="/"
+								rel="nofollow noopner noreferrer"
 								target="_blank"
 								class="mb-6 mr-5 block max-w-[120px] xl:max-w-[100px] 2xl:max-w-[120px]"
 							>
@@ -229,8 +229,8 @@
 						</li>
 						<li>
 							<a
-								href="https://ayroui.com"
-								rel="nofollow noopner"
+								href="/"
+								rel="nofollow noopner noreferrer"
 								target="_blank"
 								class="mb-6 mr-5 block max-w-[120px] xl:max-w-[100px] 2xl:max-w-[120px]"
 							>
@@ -242,8 +242,8 @@
 						</li>
 						<li>
 							<a
-								href="https://ecommercehtml.com"
-								rel="nofollow noopner"
+								href="/"
+								rel="nofollow noopner noreferrer"
 								target="_blank"
 								class="mb-6 mr-5 block max-w-[120px] xl:max-w-[100px] 2xl:max-w-[120px]"
 							>
@@ -255,8 +255,8 @@
 						</li>
 						<li>
 							<a
-								href="https://graygrids.com"
-								rel="nofollow noopner"
+								href="/"
+								rel="nofollow noopner noreferrer"
 								target="_blank"
 								class="mb-6 mr-5 block max-w-[120px] xl:max-w-[100px] 2xl:max-w-[120px]"
 							>
@@ -268,8 +268,8 @@
 						</li>
 						<li>
 							<a
-								href="https://lineicons.com"
-								rel="nofollow noopner"
+								href="/"
+								rel="nofollow noopner noreferrer"
 								target="_blank"
 								class="mb-6 mr-5 block max-w-[120px] xl:max-w-[100px] 2xl:max-w-[120px]"
 							>
@@ -281,8 +281,8 @@
 						</li>
 						<li>
 							<a
-								href="https://uideck.com"
-								rel="nofollow noopner"
+								href="/"
+								rel="nofollow noopner noreferrer"
 								target="_blank"
 								class="mb-6 mr-5 block max-w-[120px] xl:max-w-[100px] 2xl:max-w-[120px]"
 							>
@@ -332,8 +332,8 @@
 						<p class="text-base text-[#f3f4fe]">
 							Designed and Developed by
 							<a
-								href="https://tailgrids.com"
-								rel="nofollow noopner"
+								href="/"
+								rel="nofollow noopner noreferrer"
 								target="_blank"
 								class="text-primary hover:underline"
 							>

@@ -35,7 +35,9 @@
 						</li>
 						<li>
 							<a
+								href='/'
 								target="_blank"
+								rel='noreferrer'
 								class="flex items-center py-4 px-6 text-base font-medium text-white transition duration-300 ease-in-out hover:opacity-70 sm:px-10"
 							>
 								Ik wil meer weten

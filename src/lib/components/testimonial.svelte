@@ -309,9 +309,9 @@
 					<div class="ud-brands-logo flex flex-wrap items-center">
 						<div class="ud-single-logo mr-10 mb-5 max-w-[140px]">
 							<a
-								href="https://tailgrids.com"
+								href="/"
 								target="_blank"
-								rel="nofollow noopner"
+								rel="nofollow noopner noreferrer"
 							>
 								<img
 									src="assets/images/brands/tailgrids.svg"
@@ -322,9 +322,9 @@
 						</div>
 						<div class="ud-single-logo mr-10 mb-5 max-w-[140px]">
 							<a
-								href="https://ayroui.com"
+								href="/"
 								target="_blank"
-								rel="nofollow noopner"
+								rel="nofollow noopner noreferrer"
 							>
 								<img
 									src="assets/images/brands/ayroui.svg"
@@ -335,9 +335,9 @@
 						</div>
 						<div class="ud-single-logo mr-10 mb-5 max-w-[140px]">
 							<a
-								href="https://uideck.com"
+								href="/"
 								target="_blank"
-								rel="nofollow noopner"
+								rel="nofollow noopner noreferrer"
 							>
 								<img
 									src="assets/images/brands/uideck.svg"
@@ -348,9 +348,9 @@
 						</div>
 						<div class="ud-single-logo mr-10 mb-5 max-w-[140px]">
 							<a
-								href="https://graygrids.com"
+								href="/"
 								target="_blank"
-								rel="nofollow noopner"
+								rel="nofollow noopner noreferrer"
 							>
 								<img
 									src="assets/images/brands/graygrids.svg"
@@ -361,9 +361,9 @@
 						</div>
 						<div class="ud-single-logo mr-10 mb-5 max-w-[140px]">
 							<a
-								href="https://lineicons.com"
+								href="/"
 								target="_blank"
-								rel="nofollow noopner"
+								rel="nofollow noopner noreferrer"
 							>
 								<img
 									src="assets/images/brands/lineicons.svg"
