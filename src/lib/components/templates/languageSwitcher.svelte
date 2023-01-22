@@ -34,7 +34,7 @@
 
 <button
 	on:click={() => (show = !show)}
-	class="inline-flex w-full justify-center rounded-md border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-700 shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 focus:ring-offset-gray-100 ud-menu-scroll mx-8 py-2 lg:mr-0 lg:ml-7 lg:inline-flex lg:px-0 lg:group-hover:opacity-70 lg:mt-4 lg:mb-1"
+	class="inline-flex w-full justify-center rounded-md border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-dark-800 shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 focus:ring-offset-gray-100 ud-menu-scroll mx-8 py-2 lg:mr-0 lg:ml-7 lg:inline-flex lg:px-0 lg:group-hover:opacity-70 lg:mt-4 lg:mb-1"
 >
 	Taal
 </button>
@@ -49,12 +49,12 @@
 		<div class="py-1" role="none" data-sveltekit-preload-data="off">
 			<a
 				role="menuitem" tabindex="-1"
-				class="text-gray-700 hover:bg-primary hover:text-white w-full block px-4 py-2 text-sm"
+				class="text-dark-800 hover:bg-primary hover:text-dark w-full block px-4 py-2 text-sm"
 				href='/'
 			>Nederlands</a>
 			<a
 				role="menuitem" tabindex="-1"
-				class="text-gray-700 hover:bg-primary hover:text-white w-full block px-4 py-2 text-sm"
+				class="text-dark-800 hover:bg-primary hover:text-dark w-full block px-4 py-2 text-sm"
 				href='/en'
 			>English</a>
 		</div>

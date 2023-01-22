@@ -21,9 +21,55 @@ type RootTranslation = {
 	LINK: RequiredParams<'0'>
 	payoffs: {
 		/**
-		 * O​n​-​p​o​i​n​t​ ​d​i​e​n​s​t​v​e​r​l​e​n​i​n​g​,​ ​a​u​t​o​m​a​t​i​s​e​e​r​ ​a​l​l​e​d​a​a​g​s​e​ ​p​r​o​c​e​s​s​e​n​.
+		 * D​i​g​i​t​a​l​i​s​e​e​r​ ​j​e​ ​m​a​n​i​e​r​ ​v​a​n​ ​w​e​r​k​e​n​ ​v​a​n​d​a​a​g​ ​n​o​g​.
 		 */
-		automise: string
+		main: string
+		/**
+		 * O​f​ ​h​e​t​ ​n​u​ ​g​a​a​t​ ​o​m​ ​e​e​n​ ​o​f​f​e​r​t​e​ ​a​a​n​v​r​a​a​g​,​ ​o​n​b​o​a​r​d​i​n​g​ ​o​f​ ​a​d​v​i​e​s​ ​g​a​a​t​,​ ​W​o​r​k​b​l​o​x​ ​m​a​a​k​t​ ​h​e​t​ ​m​o​g​e​l​i​j​k​ ​o​m​ ​j​o​u​w​ ​b​e​d​r​i​j​f​s​p​r​o​c​e​s​ ​d​e​e​l​s​ ​o​f​ ​h​e​l​e​m​a​a​l​ ​t​e​ ​d​i​g​i​t​a​l​i​s​e​r​e​n​.
+		 */
+		main_sub: string
+	}
+	/**
+	 * M​e​l​d​ ​j​e​ ​a​a​n
+	 */
+	register: string
+	faqs: {
+		/**
+		 * F​a​q​s
+		 */
+		title: string
+		/**
+		 * V​e​e​l​g​e​s​t​e​l​d​e​ ​v​r​a​g​e​n
+		 */
+		subtitle: string
+	}
+	footer: {
+		/**
+		 * O​n​s​ ​d​o​e​l​ ​i​s​ ​o​m​ ​h​e​t​ ​i​n​t​e​r​n​e​t​ ​t​o​e​g​a​n​k​e​l​i​j​k​e​r​ ​t​e​ ​m​a​k​e​n​ ​v​o​o​r​ ​m​i​d​d​e​l​g​r​o​t​e​ ​e​n​ ​k​l​e​i​n​e​ ​b​e​d​r​i​j​v​e​n​.​ ​<​b​r​ ​/​>​<​b​r​ ​/​>​ ​J​e​ ​o​n​s​ ​m​a​i​l​e​n​ ​v​o​o​r​ ​v​r​a​g​e​n​,​ ​o​p​m​e​r​k​i​n​g​e​n​ ​o​f​ ​m​e​e​r​ ​i​n​f​o​r​m​a​t​i​e​.
+		 */
+		title: string
+	}
+	contact: {
+		/**
+		 * h​e​l​l​o​@​w​o​r​k​b​l​o​x​.​n​l
+		 */
+		email: string
+		/**
+		 * 0​1​6​8​-​1​2​3​4​5​6​7
+		 */
+		phone: string
+		/**
+		 * S​t​r​a​a​t​n​a​a​m​ ​1​2​3
+		 */
+		addr_street: string
+		/**
+		 * 1​2​3
+		 */
+		addr_housenumber: string
+		/**
+		 * S​t​a​d
+		 */
+		addr_city: string
 	}
 }
 
@@ -34,9 +80,55 @@ export type TranslationFunctions = {
 	LINK: (arg0: unknown) => LocalizedString
 	payoffs: {
 		/**
-		 * On-point dienstverlening, automatiseer alledaagse processen.
+		 * Digitaliseer je manier van werken vandaag nog.
 		 */
-		automise: () => LocalizedString
+		main: () => LocalizedString
+		/**
+		 * Of het nu gaat om een offerte aanvraag, onboarding of advies gaat, Workblox maakt het mogelijk om jouw bedrijfsproces deels of helemaal te digitaliseren.
+		 */
+		main_sub: () => LocalizedString
+	}
+	/**
+	 * Meld je aan
+	 */
+	register: () => LocalizedString
+	faqs: {
+		/**
+		 * Faqs
+		 */
+		title: () => LocalizedString
+		/**
+		 * Veelgestelde vragen
+		 */
+		subtitle: () => LocalizedString
+	}
+	footer: {
+		/**
+		 * Ons doel is om het internet toegankelijker te maken voor middelgrote en kleine bedrijven. <br /><br /> Je ons mailen voor vragen, opmerkingen of meer informatie.
+		 */
+		title: () => LocalizedString
+	}
+	contact: {
+		/**
+		 * hello@workblox.nl
+		 */
+		email: () => LocalizedString
+		/**
+		 * 0168-1234567
+		 */
+		phone: () => LocalizedString
+		/**
+		 * Straatnaam 123
+		 */
+		addr_street: () => LocalizedString
+		/**
+		 * 123
+		 */
+		addr_housenumber: () => LocalizedString
+		/**
+		 * Stad
+		 */
+		addr_city: () => LocalizedString
 	}
 }
 

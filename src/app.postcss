@@ -2,12 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+@import '../static/assets/fonts/graphik.postcss';
+
 body {
-    font-family: "Inter", sans-serif;
+    font-family: "Graphik", sans-serif;
 }
 
 .sticky {
-    @apply fixed z-[9999] bg-white bg-opacity-80 transition;
+    @apply fixed z-[9999] bg-dark bg-opacity-80 transition;
     backdrop-filter: blur(5px);
     box-shadow: inset 0 -1px 0 0 rgba(0, 0, 0, 0.1);
 }
@@ -21,20 +23,20 @@ body {
 }
 
 .sticky #navbarCollapse li a {
-    @apply text-dark hover:text-primary hover:opacity-100;
+    @apply text-dark hover:text-dark hover:opacity-100;
 }
 #navbarCollapse li .ud-menu-scroll.active {
     @apply opacity-70;
 }
 .sticky #navbarCollapse li .ud-menu-scroll.active {
-    @apply text-primary opacity-100;
+    @apply text-dark opacity-100;
 }
 .sticky .loginBtn {
-    @apply text-dark hover:text-primary hover:opacity-100;
+    @apply text-dark hover:text-dark hover:opacity-100;
 }
 
 .sticky .signUpBtn {
-    @apply bg-primary text-white hover:bg-dark hover:text-white;
+    @apply bg-primary text-dark hover:bg-dark hover:text-dark;
 }
 
 .navbarTogglerActive > span:nth-child(1) {

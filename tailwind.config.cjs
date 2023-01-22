@@ -23,13 +23,19 @@ const config = {
 		},
 		extend: {
 			colors: {
+				"rum-swizzle": "#FEFEF9",
+				"spanish-white": "#FEF4DB",
+				"rice-flower": "#EBFFDB",
+				gray: "#B0B0B0",
 				black: "#212b36",
-				dark: "#090E34",
-				"dark-700": "#090e34b3",
-				primary: "#3056D3",
+				dark: '#0A0F0D',
+				"dark-800": 'rgba(10, 15, 13, 0.8);',
+				primary: "#D5E9F8",
 				secondary: "#13C296",
-				"body-color": "#637381",
 				warning: "#FBBF24",
+			},
+			fontFamily: {
+				'graphik': ['Graphik', 'sans-serif']
 			},
 			boxShadow: {
 				input: "0px 7px 20px rgba(0, 0, 0, 0.03)",
