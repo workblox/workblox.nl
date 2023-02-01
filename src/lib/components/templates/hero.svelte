@@ -1,16 +1,20 @@
 <script lang='ts'>
 	import { LL } from '$lib/i18n/i18n-svelte';
-	import Button from '$lib/components/atoms/button.svelte';
+	import Anchor from '$lib/components/atoms/anchor.svelte';
+	import StarSvg from '$lib/assets/svg/star.svelte';
 </script>
 
 <!-- ====== Hero Section Start -->
 <div
 	id="home"
-	class="relative overflow-hidden bg-primary py-[120px] md:py-[130px] lg:py-[160px] border-b border-b-dark"
+	class="relative overflow-hidden bg-primary border-b py-[120px] md:py-[130px] lg:py-[160px] border-b-dark md:h-full"
 >
-	<div class="container">
-		<div class="-mx-4 flex flex-wrap items-center">
-			<div class="w-full flex px-4">
+	<div class="container h-full">
+		<StarSvg class='h-6 absolute top-[12%] lg:top-[24%] left-[20%] lg:left-[35%] inline-flex' />
+		<StarSvg class='h-6 absolute top-[8%] lg:top-[14%] right-[27%] inline-flex' />
+		<StarSvg class='h-6 absolute top-[30%] right-[10%] inline-flex' />
+		<div class="-mx-4 flex flex-wrap items-center h-full">
+			<div class="w-full flex px-4 h-full md:h-auto">
 				<div class='hidden lg:flex'>
 					<img
 						src="assets/images/hero/app.png"
@@ -19,7 +23,7 @@
 					/>
 				</div>
 				<div
-					class="flex justify-center items-start flex-col wow fadeInUp"
+					class="flex justify-end items-start flex-col wow fadeInUp"
 					data-wow-delay=".2s"
 				>
 					<h1
@@ -32,9 +36,9 @@
 					>
 						{$LL.payoffs.main_sub()}
 					</p>
-					<Button>
+					<Anchor href={'#contact'}>
 						{$LL.register()}
-					</Button>
+					</Anchor>
 				</div>
 			</div>
 		</div>

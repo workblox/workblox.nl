@@ -26,6 +26,7 @@ const config = {
 				"rum-swizzle": "#FEFEF9",
 				"spanish-white": "#FEF4DB",
 				"rice-flower": "#EBFFDB",
+				"spring-wood": "#F5F1EA",
 				gray: "#B0B0B0",
 				black: "#212b36",
 				dark: '#0A0F0D',
