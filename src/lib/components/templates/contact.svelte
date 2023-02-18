@@ -1,30 +1,24 @@
+<script lang="ts">
+	import LL from '$lib/i18n/i18n-svelte';
+</script>
+
 <!-- ====== Contact Start ====== -->
 <section id="contact" class="relative py-20 md:py-[120px]">
-	<div
-		class="absolute top-0 left-0 z-[-1] h-1/2 w-full bg-rum-swizzle lg:h-[45%] xl:h-1/2"
-	></div>
+	<div class="absolute top-0 left-0 z-[-1] h-1/2 w-full bg-rum-swizzle lg:h-[45%] xl:h-1/2" />
 	<div class="container px-4">
 		<div class="-mx-4 flex flex-wrap items-center">
 			<div class="w-full px-4 lg:w-7/12 xl:w-8/12">
 				<div class="ud-contact-content-wrapper">
 					<div class="ud-contact-title mb-12 lg:mb-[150px]">
-						<span class="mb-5 text-base font-semibold text-dark">
-							Neem contact op
-						</span>
+						<span class="mb-5 text-base font-semibold text-dark">{$LL.contact.title()}</span>
 						<h2 class="text-[35px] font-semibold">
-							We horen graag hoe we u <br />
-							van dienst kunnen zijn!
+							{$LL.contact.subtitle()}
 						</h2>
 					</div>
 					<div class="mb-12 flex flex-wrap justify-between lg:mb-0">
 						<div class="mb-8 flex w-[330px] max-w-full">
 							<div class="mr-6 text-[32px] text-dark">
-								<svg
-									width="29"
-									height="35"
-									viewBox="0 0 29 35"
-									class="fill-current"
-								>
+								<svg width="29" height="35" viewBox="0 0 29 35" class="fill-current">
 									<path
 										d="M14.5 0.710938C6.89844 0.710938 0.664062 6.72656 0.664062 14.0547C0.664062 19.9062 9.03125 29.5859 12.6406 33.5234C13.1328 34.0703 13.7891 34.3437 14.5 34.3437C15.2109 34.3437 15.8672 34.0703 16.3594 33.5234C19.9688 29.6406 28.3359 19.9062 28.3359 14.0547C28.3359 6.67188 22.1016 0.710938 14.5 0.710938ZM14.9375 32.2109C14.6641 32.4844 14.2812 32.4844 14.0625 32.2109C11.3828 29.3125 2.57812 19.3594 2.57812 14.0547C2.57812 7.71094 7.9375 2.625 14.5 2.625C21.0625 2.625 26.4219 7.76562 26.4219 14.0547C26.4219 19.3594 17.6172 29.2578 14.9375 32.2109Z"
 									/>
@@ -34,29 +28,24 @@
 								</svg>
 							</div>
 							<div>
-								<h5 class="mb-6 text-lg font-semibold">Onze locatie</h5>
-								<p class="text-base text-body-color">
-									Wilhelminastraat 21B, 4811AC, Breda
-								</p>
+								<h5 class="mb-6 text-lg font-semibold">{$LL.contact.ourLocation()}</h5>
+								<p class="text-base text-body-color">{$LL.contact.address()}</p>
 							</div>
 						</div>
 						<div class="mb-8 flex w-[330px] max-w-full">
 							<div class="mr-6 text-[32px] text-dark">
-								<svg
-									width="34"
-									height="25"
-									viewBox="0 0 34 25"
-									class="fill-current"
-								>
+								<svg width="34" height="25" viewBox="0 0 34 25" class="fill-current">
 									<path
 										d="M30.5156 0.960938H3.17188C1.42188 0.960938 0 2.38281 0 4.13281V20.9219C0 22.6719 1.42188 24.0938 3.17188 24.0938H30.5156C32.2656 24.0938 33.6875 22.6719 33.6875 20.9219V4.13281C33.6875 2.38281 32.2656 0.960938 30.5156 0.960938ZM30.5156 2.875C30.7891 2.875 31.0078 2.92969 31.2266 3.09375L17.6094 11.3516C17.1172 11.625 16.5703 11.625 16.0781 11.3516L2.46094 3.09375C2.67969 2.98438 2.89844 2.875 3.17188 2.875H30.5156ZM30.5156 22.125H3.17188C2.51562 22.125 1.91406 21.5781 1.91406 20.8672V5.00781L15.0391 12.9922C15.5859 13.3203 16.1875 13.4844 16.7891 13.4844C17.3906 13.4844 17.9922 13.3203 18.5391 12.9922L31.6641 5.00781V20.8672C31.7734 21.5781 31.1719 22.125 30.5156 22.125Z"
 									/>
 								</svg>
 							</div>
 							<div>
-								<h5 class="mb-6 text-lg font-semibold">Neem contact op</h5>
-								<a href='mailto:info@workblox.nl'>info@workblox.nl</a> <br />
-								<a href='tel:+31168481123' class="text-base text-body-color">+31 (0168) 481123</a>
+								<h5 class="mb-6 text-lg font-semibold">{$LL.contact.title()}</h5>
+								<a href="mailto:info@workblox.nl">{$LL.contact.email()}</a> <br />
+								<a href="tel:+31168481123" class="text-base text-body-color"
+									>{$LL.contact.phone()}
+								</a>
 							</div>
 						</div>
 					</div>
@@ -68,71 +57,61 @@
 					data-wow-delay=".2s
               "
 				>
-					<h3 class="mb-8 text-2xl font-semibold md:text-[26px]">
-						Neem contact op
-					</h3>
+					<h3 class="mb-8 text-2xl font-semibold md:text-[26px]">{$LL.contact.title()}</h3>
 					<form name="contact-form" method="POST" data-netlify="true" netlify-honeypot="bot-field">
 						<input type="hidden" name="form-name" value="contact-form" />
 						<input type="hidden" name="bot-field" />
 
 						<div class="mb-6">
-							<label for="fullName" class="block text-xs text-dark mb-2"
-							>Voor en achternaam*</label
-							>
+							<label for="fullName" class="block text-xs text-dark mb-2">{$LL.fullName()}*</label>
 							<input
 								type="text"
-								id='fullName'
+								id="fullName"
 								name="fullName"
-								placeholder="Voor en achternaam"
+								placeholder={$LL.placeholder.fullName()}
 								class="w-full border-0 bg-rum-swizzle border-b border-[#f1f1f1] p-4 focus:border-primary focus:outline-none"
 								required
 							/>
 						</div>
 						<div class="mb-6">
-							<label for="email" class="block text-xs text-dark mb-2"
-							>Email*</label
-							>
+							<label for="email" class="block text-xs text-dark mb-2">{$LL.email()}*</label>
 							<input
 								type="email"
 								id="email"
 								name="email"
-								placeholder="voorbeeld@email.nl"
+								placeholder={$LL.placeholder.email()}
 								class="w-full border-0 bg-rum-swizzle border-b border-[#f1f1f1] p-4 focus:border-primary focus:outline-none"
 								required
 							/>
 						</div>
 						<div class="mb-6">
-							<label for="phone" class="block text-xs text-dark mb-2"
-							>Telefoon*</label
-							>
+							<label for="phone" class="block text-xs text-dark mb-2">{$LL.phone()}*</label>
 							<input
 								type="text"
 								id="phone"
 								name="phone"
-								placeholder="06 12345678"
+								placeholder={$LL.placeholder.phone()}
 								class="w-full border-0 bg-rum-swizzle border-b border-[#f1f1f1] p-4 focus:border-primary focus:outline-none"
 								required
 							/>
 						</div>
 						<div class="mb-6">
-							<label for="message" class="block text-xs text-dark mb-2"
-							>Bericht*</label
-							>
+							<label for="message" class="block text-xs text-dark mb-2">{$LL.message()}*</label>
 							<textarea
 								id="message"
 								name="message"
 								rows="1"
-								placeholder="Typ hier uw bericht"
+								placeholder={$LL.placeholder.message()}
 								class="w-full resize-none bg-rum-swizzle border-0 border-b border-[#f1f1f1] p-4 focus:border-primary focus:outline-none"
 								required
-							></textarea>
+							/>
 						</div>
 						<div class="mb-0">
 							<button
 								type="submit"
 								class="inline-flex items-center justify-center rounded bg-primary py-4 px-6 text-base font-medium text-dark transition duration-300 ease-in-out hover:bg-dark"
 							>
-								Verstuur
+								{$LL.send()}
 							</button>
 						</div>
 					</form>

@@ -4,18 +4,12 @@
 </script>
 
 <!-- ====== Navbar Section Start -->
-<div
-	class="ud-header absolute top-0 left-0 z-40 flex w-full items-center bg-transparent"
->
+<div class="ud-header absolute top-0 left-0 z-40 flex w-full items-center bg-transparent">
 	<div class="container">
 		<div class="relative -mx-4 flex items-center justify-between">
 			<div class="w-60 max-w-full px-4">
 				<a href="/" class="navbar-logo block w-full py-5">
-					<img
-						src="/assets/images/logo/logo-white.svg"
-						alt="logo"
-						class="header-logo w-full"
-					/>
+					<img src="/assets/images/logo/logo-white.svg" alt="logo" class="header-logo w-full" />
 				</a>
 			</div>
 			<div class="flex w-full items-center justify-between px-4">
@@ -24,59 +18,53 @@
 						id="navbarToggler"
 						class="absolute right-4 top-1/2 block -translate-y-1/2 rounded-lg px-3 py-[6px] ring-primary focus:ring-2 lg:hidden"
 					>
-                <span
-									class="relative my-[6px] block h-[2px] w-[30px] bg-dark"
-								></span>
-						<span
-							class="relative my-[6px] block h-[2px] w-[30px] bg-dark"
-						></span>
-						<span
-							class="relative my-[6px] block h-[2px] w-[30px] bg-dark"
-						></span>
+						<span class="relative my-[6px] block h-[2px] w-[30px] bg-dark" />
+						<span class="relative my-[6px] block h-[2px] w-[30px] bg-dark" />
+						<span class="relative my-[6px] block h-[2px] w-[30px] bg-dark" />
 					</button>
 					<nav
 						id="navbarCollapse"
 						class="absolute right-4 top-full hidden w-full max-w-[250px] rounded-lg bg-dark py-5 shadow-lg lg:static lg:block lg:w-full lg:max-w-full lg:bg-transparent lg:py-0 lg:px-4 lg:shadow-none xl:px-6"
 					>
-						<ul class="blcok lg:flex">
+						<ul class="block lg:flex">
 							<li class="group relative">
 								<a
-									href="#home"
-									class="ud-menu-scroll mx-8 flex py-2 text-base text-dark group-hover:text-dark lg:mr-0 lg:inline-flex lg:py-6 lg:px-0 lg:text-dark lg:group-hover:text-dark lg:group-hover:opacity-70"
+									href="#features"
+									class="ud-menu-scroll mx-8 flex py-2 text-base text-dark group-hover:text-dark lg:mr-0 lg:ml-7 lg:inline-flex lg:py-6 lg:px-0 lg:text-dark lg:group-hover:text-dark lg:group-hover:opacity-70 xl:ml-12"
 								>
-									Home
+									{$LL.navigation.industries.title()}
 								</a>
 							</li>
 							<li class="group relative">
 								<a
-									href={$LL.LINK('#features')}
+									href="#features"
 									class="ud-menu-scroll mx-8 flex py-2 text-base text-dark group-hover:text-dark lg:mr-0 lg:ml-7 lg:inline-flex lg:py-6 lg:px-0 lg:text-dark lg:group-hover:text-dark lg:group-hover:opacity-70 xl:ml-12"
 								>
-									Functionaliteiten
+									{$LL.navigation.product.title()}
 								</a>
 							</li>
-<!--							<li class="group relative">-->
-<!--								<a-->
-<!--									href="/#faq"-->
-<!--									class="ud-menu-scroll mx-8 flex py-2 text-base text-dark group-hover:text-dark lg:mr-0 lg:ml-7 lg:inline-flex lg:py-6 lg:px-0 lg:text-dark lg:group-hover:text-dark lg:group-hover:opacity-70 xl:ml-12"-->
-<!--								>-->
-<!--									Faq-->
-<!--								</a>-->
-<!--							</li>-->
-<!--							<li class="group relative">-->
-<!--								<a-->
-<!--									href="/#team"-->
-<!--									class="ud-menu-scroll mx-8 flex py-2 text-base text-dark group-hover:text-dark lg:mr-0 lg:ml-7 lg:inline-flex lg:py-6 lg:px-0 lg:text-dark lg:group-hover:text-dark lg:group-hover:opacity-70 xl:ml-12"-->
-<!--								>-->
-<!--									Team-->
-<!--								</a>-->
-<!--							</li>-->
 							<li class="group relative">
 								<a
-									href={$LL.LINK('/contact')}
+									href="#features"
 									class="ud-menu-scroll mx-8 flex py-2 text-base text-dark group-hover:text-dark lg:mr-0 lg:ml-7 lg:inline-flex lg:py-6 lg:px-0 lg:text-dark lg:group-hover:text-dark lg:group-hover:opacity-70 xl:ml-12"
 								>
-									Contact
+									{$LL.navigation.features.title()}
+								</a>
+							</li>
+							<!--<li class="group relative">-->
+							<!--	<a-->
+							<!--		href="/contact"-->
+							<!--		class="ud-menu-scroll mx-8 flex py-2 text-base text-dark group-hover:text-dark lg:mr-0 lg:ml-7 lg:inline-flex lg:py-6 lg:px-0 lg:text-dark lg:group-hover:text-dark lg:group-hover:opacity-70 xl:ml-12"-->
+							<!--	>-->
+							<!--		{$LL.navigation.pricing()}-->
+							<!--	</a>-->
+							<!--</li>-->
+							<li class="group relative">
+								<a
+									href="/contact"
+									class="ud-menu-scroll mx-8 flex py-2 text-base text-dark group-hover:text-dark lg:mr-0 lg:ml-7 lg:inline-flex lg:py-6 lg:px-0 lg:text-dark lg:group-hover:text-dark lg:group-hover:opacity-70 xl:ml-12"
+								>
+									{$LL.navigation.more.title()}
 								</a>
 							</li>
 							<li class="group relative">
@@ -85,20 +73,6 @@
 						</ul>
 					</nav>
 				</div>
-<!--				<div class="hidden justify-end pr-16 sm:flex lg:pr-0">-->
-<!--					<a-->
-<!--						href="signin.html"-->
-<!--						class="loginBtn py-3 px-7 text-base font-medium text-dark hover:opacity-70"-->
-<!--					>-->
-<!--						Sign In-->
-<!--					</a>-->
-<!--					<a-->
-<!--						href="signup.html"-->
-<!--						class="signUpBtn rounded-lg bg-dark bg-opacity-20 py-3 px-6 text-base font-medium text-dark duration-300 ease-in-out hover:bg-opacity-100 hover:text-dark"-->
-<!--					>-->
-<!--						Sign Up-->
-<!--					</a>-->
-<!--				</div>-->
 			</div>
 		</div>
 	</div>

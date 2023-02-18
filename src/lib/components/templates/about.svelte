@@ -1,38 +1,29 @@
 <!-- ====== About Section Start -->
-<section
-	id="about"
-	class="bg-[#f3f4fe] pt-20 pb-20 lg:pt-[120px] lg:pb-[120px]"
->
+<section id="about" class="bg-[#f3f4fe] pt-20 pb-20 lg:pt-[120px] lg:pb-[120px]">
 	<div class="container">
 		<div class="wow fadeInUp bg-dark" data-wow-delay=".2s">
 			<div class="-mx-4 flex flex-wrap">
 				<div class="w-full px-4">
-					<div
-						class="items-center justify-between overflow-hidden border lg:flex"
-					>
+					<div class="items-center justify-between overflow-hidden border lg:flex">
 						<div
 							class="w-full py-12 px-7 sm:px-12 md:p-16 lg:max-w-[565px] lg:py-9 lg:px-16 xl:max-w-[640px] xl:p-[70px]"
 						>
-                  <span
-										class="mb-5 inline-block bg-primary py-2 px-5 text-sm font-medium text-dark"
-									>
-                    About Us
-                  </span>
+							<span class="mb-5 inline-block bg-primary py-2 px-5 text-sm font-medium text-dark">
+								About Us
+							</span>
 							<h2
 								class="mb-6 text-3xl font-bold text-dark sm:text-4xl sm:leading-snug 2xl:text-[40px]"
 							>
 								Brilliant Toolkit to Build Nextgen Website Faster.
 							</h2>
 							<p class="mb-9 text-base leading-relaxed text-body-color">
-								The main ‘thrust' is to focus on educating attendees on how
-								to best protect highly vulnerable business applications with
-								interactive panel discussions and roundtables led by subject
-								matter experts.
+								The main ‘thrust' is to focus on educating attendees on how to best protect highly
+								vulnerable business applications with interactive panel discussions and roundtables
+								led by subject matter experts.
 							</p>
 							<p class="mb-9 text-base leading-relaxed text-body-color">
-								The main ‘thrust' is to focus on educating attendees on how
-								to best protect highly vulnerable business applications with
-								interactive panel.
+								The main ‘thrust' is to focus on educating attendees on how to best protect highly
+								vulnerable business applications with interactive panel.
 							</p>
 							<a
 								href="/"
@@ -44,7 +35,7 @@
 						<div class="text-center">
 							<div class="relative z-10 inline-block">
 								<img
-									src="assets/images/about/about-image.svg"
+									src="/assets/images/about/about-image.svg"
 									alt="image"
 									class="mx-auto lg:ml-auto"
 								/>

@@ -16,8 +16,8 @@ const config = {
 		adapter: adapter(),
 		prerender: {
 			crawl: true,
-			entries: ['/', '/contact', '/en', '/en/contact'],
-		},
+			entries: ['/', '/contact']
+		}
 	}
 };
 
