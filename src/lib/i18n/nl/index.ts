@@ -3,8 +3,8 @@ import type { BaseTranslation } from '../i18n-types';
 const nl: BaseTranslation = {
 	LINK: '{0}',
 	payoffs: {
-		main: 'Digitaliseer je manier van werken vandaag nog.',
-		main_sub: 'Of het nu gaat om een offerte aanvraag, onboarding of advies gaat, Workblox maakt het mogelijk om jouw bedrijfsproces deels of helemaal te digitaliseren.'
+		main: 'Workflow software dat bedrijfsprocessen optimaliseert',
+		main_sub: 'Jouw klant bewandeld een soepel en transparant proces en jij hebt controle over de juiste informatie uitwisseling.'
 	},
 	register: 'Meld je aan',
 	faqs: {
@@ -17,9 +17,10 @@ const nl: BaseTranslation = {
 	contact: {
 		email: 'hello@workblox.nl',
 		phone: '0168-1234567',
-		addr_street: 'Straatnaam 123',
-		addr_housenumber: '123',
-		addr_city: 'Stad',
+		addr_street: 'Wilhelminastraat',
+		address_zipcode: '4811AC',
+		addr_house_number: '21b',
+		addr_city: 'Breda',
 	}
 };
 

@@ -21,11 +21,11 @@ type RootTranslation = {
 	LINK: RequiredParams<'0'>
 	payoffs: {
 		/**
-		 * D​i​g​i​t​a​l​i​s​e​e​r​ ​j​e​ ​m​a​n​i​e​r​ ​v​a​n​ ​w​e​r​k​e​n​ ​v​a​n​d​a​a​g​ ​n​o​g​.
+		 * W​o​r​k​f​l​o​w​ ​s​o​f​t​w​a​r​e​ ​d​a​t​ ​b​e​d​r​i​j​f​s​p​r​o​c​e​s​s​e​n​ ​o​p​t​i​m​a​l​i​s​e​e​r​t
 		 */
 		main: string
 		/**
-		 * O​f​ ​h​e​t​ ​n​u​ ​g​a​a​t​ ​o​m​ ​e​e​n​ ​o​f​f​e​r​t​e​ ​a​a​n​v​r​a​a​g​,​ ​o​n​b​o​a​r​d​i​n​g​ ​o​f​ ​a​d​v​i​e​s​ ​g​a​a​t​,​ ​W​o​r​k​b​l​o​x​ ​m​a​a​k​t​ ​h​e​t​ ​m​o​g​e​l​i​j​k​ ​o​m​ ​j​o​u​w​ ​b​e​d​r​i​j​f​s​p​r​o​c​e​s​ ​d​e​e​l​s​ ​o​f​ ​h​e​l​e​m​a​a​l​ ​t​e​ ​d​i​g​i​t​a​l​i​s​e​r​e​n​.
+		 * J​o​u​w​ ​k​l​a​n​t​ ​b​e​w​a​n​d​e​l​d​ ​e​e​n​ ​s​o​e​p​e​l​ ​e​n​ ​t​r​a​n​s​p​a​r​a​n​t​ ​p​r​o​c​e​s​ ​e​n​ ​j​i​j​ ​h​e​b​t​ ​c​o​n​t​r​o​l​e​ ​o​v​e​r​ ​d​e​ ​j​u​i​s​t​e​ ​i​n​f​o​r​m​a​t​i​e​ ​u​i​t​w​i​s​s​e​l​i​n​g​.
 		 */
 		main_sub: string
 	}
@@ -59,15 +59,19 @@ type RootTranslation = {
 		 */
 		phone: string
 		/**
-		 * S​t​r​a​a​t​n​a​a​m​ ​1​2​3
+		 * W​i​l​h​e​l​m​i​n​a​s​t​r​a​a​t
 		 */
 		addr_street: string
 		/**
-		 * 1​2​3
+		 * 4​8​1​1​A​C
 		 */
-		addr_housenumber: string
+		address_zipcode: string
 		/**
-		 * S​t​a​d
+		 * 2​1​b
+		 */
+		addr_house_number: string
+		/**
+		 * B​r​e​d​a
 		 */
 		addr_city: string
 	}
@@ -80,11 +84,11 @@ export type TranslationFunctions = {
 	LINK: (arg0: unknown) => LocalizedString
 	payoffs: {
 		/**
-		 * Digitaliseer je manier van werken vandaag nog.
+		 * Workflow software dat bedrijfsprocessen optimaliseert
 		 */
 		main: () => LocalizedString
 		/**
-		 * Of het nu gaat om een offerte aanvraag, onboarding of advies gaat, Workblox maakt het mogelijk om jouw bedrijfsproces deels of helemaal te digitaliseren.
+		 * Jouw klant bewandeld een soepel en transparant proces en jij hebt controle over de juiste informatie uitwisseling.
 		 */
 		main_sub: () => LocalizedString
 	}
@@ -118,15 +122,19 @@ export type TranslationFunctions = {
 		 */
 		phone: () => LocalizedString
 		/**
-		 * Straatnaam 123
+		 * Wilhelminastraat
 		 */
 		addr_street: () => LocalizedString
 		/**
-		 * 123
+		 * 4811AC
 		 */
-		addr_housenumber: () => LocalizedString
+		address_zipcode: () => LocalizedString
 		/**
-		 * Stad
+		 * 21b
+		 */
+		addr_house_number: () => LocalizedString
+		/**
+		 * Breda
 		 */
 		addr_city: () => LocalizedString
 	}

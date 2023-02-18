@@ -16,10 +16,11 @@ const en: Translation = {
 	},
 	contact: {
 		email: 'hello@workblox.nl',
-		phone: '+31 (168) 1234567',
-		addr_street: 'Streetname 123',
-		addr_housenumber: '123',
-		addr_city: 'City',
+		phone: '+31 (0) 168 - 123 4567',
+		addr_street: 'Wilhelminastraat',
+		address_zipcode: '4811AC',
+		addr_house_number: '21b',
+		addr_city: 'Breda',
 	}
 }
 

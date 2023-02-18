@@ -12,7 +12,7 @@
 			<div class="w-60 max-w-full px-4">
 				<a href="/" class="navbar-logo block w-full py-5">
 					<img
-						src="assets/images/logo/logo-white.svg"
+						src="/assets/images/logo/logo-white.svg"
 						alt="logo"
 						class="header-logo w-full"
 					/>
@@ -73,7 +73,7 @@
 <!--							</li>-->
 							<li class="group relative">
 								<a
-									href={$LL.LINK('contact')}
+									href={$LL.LINK('/contact')}
 									class="ud-menu-scroll mx-8 flex py-2 text-base text-dark group-hover:text-dark lg:mr-0 lg:ml-7 lg:inline-flex lg:py-6 lg:px-0 lg:text-dark lg:group-hover:text-dark lg:group-hover:opacity-70 xl:ml-12"
 								>
 									Contact

@@ -17,7 +17,7 @@
 						class='mb-6 inline-block max-w-[160px]'
 					>
 						<img
-							src='assets/images/logo/logo-white.svg'
+							src='/assets/images/logo/logo-white.svg'
 							alt='logo'
 							class='max-w-full'
 						/>
