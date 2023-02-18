@@ -4,7 +4,7 @@
 </script>
 
 <!-- ====== Navbar Section Start -->
-<div class="ud-header absolute top-0 left-0 z-40 flex w-full items-center bg-transparent">
+<div class="ud-header absolute top-0 left-0 z-40 flex w-full items-center bg-transparent sticky">
 	<div class="container">
 		<div class="relative -mx-4 flex items-center justify-between">
 			<div class="w-60 max-w-full px-4">
@@ -32,6 +32,14 @@
 									href="#features"
 									class="ud-menu-scroll mx-8 flex py-2 text-base text-dark group-hover:text-dark lg:mr-0 lg:ml-7 lg:inline-flex lg:py-6 lg:px-0 lg:text-dark lg:group-hover:text-dark lg:group-hover:opacity-70 xl:ml-12"
 								>
+									{$LL.navigation.features.title()}
+								</a>
+							</li>
+							<li class="group relative">
+								<a
+									href="#features"
+									class="ud-menu-scroll mx-8 flex py-2 text-base text-dark group-hover:text-dark lg:mr-0 lg:ml-7 lg:inline-flex lg:py-6 lg:px-0 lg:text-dark lg:group-hover:text-dark lg:group-hover:opacity-70 xl:ml-12"
+								>
 									{$LL.navigation.industries.title()}
 								</a>
 							</li>
@@ -43,22 +51,6 @@
 									{$LL.navigation.product.title()}
 								</a>
 							</li>
-							<li class="group relative">
-								<a
-									href="#features"
-									class="ud-menu-scroll mx-8 flex py-2 text-base text-dark group-hover:text-dark lg:mr-0 lg:ml-7 lg:inline-flex lg:py-6 lg:px-0 lg:text-dark lg:group-hover:text-dark lg:group-hover:opacity-70 xl:ml-12"
-								>
-									{$LL.navigation.features.title()}
-								</a>
-							</li>
-							<!--<li class="group relative">-->
-							<!--	<a-->
-							<!--		href="/contact"-->
-							<!--		class="ud-menu-scroll mx-8 flex py-2 text-base text-dark group-hover:text-dark lg:mr-0 lg:ml-7 lg:inline-flex lg:py-6 lg:px-0 lg:text-dark lg:group-hover:text-dark lg:group-hover:opacity-70 xl:ml-12"-->
-							<!--	>-->
-							<!--		{$LL.navigation.pricing()}-->
-							<!--	</a>-->
-							<!--</li>-->
 							<li class="group relative">
 								<a
 									href="/contact"

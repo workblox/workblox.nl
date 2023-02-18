@@ -8,7 +8,27 @@ const en: Translation = {
 	},
 	register: 'Sign up',
 	faqs: {
-		title: 'Frequently asked questions'
+		title: 'Frequently asked questions',
+		what: {
+			title: 'What is Workblox?',
+			answer:
+				'WorkBlox is a project management tool designed to help teams collaborate and manage tasks efficiently. It offers features such as task tracking, team communication, file sharing, time tracking, and project reporting.'
+		},
+		costs: {
+			title: 'How much does Workblox cost?',
+			answer:
+				'Workblox offers a variety of pricing plans depending on the number of users and features needed. The basic plan is free, while the premium plans start at $10 per user per month.'
+		},
+		secure: {
+			title: 'Is WorkBlox secure?',
+			answer:
+				'Yes, Workblox takes security very seriously and uses industry-standard encryption to protect user data. It also offers advanced security features such as two-factor authentication and single sign-on.'
+		},
+		integrations: {
+			title: 'Can WorkBlox be integrated with other tools?',
+			answer:
+				'Yes, Workblox can be integrated with a variety of tools including Google Drive, Dropbox, Trello, and Slack, among others. This makes it easy to connect your existing tools and streamline your workflow.'
+		}
 	},
 	navigation: {
 		product: {

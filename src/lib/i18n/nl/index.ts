@@ -4,11 +4,31 @@ const nl: BaseTranslation = {
 	payoffs: {
 		main: 'Workflow software dat bedrijfsprocessen optimaliseert',
 		main_sub:
-			'Jouw klant bewandeld een soepel en transparant proces en jij hebt controle over de juiste informatie uitwisseling.'
+			'Jouw klant bewandeld een soepel en transparant proces en jij hebt controle over de juiste informatie-uitwisseling.'
 	},
 	register: 'Meld je aan',
 	faqs: {
-		title: 'Veelgestelde vragen'
+		title: 'Veelgestelde vragen',
+		what: {
+			title: 'Wat is Workblox?',
+			answer:
+				'Workblox is een tool voor projectbeheer die is ontworpen om teams te helpen samenwerken en taken efficiënt te beheren. Het biedt functies zoals het bijhouden van taken, teamcommunicatie, het delen van bestanden, tijdregistratie en projectrapportage.'
+		},
+		costs: {
+			title: 'Hoeveel kost Workblox?',
+			answer:
+				'Workblox biedt verschillende tariefplannen, afhankelijk van het aantal gebruikers en benodigde functies. Het basisplan is gratis, terwijl de premium-abonnementen beginnen bij $ 10 per gebruiker per maand.'
+		},
+		secure: {
+			title: 'Is Workblox veilig?',
+			answer:
+				'Ja, Workblox neemt beveiliging zeer serieus en maakt gebruik van industriestandaard encryptie om gebruikersgegevens te beschermen. Het biedt ook geavanceerde beveiligingsfuncties zoals tweefactorauthenticatie en eenmalige aanmelding.'
+		},
+		integrations: {
+			title: 'Kan Workblox worden geïntegreerd met andere tools?',
+			answer:
+				'Ja, Workblox kan worden geïntegreerd met verschillende tools, waaronder Google Drive, Dropbox, Trello en Slack. Dit maakt het eenvoudig om uw bestaande tools te verbinden en uw workflow te stroomlijnen.'
+		}
 	},
 	navigation: {
 		product: {

@@ -20,7 +20,7 @@ type RootTranslation = {
 		 */
 		main: string
 		/**
-		 * J​o​u​w​ ​k​l​a​n​t​ ​b​e​w​a​n​d​e​l​d​ ​e​e​n​ ​s​o​e​p​e​l​ ​e​n​ ​t​r​a​n​s​p​a​r​a​n​t​ ​p​r​o​c​e​s​ ​e​n​ ​j​i​j​ ​h​e​b​t​ ​c​o​n​t​r​o​l​e​ ​o​v​e​r​ ​d​e​ ​j​u​i​s​t​e​ ​i​n​f​o​r​m​a​t​i​e​ ​u​i​t​w​i​s​s​e​l​i​n​g​.
+		 * J​o​u​w​ ​k​l​a​n​t​ ​b​e​w​a​n​d​e​l​d​ ​e​e​n​ ​s​o​e​p​e​l​ ​e​n​ ​t​r​a​n​s​p​a​r​a​n​t​ ​p​r​o​c​e​s​ ​e​n​ ​j​i​j​ ​h​e​b​t​ ​c​o​n​t​r​o​l​e​ ​o​v​e​r​ ​d​e​ ​j​u​i​s​t​e​ ​i​n​f​o​r​m​a​t​i​e​-​u​i​t​w​i​s​s​e​l​i​n​g​.
 		 */
 		main_sub: string
 	}
@@ -33,6 +33,46 @@ type RootTranslation = {
 		 * V​e​e​l​g​e​s​t​e​l​d​e​ ​v​r​a​g​e​n
 		 */
 		title: string
+		what: {
+			/**
+			 * W​a​t​ ​i​s​ ​W​o​r​k​b​l​o​x​?
+			 */
+			title: string
+			/**
+			 * W​o​r​k​b​l​o​x​ ​i​s​ ​e​e​n​ ​t​o​o​l​ ​v​o​o​r​ ​p​r​o​j​e​c​t​b​e​h​e​e​r​ ​d​i​e​ ​i​s​ ​o​n​t​w​o​r​p​e​n​ ​o​m​ ​t​e​a​m​s​ ​t​e​ ​h​e​l​p​e​n​ ​s​a​m​e​n​w​e​r​k​e​n​ ​e​n​ ​t​a​k​e​n​ ​e​f​f​i​c​i​ë​n​t​ ​t​e​ ​b​e​h​e​r​e​n​.​ ​H​e​t​ ​b​i​e​d​t​ ​f​u​n​c​t​i​e​s​ ​z​o​a​l​s​ ​h​e​t​ ​b​i​j​h​o​u​d​e​n​ ​v​a​n​ ​t​a​k​e​n​,​ ​t​e​a​m​c​o​m​m​u​n​i​c​a​t​i​e​,​ ​h​e​t​ ​d​e​l​e​n​ ​v​a​n​ ​b​e​s​t​a​n​d​e​n​,​ ​t​i​j​d​r​e​g​i​s​t​r​a​t​i​e​ ​e​n​ ​p​r​o​j​e​c​t​r​a​p​p​o​r​t​a​g​e​.
+			 */
+			answer: string
+		}
+		costs: {
+			/**
+			 * H​o​e​v​e​e​l​ ​k​o​s​t​ ​W​o​r​k​b​l​o​x​?
+			 */
+			title: string
+			/**
+			 * W​o​r​k​b​l​o​x​ ​b​i​e​d​t​ ​v​e​r​s​c​h​i​l​l​e​n​d​e​ ​t​a​r​i​e​f​p​l​a​n​n​e​n​,​ ​a​f​h​a​n​k​e​l​i​j​k​ ​v​a​n​ ​h​e​t​ ​a​a​n​t​a​l​ ​g​e​b​r​u​i​k​e​r​s​ ​e​n​ ​b​e​n​o​d​i​g​d​e​ ​f​u​n​c​t​i​e​s​.​ ​H​e​t​ ​b​a​s​i​s​p​l​a​n​ ​i​s​ ​g​r​a​t​i​s​,​ ​t​e​r​w​i​j​l​ ​d​e​ ​p​r​e​m​i​u​m​-​a​b​o​n​n​e​m​e​n​t​e​n​ ​b​e​g​i​n​n​e​n​ ​b​i​j​ ​$​ ​1​0​ ​p​e​r​ ​g​e​b​r​u​i​k​e​r​ ​p​e​r​ ​m​a​a​n​d​.
+			 */
+			answer: string
+		}
+		secure: {
+			/**
+			 * I​s​ ​W​o​r​k​b​l​o​x​ ​v​e​i​l​i​g​?
+			 */
+			title: string
+			/**
+			 * J​a​,​ ​W​o​r​k​b​l​o​x​ ​n​e​e​m​t​ ​b​e​v​e​i​l​i​g​i​n​g​ ​z​e​e​r​ ​s​e​r​i​e​u​s​ ​e​n​ ​m​a​a​k​t​ ​g​e​b​r​u​i​k​ ​v​a​n​ ​i​n​d​u​s​t​r​i​e​s​t​a​n​d​a​a​r​d​ ​e​n​c​r​y​p​t​i​e​ ​o​m​ ​g​e​b​r​u​i​k​e​r​s​g​e​g​e​v​e​n​s​ ​t​e​ ​b​e​s​c​h​e​r​m​e​n​.​ ​H​e​t​ ​b​i​e​d​t​ ​o​o​k​ ​g​e​a​v​a​n​c​e​e​r​d​e​ ​b​e​v​e​i​l​i​g​i​n​g​s​f​u​n​c​t​i​e​s​ ​z​o​a​l​s​ ​t​w​e​e​f​a​c​t​o​r​a​u​t​h​e​n​t​i​c​a​t​i​e​ ​e​n​ ​e​e​n​m​a​l​i​g​e​ ​a​a​n​m​e​l​d​i​n​g​.
+			 */
+			answer: string
+		}
+		integrations: {
+			/**
+			 * K​a​n​ ​W​o​r​k​b​l​o​x​ ​w​o​r​d​e​n​ ​g​e​ï​n​t​e​g​r​e​e​r​d​ ​m​e​t​ ​a​n​d​e​r​e​ ​t​o​o​l​s​?
+			 */
+			title: string
+			/**
+			 * J​a​,​ ​W​o​r​k​b​l​o​x​ ​k​a​n​ ​w​o​r​d​e​n​ ​g​e​ï​n​t​e​g​r​e​e​r​d​ ​m​e​t​ ​v​e​r​s​c​h​i​l​l​e​n​d​e​ ​t​o​o​l​s​,​ ​w​a​a​r​o​n​d​e​r​ ​G​o​o​g​l​e​ ​D​r​i​v​e​,​ ​D​r​o​p​b​o​x​,​ ​T​r​e​l​l​o​ ​e​n​ ​S​l​a​c​k​.​ ​D​i​t​ ​m​a​a​k​t​ ​h​e​t​ ​e​e​n​v​o​u​d​i​g​ ​o​m​ ​u​w​ ​b​e​s​t​a​a​n​d​e​ ​t​o​o​l​s​ ​t​e​ ​v​e​r​b​i​n​d​e​n​ ​e​n​ ​u​w​ ​w​o​r​k​f​l​o​w​ ​t​e​ ​s​t​r​o​o​m​l​i​j​n​e​n​.
+			 */
+			answer: string
+		}
 	}
 	navigation: {
 		product: {
@@ -263,7 +303,7 @@ export type TranslationFunctions = {
 		 */
 		main: () => LocalizedString
 		/**
-		 * Jouw klant bewandeld een soepel en transparant proces en jij hebt controle over de juiste informatie uitwisseling.
+		 * Jouw klant bewandeld een soepel en transparant proces en jij hebt controle over de juiste informatie-uitwisseling.
 		 */
 		main_sub: () => LocalizedString
 	}
@@ -276,6 +316,46 @@ export type TranslationFunctions = {
 		 * Veelgestelde vragen
 		 */
 		title: () => LocalizedString
+		what: {
+			/**
+			 * Wat is Workblox?
+			 */
+			title: () => LocalizedString
+			/**
+			 * Workblox is een tool voor projectbeheer die is ontworpen om teams te helpen samenwerken en taken efficiënt te beheren. Het biedt functies zoals het bijhouden van taken, teamcommunicatie, het delen van bestanden, tijdregistratie en projectrapportage.
+			 */
+			answer: () => LocalizedString
+		}
+		costs: {
+			/**
+			 * Hoeveel kost Workblox?
+			 */
+			title: () => LocalizedString
+			/**
+			 * Workblox biedt verschillende tariefplannen, afhankelijk van het aantal gebruikers en benodigde functies. Het basisplan is gratis, terwijl de premium-abonnementen beginnen bij $ 10 per gebruiker per maand.
+			 */
+			answer: () => LocalizedString
+		}
+		secure: {
+			/**
+			 * Is Workblox veilig?
+			 */
+			title: () => LocalizedString
+			/**
+			 * Ja, Workblox neemt beveiliging zeer serieus en maakt gebruik van industriestandaard encryptie om gebruikersgegevens te beschermen. Het biedt ook geavanceerde beveiligingsfuncties zoals tweefactorauthenticatie en eenmalige aanmelding.
+			 */
+			answer: () => LocalizedString
+		}
+		integrations: {
+			/**
+			 * Kan Workblox worden geïntegreerd met andere tools?
+			 */
+			title: () => LocalizedString
+			/**
+			 * Ja, Workblox kan worden geïntegreerd met verschillende tools, waaronder Google Drive, Dropbox, Trello en Slack. Dit maakt het eenvoudig om uw bestaande tools te verbinden en uw workflow te stroomlijnen.
+			 */
+			answer: () => LocalizedString
+		}
 	}
 	navigation: {
 		product: {

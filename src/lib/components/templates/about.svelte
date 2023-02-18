@@ -36,7 +36,7 @@
 							<div class="relative z-10 inline-block">
 								<img
 									src="/assets/images/about/about-image.svg"
-									alt="image"
+									alt="about"
 									class="mx-auto lg:ml-auto"
 								/>
 							</div>

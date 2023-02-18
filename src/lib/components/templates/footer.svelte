@@ -34,20 +34,20 @@
 <footer class="wow fadeInUp relative z-10 bg-rice-flower pt-20 lg:pt-[120px]" data-wow-delay=".15s">
 	<div class="container">
 		<div class="-mx-4 flex flex-wrap">
-			<div class="w-full px-4 md:w-1/2 lg:w-4/12 xl:w-3/12">
-				<div class="mb-10 w-full" data-sveltekit-preload-data="off">
+			<div class="w-full px-4 lg:w-4/12 xl:w-3/12">
+				<div class="mb-10 md:mb-16 w-full">
 					<a href="/" class="mb-6 inline-block max-w-[160px]">
 						<img src="/assets/images/logo/logo-white.svg" alt="logo" class="max-w-full" />
 					</a>
 					<p class="mb-7 text-dark">
 						{@html $LL.footer.title()}
 					</p>
-					<Anchor href="mailto:{$LL.contact.email()}" data-sveltekit-reload>
+					<Anchor href="mailto:{$LL.contact.email()}">
 						{$LL.contact.email()}
 					</Anchor>
 				</div>
 			</div>
-			<div class="hidden lg:block w-full px-4 sm:w-1/2 md:w-1/2 lg:w-2/12 xl:w-2/12">
+			<div class="lg:block w-full px-4 sm:w-1/2 md:w-1/2 lg:w-2/12 xl:w-2/12">
 				<div class="mb-10 w-full">
 					<h4 class="mb-9 text-lg font-semibold text-dark">{$LL.navigation.industries.title()}</h4>
 					<ul>
@@ -61,7 +61,7 @@
 					</ul>
 				</div>
 			</div>
-			<div class="hidden lg:block w-full px-4 sm:w-1/2 md:w-1/2 lg:w-2/12 xl:w-2/12">
+			<div class="lg:block w-full px-4 sm:w-1/2 md:w-1/2 lg:w-2/12 xl:w-2/12">
 				<div class="mb-10 w-full">
 					<h4 class="mb-9 text-lg font-semibold text-dark">{$LL.navigation.product.title()}</h4>
 					<ul>
@@ -75,7 +75,7 @@
 					</ul>
 				</div>
 			</div>
-			<div class="hidden lg:block w-full px-4 sm:w-1/2 md:w-1/2 lg:w-2/12 xl:w-2/12">
+			<div class="lg:block w-full px-4 sm:w-1/2 md:w-1/2 lg:w-2/12 xl:w-2/12">
 				<div class="mb-10 w-full">
 					<h4 class="mb-9 text-lg font-semibold text-dark">{$LL.navigation.features.title()}</h4>
 					<ul>
@@ -89,7 +89,7 @@
 					</ul>
 				</div>
 			</div>
-			<div class="hidden lg:block w-full px-4 sm:w-1/2 md:w-1/2 lg:w-2/12 xl:w-2/12">
+			<div class="lg:block w-full px-4 sm:w-1/2 md:w-1/2 lg:w-2/12 xl:w-2/12">
 				<div class="mb-10 w-full">
 					<h4 class="mb-9 text-lg font-semibold text-dark">{$LL.navigation.more.title()}</h4>
 					<ul>
