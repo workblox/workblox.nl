@@ -1,4 +1,5 @@
 <script lang="ts">
+	import Usps from '$lib/components/templates/usps.svelte';
 	import Features from '$lib/components/templates/features.svelte';
 	import Faq from '$lib/components/templates/faq.svelte';
 	import Hero from '$lib/components/templates/hero.svelte';
@@ -9,6 +10,7 @@
 </script>
 
 <Hero />
+<Usps />
 <Features />
 <!--<About />-->
 <!--<Pricing />-->

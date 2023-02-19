@@ -65,19 +65,48 @@ const en: Translation = {
 		nl: 'Nederlands',
 		en: 'English'
 	},
-	features: {
+	usps: {
 		title: 'Providing the best service has never taken so little effort.',
-		feature1: {
+		usp1: {
 			title: 'Drag-and-drop interface.',
 			subtitle: 'No technical knowledge required.'
 		},
-		feature2: {
+		usp2: {
 			title: 'Tips & tricks.',
 			subtitle: 'We help transform your way of working into workflows.'
 		},
-		feature3: {
+		usp3: {
 			title: 'Save time.',
 			subtitle: 'Automate repetitive actions.'
+		}
+	},
+	features: {
+		title: 'Make your customers part of the process.',
+		subtitle: 'They go through a workflow in a personal and intuitive environment.',
+		feature1: {
+			title: 'Predictable & transparent',
+			item1: 'They know exactly what to expect.',
+			item2: 'Are provided with the right information at the right time.',
+		},
+		feature2: {
+			title: 'Collaborate',
+			item1: 'Set concrete tasks for your clients.',
+			item2: 'Provide easy feedback on the input provided.',
+		},
+		feature3: {
+			title: 'All information in one place',
+			item1: 'No more lost emails.',
+			item2: 'Everything is easy to review.',
+		},
+		feature4: {
+			title: 'Easily choose extra services',
+			item1: 'Always clear what the possibilities are.',
+			item2: 'Customers decide for themselves what they do and do not want to use.',
+		},
+		feature5: {
+			title: 'Completely in style',
+			item1: 'Your company logo, colors, fonts, and much more.',
+			item2: 'Workblox seamlessly integrates with all your other channels.',
 		}
 	},
 	footer: {

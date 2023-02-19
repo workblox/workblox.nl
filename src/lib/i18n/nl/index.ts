@@ -65,20 +65,49 @@ const nl: BaseTranslation = {
 		nl: 'Nederlands',
 		en: 'English'
 	},
-	features: {
+	usps: {
 		title: 'Het bieden van de beste service kostte nog nooit zo weinig moeite.',
-		feature1: {
+		usp1: {
 			title: 'Drag-and-drop interface.',
 			subtitle: 'Geen technische kennis nodig.'
 		},
-		feature2: {
+		usp2: {
 			title: 'Tips & tricks.',
 			subtitle: 'We helpen je manier van werken om te zetten in workflows.'
 		},
-		feature3: {
+		usp3: {
 			title: 'Bespaar tijd.',
 			subtitle: 'Automatiseer repetitieve handelingen.'
 		}
+	},
+	features: {
+		title: 'Maak je klanten onderdeel van het proces.',
+		subtitle: 'Ze doorlopen een workflow in een persoonlijke en intuïtieve omgeving. ',
+		feature1: {
+			title: 'Voorspelbaar & transparant',
+			item1: 'Ze weten precies wat ze kunnen verwachten. ',
+			item2: 'Worden voorzien van de juiste informatie op het juiste moment.',
+		},
+		feature2: {
+			title: 'Werk samen',
+			item1: 'Stel concrete taken op voor je klanten. ',
+			item2: 'Geef makkelijk feedback op de aangeleverde input. ',
+		},
+		feature3: {
+			title: 'Alle informatie centraal',
+			item1: 'Geen verloren e-mail’s meer.',
+			item2: 'Alles makkelijk terug te lezen.',
+		},
+		feature4: {
+			title: 'Makkelijk extra diensten kiezen',
+			item1: 'Altijd inzichtelijk wat de mogelijkheden zijn. ',
+			item2: 'Klanten bepalen zelf wat ze wel en niet willen afnemen. ',
+		},
+		feature5: {
+			title: 'Helemaal in stijl',
+			item1: 'Je bedrijfslogo, kleuren, fonts en nog veel meer.',
+			item2: 'Workblox sluit naadloos aan al je andere kanalen. ',
+		},
 	},
 	footer: {
 		title:

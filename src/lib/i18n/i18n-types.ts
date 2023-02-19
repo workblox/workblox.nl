@@ -184,12 +184,12 @@ type RootTranslation = {
 		 */
 		en: string
 	}
-	features: {
+	usps: {
 		/**
 		 * H​e​t​ ​b​i​e​d​e​n​ ​v​a​n​ ​d​e​ ​b​e​s​t​e​ ​s​e​r​v​i​c​e​ ​k​o​s​t​t​e​ ​n​o​g​ ​n​o​o​i​t​ ​z​o​ ​w​e​i​n​i​g​ ​m​o​e​i​t​e​.
 		 */
 		title: string
-		feature1: {
+		usp1: {
 			/**
 			 * D​r​a​g​-​a​n​d​-​d​r​o​p​ ​i​n​t​e​r​f​a​c​e​.
 			 */
@@ -199,7 +199,7 @@ type RootTranslation = {
 			 */
 			subtitle: string
 		}
-		feature2: {
+		usp2: {
 			/**
 			 * T​i​p​s​ ​&​ ​t​r​i​c​k​s​.
 			 */
@@ -209,7 +209,7 @@ type RootTranslation = {
 			 */
 			subtitle: string
 		}
-		feature3: {
+		usp3: {
 			/**
 			 * B​e​s​p​a​a​r​ ​t​i​j​d​.
 			 */
@@ -218,6 +218,86 @@ type RootTranslation = {
 			 * A​u​t​o​m​a​t​i​s​e​e​r​ ​r​e​p​e​t​i​t​i​e​v​e​ ​h​a​n​d​e​l​i​n​g​e​n​.
 			 */
 			subtitle: string
+		}
+	}
+	features: {
+		/**
+		 * M​a​a​k​ ​j​e​ ​k​l​a​n​t​e​n​ ​o​n​d​e​r​d​e​e​l​ ​v​a​n​ ​h​e​t​ ​p​r​o​c​e​s​.
+		 */
+		title: string
+		/**
+		 * Z​e​ ​d​o​o​r​l​o​p​e​n​ ​e​e​n​ ​w​o​r​k​f​l​o​w​ ​i​n​ ​e​e​n​ ​p​e​r​s​o​o​n​l​i​j​k​e​ ​e​n​ ​i​n​t​u​ï​t​i​e​v​e​ ​o​m​g​e​v​i​n​g​.​ 
+		 */
+		subtitle: string
+		feature1: {
+			/**
+			 * V​o​o​r​s​p​e​l​b​a​a​r​ ​&​ ​t​r​a​n​s​p​a​r​a​n​t
+			 */
+			title: string
+			/**
+			 * Z​e​ ​w​e​t​e​n​ ​p​r​e​c​i​e​s​ ​w​a​t​ ​z​e​ ​k​u​n​n​e​n​ ​v​e​r​w​a​c​h​t​e​n​.​ 
+			 */
+			item1: string
+			/**
+			 * W​o​r​d​e​n​ ​v​o​o​r​z​i​e​n​ ​v​a​n​ ​d​e​ ​j​u​i​s​t​e​ ​i​n​f​o​r​m​a​t​i​e​ ​o​p​ ​h​e​t​ ​j​u​i​s​t​e​ ​m​o​m​e​n​t​.
+			 */
+			item2: string
+		}
+		feature2: {
+			/**
+			 * W​e​r​k​ ​s​a​m​e​n
+			 */
+			title: string
+			/**
+			 * S​t​e​l​ ​c​o​n​c​r​e​t​e​ ​t​a​k​e​n​ ​o​p​ ​v​o​o​r​ ​j​e​ ​k​l​a​n​t​e​n​.​ 
+			 */
+			item1: string
+			/**
+			 * G​e​e​f​ ​m​a​k​k​e​l​i​j​k​ ​f​e​e​d​b​a​c​k​ ​o​p​ ​d​e​ ​a​a​n​g​e​l​e​v​e​r​d​e​ ​i​n​p​u​t​.​ 
+			 */
+			item2: string
+		}
+		feature3: {
+			/**
+			 * A​l​l​e​ ​i​n​f​o​r​m​a​t​i​e​ ​c​e​n​t​r​a​a​l
+			 */
+			title: string
+			/**
+			 * G​e​e​n​ ​v​e​r​l​o​r​e​n​ ​e​-​m​a​i​l​’​s​ ​m​e​e​r​.
+			 */
+			item1: string
+			/**
+			 * A​l​l​e​s​ ​m​a​k​k​e​l​i​j​k​ ​t​e​r​u​g​ ​t​e​ ​l​e​z​e​n​.
+			 */
+			item2: string
+		}
+		feature4: {
+			/**
+			 * M​a​k​k​e​l​i​j​k​ ​e​x​t​r​a​ ​d​i​e​n​s​t​e​n​ ​k​i​e​z​e​n
+			 */
+			title: string
+			/**
+			 * A​l​t​i​j​d​ ​i​n​z​i​c​h​t​e​l​i​j​k​ ​w​a​t​ ​d​e​ ​m​o​g​e​l​i​j​k​h​e​d​e​n​ ​z​i​j​n​.​ 
+			 */
+			item1: string
+			/**
+			 * K​l​a​n​t​e​n​ ​b​e​p​a​l​e​n​ ​z​e​l​f​ ​w​a​t​ ​z​e​ ​w​e​l​ ​e​n​ ​n​i​e​t​ ​w​i​l​l​e​n​ ​a​f​n​e​m​e​n​.​ 
+			 */
+			item2: string
+		}
+		feature5: {
+			/**
+			 * H​e​l​e​m​a​a​l​ ​i​n​ ​s​t​i​j​l
+			 */
+			title: string
+			/**
+			 * J​e​ ​b​e​d​r​i​j​f​s​l​o​g​o​,​ ​k​l​e​u​r​e​n​,​ ​f​o​n​t​s​ ​e​n​ ​n​o​g​ ​v​e​e​l​ ​m​e​e​r​.
+			 */
+			item1: string
+			/**
+			 * W​o​r​k​b​l​o​x​ ​s​l​u​i​t​ ​n​a​a​d​l​o​o​s​ ​a​a​n​ ​a​l​ ​j​e​ ​a​n​d​e​r​e​ ​k​a​n​a​l​e​n​.​ 
+			 */
+			item2: string
 		}
 	}
 	footer: {
@@ -467,12 +547,12 @@ export type TranslationFunctions = {
 		 */
 		en: () => LocalizedString
 	}
-	features: {
+	usps: {
 		/**
 		 * Het bieden van de beste service kostte nog nooit zo weinig moeite.
 		 */
 		title: () => LocalizedString
-		feature1: {
+		usp1: {
 			/**
 			 * Drag-and-drop interface.
 			 */
@@ -482,7 +562,7 @@ export type TranslationFunctions = {
 			 */
 			subtitle: () => LocalizedString
 		}
-		feature2: {
+		usp2: {
 			/**
 			 * Tips & tricks.
 			 */
@@ -492,7 +572,7 @@ export type TranslationFunctions = {
 			 */
 			subtitle: () => LocalizedString
 		}
-		feature3: {
+		usp3: {
 			/**
 			 * Bespaar tijd.
 			 */
@@ -501,6 +581,86 @@ export type TranslationFunctions = {
 			 * Automatiseer repetitieve handelingen.
 			 */
 			subtitle: () => LocalizedString
+		}
+	}
+	features: {
+		/**
+		 * Maak je klanten onderdeel van het proces.
+		 */
+		title: () => LocalizedString
+		/**
+		 * Ze doorlopen een workflow in een persoonlijke en intuïtieve omgeving. 
+		 */
+		subtitle: () => LocalizedString
+		feature1: {
+			/**
+			 * Voorspelbaar & transparant
+			 */
+			title: () => LocalizedString
+			/**
+			 * Ze weten precies wat ze kunnen verwachten. 
+			 */
+			item1: () => LocalizedString
+			/**
+			 * Worden voorzien van de juiste informatie op het juiste moment.
+			 */
+			item2: () => LocalizedString
+		}
+		feature2: {
+			/**
+			 * Werk samen
+			 */
+			title: () => LocalizedString
+			/**
+			 * Stel concrete taken op voor je klanten. 
+			 */
+			item1: () => LocalizedString
+			/**
+			 * Geef makkelijk feedback op de aangeleverde input. 
+			 */
+			item2: () => LocalizedString
+		}
+		feature3: {
+			/**
+			 * Alle informatie centraal
+			 */
+			title: () => LocalizedString
+			/**
+			 * Geen verloren e-mail’s meer.
+			 */
+			item1: () => LocalizedString
+			/**
+			 * Alles makkelijk terug te lezen.
+			 */
+			item2: () => LocalizedString
+		}
+		feature4: {
+			/**
+			 * Makkelijk extra diensten kiezen
+			 */
+			title: () => LocalizedString
+			/**
+			 * Altijd inzichtelijk wat de mogelijkheden zijn. 
+			 */
+			item1: () => LocalizedString
+			/**
+			 * Klanten bepalen zelf wat ze wel en niet willen afnemen. 
+			 */
+			item2: () => LocalizedString
+		}
+		feature5: {
+			/**
+			 * Helemaal in stijl
+			 */
+			title: () => LocalizedString
+			/**
+			 * Je bedrijfslogo, kleuren, fonts en nog veel meer.
+			 */
+			item1: () => LocalizedString
+			/**
+			 * Workblox sluit naadloos aan al je andere kanalen. 
+			 */
+			item2: () => LocalizedString
 		}
 	}
 	footer: {
