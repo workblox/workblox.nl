@@ -2,10 +2,13 @@
 	export let title = '';
 	export const href = '';
 	export let subtitle = '';
+
+	let clazz = '';
+	export { clazz as class };
 </script>
 
 <div
-	class="flex flex-row items-center mt-8 ml-4 bg-spring-wood border border-gray-200 rounded-lg shadow md:flex-row hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700 p-4"
+	class="{`${clazz}`} flex flex-row items-center mt-8 bg-spring-wood border border-gray-200 rounded-lg shadow md:flex-row hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700 p-4"
 >
 	<div class="flex flex-shrink-0">
 		<slot nam="icon" />

@@ -1,25 +1,15 @@
 <script lang="ts">
-	import { LL } from '$lib/i18n/i18n-svelte';
 	import Faq from '$lib/components/atoms/faq.svelte';
+	import { LL } from '$lib/i18n/i18n-svelte';
 
-	let faqItems = [
-		{
-			title: $LL.faqs.what.title(),
-			answer: $LL.faqs.what.answer()
-		},
-		{
-			title: $LL.faqs.costs.title(),
-			answer: $LL.faqs.costs.answer()
-		},
-		{
-			title: $LL.faqs.secure.title(),
-			answer: $LL.faqs.secure.answer()
-		},
-		{
-			title: $LL.faqs.integrations.title(),
-			answer: $LL.faqs.integrations.answer()
-		}
-	];
+	import type { Translation } from '$lib/i18n/i18n-types';
+
+	let what: keyof Translation['faqs'] = 'what';
+	let costs: keyof Translation['faqs'] = 'costs';
+	let secure: keyof Translation['faqs'] = 'secure';
+	let integrations: keyof Translation['faqs'] = 'integrations';
+
+	let faqItems = [what, costs, secure, integrations];
 </script>
 
 <!-- ====== Faq Section Start -->
@@ -40,13 +30,13 @@
 
 		<div class="-mx-4 flex flex-wrap">
 			<div class="w-full px-4 lg:w-1/2">
-				{#each faqItems.slice(0, Math.ceil(faqItems.length / 2)) as { title, answer }}
-					<Faq {title} {answer} />
+				{#each faqItems.slice(0, Math.ceil(faqItems.length / 2)) as faqItem}
+					<Faq title={$LL.faqs[faqItem].title()} answer={$LL.faqs[faqItem].answer()} />
 				{/each}
 			</div>
 			<div class="w-full px-4 lg:w-1/2">
-				{#each faqItems.slice(Math.ceil(faqItems.length / 2)) as { title, answer }}
-					<Faq {title} {answer} />
+				{#each faqItems.slice(Math.ceil(faqItems.length / 2)) as faqItem}
+					<Faq title={$LL.faqs[faqItem].title()} answer={$LL.faqs[faqItem].answer()} />
 				{/each}
 			</div>
 		</div>

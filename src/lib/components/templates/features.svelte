@@ -20,10 +20,18 @@
 					<Card title={$LL.features.feature1.title()} subtitle={$LL.features.feature1.subtitle()}>
 						<slot name="icon"><DragAndDropSvg /></slot>
 					</Card>
-					<Card title={$LL.features.feature2.title()} subtitle={$LL.features.feature2.subtitle()}>
+					<Card
+						title={$LL.features.feature2.title()}
+						subtitle={$LL.features.feature2.subtitle()}
+						class="lg:ml-4"
+					>
 						<slot name="icon"><TipsTricksSvg /></slot>
 					</Card>
-					<Card title={$LL.features.feature3.title()} subtitle={$LL.features.feature3.subtitle()}>
+					<Card
+						title={$LL.features.feature3.title()}
+						subtitle={$LL.features.feature3.subtitle()}
+						class="lg:ml-4"
+					>
 						<slot name="icon"><SaveTimeSvg /></slot>
 					</Card>
 				</div>
