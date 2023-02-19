@@ -3,6 +3,8 @@
 	import { scale } from 'svelte/transition';
 	import LL from '$lib/i18n/i18n-svelte';
 
+	import LanguageSwitchAnchor from '$lib/components/atoms/languageSwitchAnchor.svelte';
+
 	let show = false;
 	let menu = null;
 
@@ -47,26 +49,11 @@
 			tabindex="-1"
 			in:scale={{ duration: 100, start: 0.95 }}
 			out:scale={{ duration: 75, start: 0.95 }}
+			data-sveltekit-preload-data="off"
 		>
 			<div class="py-1" role="none">
-				<a
-					role="menuitem"
-					tabindex="-1"
-					class="text-dark-800 hover:bg-primary hover:text-dark w-full block px-4 py-2 text-sm"
-					href="?lang=nl"
-					data-sveltekit-reload
-				>
-					{$LL.navigation.nl()}
-				</a>
-				<a
-					role="menuitem"
-					tabindex="-1"
-					class="text-dark-800 hover:bg-primary hover:text-dark w-full block px-4 py-2 text-sm"
-					href="?lang=en"
-					data-sveltekit-reload
-				>
-					{$LL.navigation.en()}
-				</a>
+				<LanguageSwitchAnchor href="/" language="Nederlands" />
+				<LanguageSwitchAnchor href="/en" language="English" />
 			</div>
 		</div>
 	{/if}
