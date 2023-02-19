@@ -25,7 +25,7 @@
 						<Card
 							title={$LL.features.feature1.title()}
 							items="{[$LL.features.feature1.item1(), $LL.features.feature1.item2()]}"
-							class="bg-[#EBFFDB] ml-4 snap-center"
+							class="bg-[#EBFFDB] snap-center"
 						>
 							<slot><FeaturePath /></slot>
 						</Card>
