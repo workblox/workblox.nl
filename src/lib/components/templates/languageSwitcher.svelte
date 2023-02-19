@@ -33,9 +33,11 @@
 	});
 </script>
 
-<div class="relative" bind:this={menu} on:click={() => (show = !show)}>
+<div class="relative" bind:this={menu}>
 	<button
 		class="inline-flex w-full justify-center rounded-md border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-dark-800 shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 focus:ring-offset-gray-100 ud-menu-scroll mx-8 py-2 lg:mr-0 lg:ml-7 lg:inline-flex lg:px-0 lg:group-hover:opacity-70 lg:mt-4 lg:mb-1"
+		on:click={() => (show = !show)}
+		tabindex="0"
 	>
 		{$LL.navigation.language()}
 	</button>
