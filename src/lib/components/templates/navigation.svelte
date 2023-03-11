@@ -60,15 +60,6 @@
 									{$LL.navigation.product.title()}
 								</a>
 							</li>
-							<li class="group relative">
-								<a
-									href="/contact"
-									class="ud-menu-scroll mx-8 flex py-2 text-base text-dark group-hover:text-dark lg:mr-0 lg:ml-7 lg:inline-flex lg:py-6 lg:px-0 lg:text-dark lg:group-hover:text-dark lg:group-hover:opacity-70 xl:ml-12"
-									on:click={() => (showMobileMenu = false)}
-								>
-									{$LL.navigation.more.title()}
-								</a>
-							</li>
 							<LanguageSwitcher on:click={() => (showMobileMenu = false)} />
 						</ul>
 					</nav>
