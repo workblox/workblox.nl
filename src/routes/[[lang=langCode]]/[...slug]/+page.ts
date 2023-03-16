@@ -7,9 +7,12 @@ export async function load({ params, parent }) {
     } else {
         path += 'home';
     }
+
     const dataStory = await storyblokApi.get(path, {
-        version: 'draft'
+        version: 'published',
+        language: params.lang
     });
+
     return {
         story: dataStory.data.story
     };

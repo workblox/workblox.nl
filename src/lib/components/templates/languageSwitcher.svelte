@@ -8,8 +8,13 @@
 
 	import LanguageSwitchAnchor from '$lib/components/atoms/languageSwitchAnchor.svelte';
 
+
 	let show = false;
 	let menu = null;
+
+	import type { PageData } from './$types';
+
+	export let data: PageData
 
 	function closeMenu() {
 		show = false;

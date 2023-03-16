@@ -35,9 +35,11 @@
 					>
 						{blok.subtitle}
 					</p>
-					<Anchor href={blok.cta.url}>
-						{blok.cta.title}
-					</Anchor>
+					{#if blok.cta.url}
+						<Anchor href={blok.cta.url}>
+							{blok.cta.title}
+						</Anchor>
+					{/if}
 				</div>
 			</div>
 		</div>
