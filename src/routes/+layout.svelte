@@ -1,11 +1,13 @@
 <script lang="ts">
   import '../app.postcss';
   import Navigation from '$lib/components/templates/navigation.svelte'
+  import Footer from '$lib/components/templates/footer.svelte'
   export let data;
 </script>
 
-<Navigation header={data.header}/>
+<Navigation data={data.header}/>
 <slot />
+<Footer data="{data.footer}" />
 
 <!-- ====== Back To Top Start -->
 <a

@@ -1,37 +1,9 @@
 <script lang="ts">
-	import { LL } from '$lib/i18n/i18n-svelte';
 	import Anchor from '$lib/components/atoms/anchor.svelte';
-
-	let submenuItems = {
-		product: [
-			$LL.navigation.product.product1(),
-			$LL.navigation.product.product2(),
-			$LL.navigation.product.product3(),
-			$LL.navigation.product.product4()
-		],
-		more: [
-			$LL.navigation.more.more1(),
-			$LL.navigation.more.more2(),
-			$LL.navigation.more.more3(),
-			$LL.navigation.more.more4()
-		],
-		features: [
-			$LL.navigation.features.feature1(),
-			$LL.navigation.features.feature2(),
-			$LL.navigation.features.feature3(),
-			$LL.navigation.features.feature4()
-		],
-		industries: [
-			$LL.navigation.industries.industry1(),
-			$LL.navigation.industries.industry2(),
-			$LL.navigation.industries.industry3(),
-			$LL.navigation.industries.industry4()
-		]
-	};
+	export let data;
 </script>
 
-<!-- ====== Footer Section Start -->
-<footer class="wow fadeInUp relative z-10 bg-rice-flower pt-20 lg:pt-[120px]" data-wow-delay=".15s">
+<footer class="wow fadeInUp relative z-10 bg-rice-flower pt-20 lg:pt-[120px]">
 	<div class="container">
 		<div class="-mx-4 flex flex-wrap">
 			<div class="w-full px-4 lg:w-4/12 xl:w-3/12">
@@ -39,70 +11,30 @@
 					<a href="/" class="mb-6 inline-block max-w-[160px]">
 						<img src="/assets/images/logo/logo-white.svg" alt="logo" class="max-w-full" />
 					</a>
-					<p class="mb-7 text-dark">
-						{@html $LL.footer.title()}
+					<p class="mb-7 text-dark whitespace-pre-line">
+						{data.description}
 					</p>
-					<Anchor href="mailto:{$LL.contact.email()}">
-						{$LL.contact.email()}
+					<Anchor href="mailto:{data.email.url}">
+						{data.email.url}
 					</Anchor>
 				</div>
 			</div>
-			<div class="lg:block w-full px-4 sm:w-1/2 md:w-1/2 lg:w-2/12 xl:w-2/12">
-				<div class="mb-10 w-full">
-					<h4 class="mb-9 text-lg font-semibold text-dark">{$LL.navigation.industries.title()}</h4>
-					<ul>
-						{#each submenuItems.industries as item}
-							<li>
-								<a href="/" class="mb-2 inline-block text-base leading-loose text-dark">
-									{item}
-								</a>
-							</li>
-						{/each}
-					</ul>
+			{#each data.lists as linkList}
+				<div class="lg:block w-full px-4 sm:w-1/2 md:w-1/2 lg:w-2/12 xl:w-2/12">
+					<div class="mb-10 w-full">
+						<h4 class="mb-9 text-lg font-semibold text-dark">{linkList.title}</h4>
+						<ul>
+							{#each linkList.items as linkItem}
+								<li>
+									<a href="{linkItem.url.url}" class="mb-2 inline-block text-base leading-loose text-dark">
+										{linkItem.label}
+									</a>
+								</li>
+							{/each}
+						</ul>
+					</div>
 				</div>
-			</div>
-			<div class="lg:block w-full px-4 sm:w-1/2 md:w-1/2 lg:w-2/12 xl:w-2/12">
-				<div class="mb-10 w-full">
-					<h4 class="mb-9 text-lg font-semibold text-dark">{$LL.navigation.product.title()}</h4>
-					<ul>
-						{#each submenuItems.product as item}
-							<li>
-								<a href="/" class="mb-2 inline-block text-base leading-loose text-dark">
-									{item}
-								</a>
-							</li>
-						{/each}
-					</ul>
-				</div>
-			</div>
-			<div class="lg:block w-full px-4 sm:w-1/2 md:w-1/2 lg:w-2/12 xl:w-2/12">
-				<div class="mb-10 w-full">
-					<h4 class="mb-9 text-lg font-semibold text-dark">{$LL.navigation.features.title()}</h4>
-					<ul>
-						{#each submenuItems.features as item}
-							<li>
-								<a href="/" class="mb-2 inline-block text-base leading-loose text-dark">
-									{item}
-								</a>
-							</li>
-						{/each}
-					</ul>
-				</div>
-			</div>
-			<div class="lg:block w-full px-4 sm:w-1/2 md:w-1/2 lg:w-2/12 xl:w-2/12">
-				<div class="mb-10 w-full">
-					<h4 class="mb-9 text-lg font-semibold text-dark">{$LL.navigation.more.title()}</h4>
-					<ul>
-						{#each submenuItems.more as item}
-							<li>
-								<a href="/" class="mb-2 inline-block text-base leading-loose text-dark">
-									{item}
-								</a>
-							</li>
-						{/each}
-					</ul>
-				</div>
-			</div>
+			{/each}
 		</div>
 	</div>
 
@@ -111,7 +43,7 @@
 			<div class="-mx-4 flex flex-wrap">
 				<div class="w-full px-4">
 					<div class="my-1 flex justify-between">
-						<p class="text-dark">{$LL.keepInTouch()}</p>
+						<p class="text-dark">{data.socialTitle}</p>
 						<div class="-mx-3 flex items-center">
 							<a href="/" class="px-3 text-dark">
 								<svg width="10" height="18" viewBox="0 0 10 18" class="fill-current">
@@ -159,26 +91,20 @@
 			<div class="-mx-4 flex flex-wrap">
 				<div class="w-full px-4">
 					<div class="my-1 flex justify-center">
-						<a
-							href="/"
-							rel="nofollow noopner noreferrer"
-							target="_blank"
-							class="text-dark hover:underline"
-						>
-							Cookies
-						</a>
-						<a
-							href="/"
-							rel="nofollow noopner noreferrer"
-							target="_blank"
-							class="text-dark ml-4 hover:underline"
-						>
-							Privacy
-						</a>
+						<!--{#each data.bottomlinks as bottomLink}-->
+						<!--	{bottomLink.url.url}-->
+<!--							<a-->
+<!--								href="{bottomLink.url.url}"-->
+<!--								rel="nofollow noopner noreferrer"-->
+<!--								target="_blank"-->
+<!--								class="text-dark hover:underline"-->
+<!--							>-->
+<!--								{bottomLink.label}-->
+<!--							</a>-->
+<!--						{/each}-->
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
 </footer>
-<!-- ====== Footer Section End -->

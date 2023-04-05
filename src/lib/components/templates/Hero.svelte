@@ -5,7 +5,6 @@
 	export let blok;
 </script>
 
-<!-- ====== Hero Section Start -->
 <div
 	id="home"
 	class="relative overflow-hidden bg-primary border-b py-[120px] md:py-[130px] lg:py-[160px] border-b-dark md:h-full"

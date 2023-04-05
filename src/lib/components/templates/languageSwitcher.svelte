@@ -12,10 +12,6 @@
 	let show = false;
 	let menu = null;
 
-	import type { PageData } from './$types';
-
-	export let data: PageData
-
 	function closeMenu() {
 		show = false;
 		dispatch('click');

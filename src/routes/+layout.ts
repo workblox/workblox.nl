@@ -6,6 +6,8 @@ import { detectLocale } from '$lib/i18n/i18n-util';
 import type {LoadEvent} from "@sveltejs/kit";
 import Hero from "$lib/components/templates/Hero.svelte";
 import SmallCardsTemplate from "$lib/components/templates/SmallCards.svelte";
+import ListCardSliderTemplate from "$lib/components/templates/ListCardSlider.svelte";
+import FaqTemplate from "$lib/components/templates/Faq.svelte";
 import SeoMeta from "$lib/components/templates/SeoMeta.svelte";
 import Page from "$lib/components/templates/Page.svelte";
 
@@ -19,6 +21,8 @@ export const load = (async (event: LoadEvent) => {
 			hero: Hero,
 			page: Page,
 			smallCardsTemplate: SmallCardsTemplate,
+			listCardSliderTemplate: ListCardSliderTemplate,
+			faqTemplate: FaqTemplate,
 			seo_meta: SeoMeta
 		},
 	});
@@ -36,6 +40,7 @@ export const load = (async (event: LoadEvent) => {
 	return {
 		storyblokApi: storyblokApi,
 		header: dataConfig.data.story.content.header_menu,
+		footer: dataConfig.data.story.content.footer,
 		locale: locale
 	};
 }) satisfies LayoutLoad;

@@ -1,10 +1,9 @@
 <script lang="ts">
 	import LanguageSwitcher from '$lib/components/templates/languageSwitcher.svelte';
 	let showMobileMenu = false;
-	export let header;
+	export let data;
 </script>
 
-<!-- ====== Navbar Section Start -->
 <div class="ud-header absolute top-0 left-0 z-40 flex w-full items-center bg-transparent sticky">
 	<div class="container">
 		<div class="relative -mx-4 flex items-center justify-between">
@@ -33,15 +32,15 @@
 							: ''}"
 					>
 						<ul class="block lg:flex">
-							{#each header as blok}
-								{#if blok.link.story.slug}
+							{#each data as header_item}
+								{#if header_item.url.story.slug}
 									<li class="group relative">
 										<a
-											href={blok.link.story.slug}
+											href={header_item.url.story.slug}
 											class="ud-menu-scroll mx-8 flex py-2 text-base text-dark group-hover:text-dark lg:mr-0 lg:ml-7 lg:inline-flex lg:py-6 lg:px-0 lg:text-dark lg:group-hover:text-dark lg:group-hover:opacity-70 xl:ml-12"
 											on:click={() => (showMobileMenu = false)}
 										>
-											{blok.title}
+											{header_item.label}
 										</a>
 									</li>
 								{/if}
@@ -54,4 +53,3 @@
 		</div>
 	</div>
 </div>
-<!-- ====== Navbar Section End -->

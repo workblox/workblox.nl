@@ -5,7 +5,6 @@
 	export let blok;
 </script>
 
-<!-- ====== USPS Section Start -->
 <section
 	id="usps" class="pt-20 pb-8 lg:pt-[120px] lg:pb-[70px] border-b"
 	 use:storyblokEditable={blok}
