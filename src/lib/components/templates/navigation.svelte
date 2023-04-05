@@ -4,7 +4,7 @@
 	export let data;
 </script>
 
-<div class="ud-header absolute top-0 left-0 z-40 flex w-full items-center bg-transparent sticky">
+<div id="home" class="ud-header absolute top-0 left-0 z-40 flex w-full items-center bg-transparent sticky">
 	<div class="container">
 		<div class="relative -mx-4 flex items-center justify-between">
 			<div class="w-60 max-w-full px-4">
