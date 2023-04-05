@@ -91,17 +91,17 @@
 			<div class="-mx-4 flex flex-wrap">
 				<div class="w-full px-4">
 					<div class="my-1 flex justify-center">
-						<!--{#each data.bottomlinks as bottomLink}-->
-						<!--	{bottomLink.url.url}-->
-<!--							<a-->
-<!--								href="{bottomLink.url.url}"-->
-<!--								rel="nofollow noopner noreferrer"-->
-<!--								target="_blank"-->
-<!--								class="text-dark hover:underline"-->
-<!--							>-->
-<!--								{bottomLink.label}-->
-<!--							</a>-->
-<!--						{/each}-->
+						{#each data.bottomlinks as bottomLink, i}
+							<a
+								href="{bottomLink.url.url}"
+								rel="nofollow noopner noreferrer"
+								target="_blank"
+								class="text-dark hover:underline {i > 0 ? 'ml-4' : ''}"
+
+							>
+								{bottomLink.label}
+							</a>
+						{/each}
 					</div>
 				</div>
 			</div>

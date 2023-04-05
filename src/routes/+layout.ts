@@ -10,6 +10,8 @@ import ListCardSliderTemplate from "$lib/components/templates/ListCardSlider.sve
 import FaqTemplate from "$lib/components/templates/Faq.svelte";
 import SeoMeta from "$lib/components/templates/SeoMeta.svelte";
 import Page from "$lib/components/templates/Page.svelte";
+import Footer from '$lib/components/templates/footer.svelte';
+import Navigation from '$lib/components/templates/navigation.svelte';
 
 export const load = (async (event: LoadEvent) => {
 	const locale = await setLocaleFromEvent(event);
@@ -20,6 +22,8 @@ export const load = (async (event: LoadEvent) => {
 		components: {
 			hero: Hero,
 			page: Page,
+			footer: Footer,
+			navigation: Navigation,
 			smallCardsTemplate: SmallCardsTemplate,
 			listCardSliderTemplate: ListCardSliderTemplate,
 			faqTemplate: FaqTemplate,
@@ -40,7 +44,7 @@ export const load = (async (event: LoadEvent) => {
 	return {
 		storyblokApi: storyblokApi,
 		header: dataConfig.data.story.content.header_menu,
-		footer: dataConfig.data.story.content.footer,
+		footer: dataConfig.data.story.content.footer[0],
 		locale: locale
 	};
 }) satisfies LayoutLoad;
