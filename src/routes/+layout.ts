@@ -1,7 +1,7 @@
 import { apiPlugin, storyblokInit, useStoryblokApi } from "@storyblok/svelte";
 import type { LayoutLoad } from './$types';
 import { loadLocaleAsync } from '$lib/i18n/i18n-util.async';
-import { setLocale, locale } from '$lib/i18n/i18n-svelte';
+import { setLocale } from '$lib/i18n/i18n-svelte';
 import { detectLocale } from '$lib/i18n/i18n-util';
 import type {LoadEvent} from "@sveltejs/kit";
 import Hero from "$lib/components/templates/Hero.svelte";
