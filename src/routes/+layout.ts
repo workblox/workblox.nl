@@ -12,6 +12,7 @@ import SeoMeta from "$lib/components/templates/SeoMeta.svelte";
 import Page from "$lib/components/templates/Page.svelte";
 import Footer from '$lib/components/templates/footer.svelte';
 import Navigation from '$lib/components/templates/navigation.svelte';
+import ContactForm from '$lib/components/templates/contactForm.svelte';
 
 export const load = (async (event: LoadEvent) => {
 	const locale = await setLocaleFromEvent(event);
@@ -27,7 +28,8 @@ export const load = (async (event: LoadEvent) => {
 			smallCardsTemplate: SmallCardsTemplate,
 			listCardSliderTemplate: ListCardSliderTemplate,
 			faqTemplate: FaqTemplate,
-			seo_meta: SeoMeta
+			seo_meta: SeoMeta,
+			contactForm: ContactForm
 		},
 	});
 
