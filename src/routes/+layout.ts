@@ -43,6 +43,8 @@ export const load = (async (event: LoadEvent) => {
 		resolve_links: 'url'
 	});
 
+	console.log(dataConfig);
+
 	return {
 		storyblokApi: storyblokApi,
 		header: dataConfig.data.story.content.header_menu,
