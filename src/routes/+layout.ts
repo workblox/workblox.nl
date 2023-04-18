@@ -18,7 +18,7 @@ export const load = (async (event: LoadEvent) => {
 	const locale = await setLocaleFromEvent(event);
 
 	storyblokInit({
-		accessToken: "3wRT5lQSjyjr1vkfEGIlygtt",
+		accessToken: "yhQzwAxQSgJXrLNfErtOSwtt",
 		use: [apiPlugin],
 		components: {
 			hero: Hero,
