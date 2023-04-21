@@ -3,6 +3,8 @@
 	import Anchor from '$lib/components/atoms/anchor.svelte';
 	import StarSvg from '$lib/assets/svg/star.svelte';
 	export let blok;
+	const ctaUrl = blok.cta[0].url.length ? blok.cta[0].url : blok.cta[0].url.story.url;
+	console.log(ctaUrl);
 </script>
 
 <div
@@ -50,8 +52,8 @@
 						{blok.description}
 					</p>
 					<div class="flex justify-between w-full mb-8">
-						{#if blok.cta[0].url}
-							<Anchor href={blok.cta[0].url}>
+						{#if ctaUrl}
+							<Anchor href={ctaUrl}>
 								{blok.cta[0].label}
 							</Anchor>
 						{/if}
