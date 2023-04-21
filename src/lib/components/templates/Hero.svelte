@@ -6,38 +6,59 @@
 </script>
 
 <div
-	class="relative overflow-hidden bg-primary border-b py-[120px] md:py-[130px] lg:py-[160px] border-b-dark md:h-full"
+	class="relative overflow-hidden bg-primary border-b pt-[120px] md:pt-[130px] lg:py-[160px] border-b-dark md:h-full"
 	use:storyblokEditable={blok}
 >
-	<div class="container h-full">
+	<div class="container md:mx-auto h-full">
 		<StarSvg class="h-6 absolute top-[12%] lg:top-[24%] left-[20%] lg:left-[35%] inline-flex" />
 		<StarSvg class="h-6 absolute top-[8%] lg:top-[14%] right-[27%] inline-flex" />
 		<StarSvg class="h-6 absolute top-[30%] right-[10%] inline-flex" />
 		<div class="-mx-4 flex flex-wrap items-center h-full">
-			<div class="w-full flex px-4 h-full md:h-auto">
-				<div class="hidden lg:flex">
+			<div class="w-full flex flex-col lg:flex-row px-4 h-full md:h-auto">
+				<img
+					src="{blok.imageMobile.filename}"
+					alt="{blok.imageMobile.alt}"
+					width="229"
+					height="296"
+					class="order-2 lg:hidden mx-auto max-w-full"
+				/>
+				{#if blok.imageTablet}
 					<img
-						src="/assets/images/hero/app.png"
-						alt="hero"
-						class="mx-auto max-w-full rounded-t-xl rounded-tr-xl"
+						src="{blok.imageTablet.filename}"
+						alt="{blok.imageTablet.alt}"
+						width="272"
+						height="516"
+						class="hidden lg:flex xl:hidden"
 					/>
-				</div>
-				<div class="flex justify-end items-start flex-col">
+				{/if}
+				<img
+					src="{blok.imageDesktop.filename}"
+					alt="{blok.imageDesktop.alt}"
+					width="753"
+					height="616"
+					class="hidden xl:flex -ml-[15vw] hidden mx-auto max-w-full"
+				/>
+				<div class="flex order-1 lg:ml-24 2xl:ml-40 justify-end xl:justify-start xl:pt-28 items-start flex-col">
 					<h1
 						class="mb-8 text-[44px] font-medium leading-snug text-dark sm:text-4xl sm:leading-snug md:text-[45px] md:leading-snug"
 					>
 						{blok.title}
 					</h1>
 					<p
-						class="mb-10 max-w-[600px] text-dark-800 sm:text-lg sm:leading-relaxed md:text-xl md:leading-relaxed"
+						class="mb-8 xl:mb-24 max-w-[600px] text-dark-800 sm:text-lg sm:leading-relaxed md:text-xl md:leading-relaxed"
 					>
-						{blok.subtitle}
+						{blok.description}
 					</p>
-					{#if blok.cta.url}
-						<Anchor href={blok.cta.url}>
-							{blok.cta.title}
-						</Anchor>
-					{/if}
+					<div class="flex justify-between w-full mb-8">
+						{#if blok.cta[0].url}
+							<Anchor href={blok.cta[0].url}>
+								{blok.cta[0].label}
+							</Anchor>
+						{/if}
+						{#if blok.subtitle}
+							<span>{blok.subtitle}</span>
+						{/if}
+					</div>
 				</div>
 			</div>
 		</div>

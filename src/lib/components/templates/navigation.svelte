@@ -12,7 +12,7 @@
 					<img src="/assets/images/logo/logo-white.svg" alt="logo" class="header-logo w-full" />
 				</a>
 			</div>
-			<div class="flex w-full items-center justify-between px-4">
+			<div class="flex items-center justify-between px-4">
 				<div>
 					<button
 						id="navbarToggler"
