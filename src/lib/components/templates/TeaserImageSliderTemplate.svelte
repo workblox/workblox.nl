@@ -15,6 +15,10 @@
             </div>
         </div>
     </div>
-    <TeaserCardImage />
+    <div class="container">
+        <div class="custom-breakout">
+            <TeaserCardImage />
+        </div>
+    </div>
 </section>
 

@@ -34,7 +34,6 @@
 		"svelte-check": "^2.9.2",
 		"svelte-meta-tags": "^2.7.0",
 		"svelte-preprocess": "^4.10.7",
-		"tailwind-container-break-out": "^2.0.6",
 		"tailwindcss": "^3.1.5",
 		"tslib": "^2.4.1",
 		"typesafe-i18n": "^5.20.0",

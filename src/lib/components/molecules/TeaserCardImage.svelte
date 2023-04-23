@@ -26,11 +26,11 @@
 	let activeId = 1;
 </script>
 
-<image-slider class="w-full">
-	<div class="flex gap-4 snap-x snap-proximity overflow-x-auto mb-10 hide-scroll-bar">
+<image-slider>
+	<div class="image-slider custom-breakout-correction relative flex gap-4 snap-x snap-mandatory overflow-x-auto mb-10 hide-scroll-bar">
 		{#each images as image, i}
 			<div
-				class="imageCard lg:flex-row pt-6 px-6 lg:px-12 lg:pt-12 items-center relative inline-flex rounded-2xl overflow-hidden lg:ml-4 bg-cover bg-center snap-center flex flex-col gap-6 justify-between mt-8 lg:mt-0 w-[85%] md:w-[60vw] xl:w-[70vw] 2xl:w-[50vw] shrink-0 border border-gray-200 rounded-lg shadow last:mr-4"
+				class="imageCard lg:flex-row pt-6 px-6 lg:px-12 lg:pt-12 items-center relative inline-flex rounded-2xl overflow-hidden lg:ml-4 bg-cover bg-center snap-center flex flex-col gap-6 justify-between mt-8 lg:mt-0 w-[85%] md:w-[60vw] xl:w-[70vw] 2xl:w-[50vw] shrink-0 border border-gray-200 rounded-lg shadow"
 				style="background-image: url({image.src});"
 			>
 				<div class="flex flex-col text-rum-swizzle pt-4 lg:pt-20 mb-4">
@@ -63,6 +63,14 @@
 </image-slider>
 
 <style lang="postcss">
+	.image-slider {
+		-ms-overflow-style: none;  /* Internet Explorer 10+ */
+		scrollbar-width: none;  /* Firefox */
+
+		&::-webkit-scrollbar {
+			display: none;  /* Safari and Chrome */
+		}
+	}
 	.imageCard {
 		box-shadow: rgba(0, 0, 0, .7) 0 0 0 1000000px inset;
 	}

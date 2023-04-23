@@ -2530,11 +2530,6 @@ svelte@^3.0.0, svelte@^3.54.0:
   resolved "https://registry.yarnpkg.com/svelte/-/svelte-3.58.0.tgz#d3e6f103efd6129e51c7d709225ad3b4c052b64e"
   integrity sha512-brIBNNB76mXFmU/Kerm4wFnkskBbluBDCjx/8TcpYRb298Yh2dztS2kQ6bhtjMcvUhd5ynClfwpz5h2gnzdQ1A==
 
-tailwind-container-break-out@^2.0.6:
-  version "2.0.6"
-  resolved "https://registry.yarnpkg.com/tailwind-container-break-out/-/tailwind-container-break-out-2.0.6.tgz#a23c17d7bb6c9b3a7871eeb93113895b48ffff78"
-  integrity sha512-j9PfyQ9ESAH6DRVBfWeZhLABI+lbLHmd2DwL5WOtqBTTBbqCnr4xp9u8+9nhwj8CwmlqeBcu4JXZMSgcbXhj+Q==
-
 tailwindcss@^3.1.5:
   version "3.2.4"
   resolved "https://registry.yarnpkg.com/tailwindcss/-/tailwindcss-3.2.4.tgz#afe3477e7a19f3ceafb48e4b083e292ce0dc0250"
