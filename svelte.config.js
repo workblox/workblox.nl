@@ -7,9 +7,9 @@ const config = {
 	// Consult https://kit.svelte.dev/docs/integrations#preprocessors
 	// for more information about preprocessors
 	preprocess: [
-		vitePreprocess(),
+		vitePreprocess({}),
 		preprocess({
-			postcss: true
+			postcss: true,
 		})
 	],
 	kit: {
@@ -19,8 +19,8 @@ const config = {
 			entries: ['/']
 		},
 		alias: {
-			'@storyblok/svelte': './node_modules/@storyblok/svelte',
-		},
+			'@storyblok/svelte': './node_modules/@storyblok/svelte'
+		}
 	}
 };
 

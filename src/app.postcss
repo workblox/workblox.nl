@@ -1,25 +1,26 @@
+/* Write your global styles here, in PostCSS syntax */
+
 @import '../static/assets/fonts/graphik.postcss';
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-
 body {
-    font-family: "Graphik", sans-serif;
+	font-family: 'Graphik', sans-serif;
 }
 
 .sticky {
-    @apply fixed z-[9999] bg-primary bg-opacity-80 transition;
-    backdrop-filter: blur(5px);
+	@apply fixed z-[9999] bg-primary bg-opacity-80 transition;
+	backdrop-filter: blur(5px);
 }
 
 .navbarTogglerActive > span:nth-child(1) {
-    @apply top-[7px] rotate-45 transform;
+	@apply top-[7px] rotate-45 transform;
 }
 .navbarTogglerActive > span:nth-child(2) {
-    @apply opacity-0;
+	@apply opacity-0;
 }
 .navbarTogglerActive > span:nth-child(3) {
-    @apply top-[-8px] rotate-[135deg];
+	@apply top-[-8px] rotate-[135deg];
 }

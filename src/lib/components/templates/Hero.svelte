@@ -2,14 +2,18 @@
 	import { storyblokEditable } from "@storyblok/svelte";
 	import Anchor from '$lib/components/atoms/anchor.svelte';
 	import StarSvg from '$lib/assets/svg/star.svelte';
+	import {onMount} from "svelte";
 	export let blok;
-	const ctaUrl = blok.cta[0].url.length ? blok.cta[0].url : blok.cta[0].url.story.url;
-	console.log(ctaUrl);
+
+	let ctaUrl;
+	onMount(async () => {
+		// ctaUrl = blok.cta[0].url.length ? blok.cta[0].url : blok.cta[0].url.story.url;
+	});
 </script>
 
 <div
-	class="relative overflow-hidden bg-primary border-b pt-[120px] md:pt-[130px] lg:py-[160px] border-b-dark md:h-full"
 	use:storyblokEditable={blok}
+	class="relative overflow-hidden bg-primary border-b pt-[120px] md:pt-[130px] lg:py-[160px] border-b-dark md:h-full"
 >
 	<div class="container md:mx-auto h-full">
 		<StarSvg class="h-6 absolute top-[12%] lg:top-[24%] left-[20%] lg:left-[35%] inline-flex" />
@@ -52,14 +56,14 @@
 						{blok.description}
 					</p>
 					<div class="flex justify-between w-full mb-8">
-						{#if ctaUrl}
-							<Anchor href={ctaUrl}>
-								{blok.cta[0].label}
-							</Anchor>
-						{/if}
-						{#if blok.subtitle}
-							<span>{blok.subtitle}</span>
-						{/if}
+						<!--{#if ctaUrl}-->
+<!--							<Anchor href={ctaUrl}>-->
+<!--								{blok.cta[0].label}-->
+<!--							</Anchor>-->
+<!--						{/if}-->
+<!--						{#if blok.subtitle}-->
+<!--							<span>{blok.subtitle}</span>-->
+<!--						{/if}-->
 					</div>
 				</div>
 			</div>

@@ -46,7 +46,7 @@ const config = {
 			},
 		},
 	},
-	plugins: []
+	plugins: [require('tailwind-container-break-out')]
 };
 
 module.exports = config;
