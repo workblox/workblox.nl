@@ -442,12 +442,12 @@
     esbuild "^0.16.3"
     set-cookie-parser "^2.5.1"
 
-"@sveltejs/kit@^1.0.0-next.587":
-  version "1.15.2"
-  resolved "https://registry.yarnpkg.com/@sveltejs/kit/-/kit-1.15.2.tgz#2d351b15aa39ab792c36c2c236c7e31a2010a6b0"
-  integrity sha512-rLNxZrjbrlPf8AWW8GAU4L/Vvu17e9v8EYl7pUip7x72lTft7RcxeP3z7tsrHpMSBBxC9o4XdKzFvz1vMZyXZw==
+"@sveltejs/kit@^1.0.0":
+  version "1.15.8"
+  resolved "https://registry.yarnpkg.com/@sveltejs/kit/-/kit-1.15.8.tgz#eaadf33de4d4731f79c45996eaacd1b0664d565c"
+  integrity sha512-xPIF3UbFEA5BBZWFTGGUtSZ0O3DAtmzIp/yZZVdLIfzZ9+geKG3iGSVFnOUdYstjU7JcvJg12UC5MD5xoED59A==
   dependencies:
-    "@sveltejs/vite-plugin-svelte" "^2.0.0"
+    "@sveltejs/vite-plugin-svelte" "^2.1.0"
     "@types/cookie" "^0.5.1"
     cookie "^0.5.0"
     devalue "^4.3.0"
@@ -459,12 +459,12 @@
     set-cookie-parser "^2.5.1"
     sirv "^2.0.2"
     tiny-glob "^0.2.9"
-    undici "5.20.0"
+    undici "~5.22.0"
 
-"@sveltejs/vite-plugin-svelte@^2.0.0":
-  version "2.0.4"
-  resolved "https://registry.yarnpkg.com/@sveltejs/vite-plugin-svelte/-/vite-plugin-svelte-2.0.4.tgz#607b6abe15e02e540249e3f47d47fb9f15952e80"
-  integrity sha512-pjqhW00KwK2uzDGEr+yJBwut+D+4XfJO/+bHHdHzPRXn9+1Jeq5JcFHyrUiYaXgHtyhX0RsllCTm4ssAx4ZY7Q==
+"@sveltejs/vite-plugin-svelte@^2.1.0":
+  version "2.1.1"
+  resolved "https://registry.yarnpkg.com/@sveltejs/vite-plugin-svelte/-/vite-plugin-svelte-2.1.1.tgz#df08dba9094208a2048968e329237be6893cf66d"
+  integrity sha512-7YeBDt4us0FiIMNsVXxyaP4Hwyn2/v9x3oqStkHU3ZdIc5O22pGwUwH33wUqYo+7Itdmo8zxJ45Qvfm3H7UUjQ==
   dependencies:
     debug "^4.3.4"
     deepmerge "^4.3.1"
@@ -2348,9 +2348,9 @@ side-channel@^1.0.4:
     object-inspect "^1.9.0"
 
 sirv@^2.0.2:
-  version "2.0.2"
-  resolved "https://registry.yarnpkg.com/sirv/-/sirv-2.0.2.tgz#128b9a628d77568139cff85703ad5497c46a4760"
-  integrity sha512-4Qog6aE29nIjAOKe/wowFTxOdmbEZKb+3tsLljaBRzJwtqto0BChD2zzH0LhgCSXiI+V7X+Y45v14wBZQ1TK3w==
+  version "2.0.3"
+  resolved "https://registry.yarnpkg.com/sirv/-/sirv-2.0.3.tgz#ca5868b87205a74bef62a469ed0296abceccd446"
+  integrity sha512-O9jm9BsID1P+0HOi81VpXPoDxYP374pkOLzACAoyUQ/3OUVndNpsz6wMnY2z+yOxzbllCKZrM+9QrWsv4THnyA==
   dependencies:
     "@polka/url" "^1.0.0-next.20"
     mrmime "^1.0.0"
@@ -2647,10 +2647,10 @@ unbox-primitive@^1.0.2:
     has-symbols "^1.0.3"
     which-boxed-primitive "^1.0.2"
 
-undici@5.20.0:
-  version "5.20.0"
-  resolved "https://registry.yarnpkg.com/undici/-/undici-5.20.0.tgz#6327462f5ce1d3646bcdac99da7317f455bcc263"
-  integrity sha512-J3j60dYzuo6Eevbawwp1sdg16k5Tf768bxYK4TUJRH7cBM4kFCbf3mOnM/0E3vQYXvpxITbbWmBafaDbxLDz3g==
+undici@~5.22.0:
+  version "5.22.0"
+  resolved "https://registry.yarnpkg.com/undici/-/undici-5.22.0.tgz#5e205d82a5aecc003fc4388ccd3d2c6e8674a0ad"
+  integrity sha512-fR9RXCc+6Dxav4P9VV/sp5w3eFiSdOjJYsbtWfd4s5L5C4ogyuVpdKIVHeW0vV1MloM65/f7W45nR9ZxwVdyiA==
   dependencies:
     busboy "^1.6.0"
 

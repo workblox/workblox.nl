@@ -17,17 +17,17 @@
 		slideElements.forEach((element, i) => {
 			const isElementInViewport = isInViewport(element);
 			if (!isElementInViewport) return;
-
 			activeSlideIndex = i;
 		});
 	}, 150);
 
 	function isInViewport(element) {
 		const rect = element.getBoundingClientRect();
+		const windowInnerHeight = (window.innerHeight || document.documentElement.clientHeight);
 		return (
-				rect.top >= 0 &&
+				rect.top >= -rect.height &&
 				rect.left >= 0 &&
-				rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+				rect.top <= windowInnerHeight &&
 				rect.right <= (window.innerWidth || document.documentElement.clientWidth)
 		);
 	}
@@ -40,7 +40,7 @@
 		} else {
 			activeSlideIndex = number;
 		}
-		slideElements[activeSlideIndex].scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' })
+		slideElements[activeSlideIndex].scrollIntoView({ behavior: 'smooth', block: 'center', inline: 'center' })
 	}
 </script>
 
@@ -54,7 +54,6 @@
 			<div
 				class="imageCard lg:flex-row pt-6 px-6 lg:px-12 lg:pt-12 items-center relative inline-flex rounded-2xl overflow-hidden bg-cover bg-center snap-center flex flex-col gap-6 justify-between mt-8 lg:mt-0 w-[85%] md:w-[60vw] xl:w-[70vw] 2xl:w-[55vw] shrink-0 border border-gray-200 rounded-lg shadow"
 				style="background-image: url({slide.backgroundImage.filename + '/m/990x0'});"
-				data-slide={slide}
 			>
 				<div class="flex flex-col text-rum-swizzle pt-4 lg:pt-20 mb-4">
 					<span class="text-lg 2xl:text-3xl font-semibold">{slide.text}</span>
@@ -65,7 +64,7 @@
 					class="lg:self-end"
 					src="{slide.featuredImage.filename + '/m/670x0'}"
 					alt="{slide.featuredImage.alt}"
-					loading="{i > 1 ? 'lazy' : 'eager'}"
+					loading="{i > 2 ? 'lazy' : 'eager'}"
 					width="229"
 					height="296"
 				/>
@@ -120,6 +119,10 @@
 
 	.imageCard {
 		box-shadow: rgba(0, 0, 0, 0.7) 0 0 0 1000000px inset;
+
+		&[active] {
+			transform: scale(1.2);
+		}
 	}
 
 	.bullet-button {
