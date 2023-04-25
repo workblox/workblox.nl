@@ -2,13 +2,7 @@
 	import { storyblokEditable } from "@storyblok/svelte";
 	import Anchor from '$lib/components/atoms/anchor.svelte';
 	import StarSvg from '$lib/assets/svg/star.svelte';
-	import {onMount} from "svelte";
 	export let blok;
-
-	let ctaUrl;
-	onMount(async () => {
-		// ctaUrl = blok.cta[0].url.length ? blok.cta[0].url : blok.cta[0].url.story.url;
-	});
 </script>
 
 <div
@@ -56,14 +50,12 @@
 						{blok.description}
 					</p>
 					<div class="flex justify-between w-full mb-8">
-						<!--{#if ctaUrl}-->
-<!--							<Anchor href={ctaUrl}>-->
-<!--								{blok.cta[0].label}-->
-<!--							</Anchor>-->
-<!--						{/if}-->
-<!--						{#if blok.subtitle}-->
-<!--							<span>{blok.subtitle}</span>-->
-<!--						{/if}-->
+						<Anchor href="{blok.cta[0].url.cached_url}">
+							{blok.cta[0].label}
+						</Anchor>
+						{#if blok.subtitle}
+							<span>{blok.subtitle}</span>
+						{/if}
 					</div>
 				</div>
 			</div>

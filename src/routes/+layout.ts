@@ -7,6 +7,7 @@ import type {LoadEvent} from "@sveltejs/kit";
 import Hero from "$lib/components/templates/Hero.svelte";
 import SmallCardsTemplate from "$lib/components/templates/SmallCards.svelte";
 import ListCardSliderTemplate from "$lib/components/templates/ListCardSlider.svelte";
+import FeatureCardSliderTemplate from "$lib/components/templates/FeatureCardSliderTemplate.svelte";
 import FaqTemplate from "$lib/components/templates/Faq.svelte";
 import SeoMeta from "$lib/components/templates/SeoMeta.svelte";
 import Page from "$lib/components/templates/Page.svelte";
@@ -27,6 +28,7 @@ export const load = (async (event: LoadEvent) => {
 			navigation: Navigation,
 			smallCardsTemplate: SmallCardsTemplate,
 			listCardSliderTemplate: ListCardSliderTemplate,
+			featureCardSliderTemplate: FeatureCardSliderTemplate,
 			faqTemplate: FaqTemplate,
 			seo_meta: SeoMeta,
 			contactForm: ContactForm
