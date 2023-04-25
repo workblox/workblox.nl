@@ -5,6 +5,7 @@
     onMount(() => {
         useStoryblokBridge(data.story.id, (newStory) => (data.story = newStory));
     });
+
 </script>
 
 <svelte:head>

@@ -31,5 +31,5 @@
 		</li>
 	{/each}
 	</ul>
-	<Image src={image.filename}></Image>
+	<Image src={image.filename + '/m/'}></Image>
 </div>

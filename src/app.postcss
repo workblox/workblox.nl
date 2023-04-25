@@ -1,25 +1,86 @@
+/* Write your global styles here, in PostCSS syntax */
+
 @import '../static/assets/fonts/graphik.postcss';
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+:root {
+	--vp-sm: 540px;
+	--vp-md: 720px;
+	--vp-lg: 960px;
+	--vp-xl: 1140px;
+	--vp-2xl: 1320px;
+}
+
+.custom-breakout {
+	margin-left: -16px;
+	margin-right: -16px;
+
+	@media (min-width: 540px) {
+		margin-left: calc(-100vw / 2 + var(--vp-sm) / 2 - 16px);
+		margin-right: calc(-100vw / 2 + var(--vp-sm) / 2 - 16px);
+	}
+	@media (min-width: 720px) {
+		margin-left: calc(-100vw / 2 + var(--vp-md) / 2 - 16px);
+		margin-right: calc(-100vw / 2 + var(--vp-md) / 2 - 16px);
+	}
+	@media (min-width: 960px) {
+		margin-left: calc(-100vw / 2 + var(--vp-lg) / 2 - 16px);
+		margin-right: calc(-100vw / 2 + var(--vp-lg) / 2 - 16px);
+	}
+	@media (min-width: 1140px) {
+		margin-left: calc(-100vw / 2 + var(--vp-xl) / 2 - 16px);
+		margin-right: calc(-100vw / 2 + var(--vp-xl) / 2 - 16px);
+	}
+	@media (min-width: 1320px) {
+		margin-left: calc(-100vw / 2 + var(--vp-2xl) / 2 - 16px);
+		margin-right: calc(-100vw / 2 + var(--vp-2xl) / 2 - 16px);
+	}
+}
+
+.custom-breakout-correction {
+	padding-left: 16px;
+	padding-right: 16px;
+
+	@media (min-width: 540px) {
+		padding-left: calc(-1 * calc(-100vw / 2 + var(--vp-sm) / 2 - 16px));
+		padding-right: calc(-1 * calc(-100vw / 2 + var(--vp-sm) / 2 - 16px));
+	}
+	@media (min-width: 720px) {
+		padding-left: calc(-1 * calc(-100vw / 2 + var(--vp-md) / 2 - 16px));
+		padding-right: calc(-1 * calc(-100vw / 2 + var(--vp-md) / 2 - 16px));
+	}
+	@media (min-width: 960px) {
+		padding-left: calc(-1 * calc(-100vw / 2 + var(--vp-lg) / 2 - 16px));
+		padding-right: calc(-1 * calc(-100vw / 2 + var(--vp-lg) / 2 - 16px));
+	}
+	@media (min-width: 1140px) {
+		padding-left: calc(-1 * calc(-100vw / 2 + var(--vp-xl) / 2 - 16px));
+		padding-right: calc(-1 * calc(-100vw / 2 + var(--vp-xl) / 2 - 16px));
+	}
+	@media (min-width: 1320px) {
+		padding-left: calc(-1 * calc(-100vw / 2 + var(--vp-2xl) / 2 - 16px));
+		padding-right: calc(-1 * calc(-100vw / 2 + var(--vp-2xl) / 2 - 16px));
+	}
+}
 
 body {
-    font-family: "Graphik", sans-serif;
+	font-family: 'Graphik', sans-serif;
 }
 
 .sticky {
-    @apply fixed z-[9999] bg-primary bg-opacity-80 transition;
-    backdrop-filter: blur(5px);
+	@apply fixed z-[9999] bg-primary bg-opacity-80 transition;
+	backdrop-filter: blur(5px);
 }
 
 .navbarTogglerActive > span:nth-child(1) {
-    @apply top-[7px] rotate-45 transform;
+	@apply top-[7px] rotate-45 transform;
 }
 .navbarTogglerActive > span:nth-child(2) {
-    @apply opacity-0;
+	@apply opacity-0;
 }
 .navbarTogglerActive > span:nth-child(3) {
-    @apply top-[-8px] rotate-[135deg];
+	@apply top-[-8px] rotate-[135deg];
 }

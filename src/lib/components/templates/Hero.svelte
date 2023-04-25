@@ -3,13 +3,11 @@
 	import Anchor from '$lib/components/atoms/anchor.svelte';
 	import StarSvg from '$lib/assets/svg/star.svelte';
 	export let blok;
-	const ctaUrl = blok.cta[0].url.length ? blok.cta[0].url : blok.cta[0].url.story.url;
-	console.log(ctaUrl);
 </script>
 
 <div
-	class="relative overflow-hidden bg-primary border-b pt-[120px] md:pt-[130px] lg:py-[160px] border-b-dark md:h-full"
 	use:storyblokEditable={blok}
+	class="relative overflow-hidden bg-primary border-b pt-[120px] md:pt-[130px] lg:py-[160px] border-b-dark md:h-full"
 >
 	<div class="container md:mx-auto h-full">
 		<StarSvg class="h-6 absolute top-[12%] lg:top-[24%] left-[20%] lg:left-[35%] inline-flex" />
@@ -18,7 +16,7 @@
 		<div class="-mx-4 flex flex-wrap items-center h-full">
 			<div class="w-full flex flex-col lg:flex-row px-4 h-full md:h-auto">
 				<img
-					src="{blok.imageMobile.filename}"
+					src="{blok.imageMobile.filename + '/m/458x0'}"
 					alt="{blok.imageMobile.alt}"
 					width="229"
 					height="296"
@@ -26,7 +24,7 @@
 				/>
 				{#if blok.imageTablet}
 					<img
-						src="{blok.imageTablet.filename}"
+						src="{blok.imageTablet.filename + '/m/544x0'}"
 						alt="{blok.imageTablet.alt}"
 						width="272"
 						height="516"
@@ -34,7 +32,7 @@
 					/>
 				{/if}
 				<img
-					src="{blok.imageDesktop.filename}"
+					src="{blok.imageDesktop.filename + '/m/1506x0'}"
 					alt="{blok.imageDesktop.alt}"
 					width="753"
 					height="616"
@@ -52,11 +50,9 @@
 						{blok.description}
 					</p>
 					<div class="flex justify-between w-full mb-8">
-						{#if ctaUrl}
-							<Anchor href={ctaUrl}>
-								{blok.cta[0].label}
-							</Anchor>
-						{/if}
+						<Anchor href="{blok.cta[0].url.cached_url}">
+							{blok.cta[0].label}
+						</Anchor>
 						{#if blok.subtitle}
 							<span>{blok.subtitle}</span>
 						{/if}
