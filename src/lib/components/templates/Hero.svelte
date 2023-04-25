@@ -16,7 +16,7 @@
 		<div class="-mx-4 flex flex-wrap items-center h-full">
 			<div class="w-full flex flex-col lg:flex-row px-4 h-full md:h-auto">
 				<img
-					src="{blok.imageMobile.filename}"
+					src="{blok.imageMobile.filename + '/m/458x0'}"
 					alt="{blok.imageMobile.alt}"
 					width="229"
 					height="296"
@@ -24,7 +24,7 @@
 				/>
 				{#if blok.imageTablet}
 					<img
-						src="{blok.imageTablet.filename}"
+						src="{blok.imageTablet.filename + '/m/544x0'}"
 						alt="{blok.imageTablet.alt}"
 						width="272"
 						height="516"
@@ -32,7 +32,7 @@
 					/>
 				{/if}
 				<img
-					src="{blok.imageDesktop.filename}"
+					src="{blok.imageDesktop.filename + '/m/1506x0'}"
 					alt="{blok.imageDesktop.alt}"
 					width="753"
 					height="616"

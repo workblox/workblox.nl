@@ -53,7 +53,7 @@
 		{#each slides as slide, i}
 			<div
 				class="imageCard lg:flex-row pt-6 px-6 lg:px-12 lg:pt-12 items-center relative inline-flex rounded-2xl overflow-hidden bg-cover bg-center snap-center flex flex-col gap-6 justify-between mt-8 lg:mt-0 w-[85%] md:w-[60vw] xl:w-[70vw] 2xl:w-[55vw] shrink-0 border border-gray-200 rounded-lg shadow"
-				style="background-image: url({slide.backgroundImage.filename});"
+				style="background-image: url({slide.backgroundImage.filename + '/m/990x0'});"
 				data-slide={slide}
 			>
 				<div class="flex flex-col text-rum-swizzle pt-4 lg:pt-20 mb-4">
@@ -63,8 +63,9 @@
 				</div>
 				<img
 					class="lg:self-end"
-					src="{slide.featuredImage.filename}"
+					src="{slide.featuredImage.filename + '/m/670x0'}"
 					alt="{slide.featuredImage.alt}"
+					loading="{i > 1 ? 'lazy' : 'eager'}"
 					width="229"
 					height="296"
 				/>
