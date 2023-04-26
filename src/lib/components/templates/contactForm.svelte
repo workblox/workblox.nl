@@ -33,7 +33,7 @@
 						<div class="flex flex-col lg:flex-row gap-8 mb-6">
 							<div class="w-full lg:w-4/12">
 								<label for="branche" class="block text-xs text-dark mb-2">Branche*</label>
-								<select id="branche" class="w-full border-0 bg-rum-swizzle border-b border-[#f1f1f1] p-4 focus:border-primary focus:outline-none" required>
+								<select id="branche" name="branche" class="w-full border-0 bg-rum-swizzle border-b border-[#f1f1f1] p-4 focus:border-primary focus:outline-none" required>
 									<option value="" disabled selected hidden>Kies uw branche</option>
 									<option value="health">Zorg en welzijn</option>
 									<option value="advisory">Adviseur / coach</option>
@@ -44,7 +44,7 @@
 							</div>
 							<div class="w-full lg:w-4/12">
 								<label for="size" class="block text-xs text-dark mb-2">Organisatie grootte*</label>
-								<select id="size" class="w-full border-0 bg-rum-swizzle border-b border-[#f1f1f1] p-4 focus:border-primary focus:outline-none" required>
+								<select id="size" name="organization-size" class="w-full border-0 bg-rum-swizzle border-b border-[#f1f1f1] p-4 focus:border-primary focus:outline-none" required>
 									<option value="" disabled selected hidden>Aantal medewerkers</option>
 									<option value="1-2">1 - 2</option>
 									<option value="2-10">2 - 10</option>
@@ -56,12 +56,12 @@
 							<div class="w-full lg:w-4/12">
 								<label for="email" class="block text-xs text-dark mb-2">{$LL.email()}*</label>
 								<input
-										type="email"
-										id="email"
-										name="email"
-										placeholder={$LL.placeholder.email()}
-										class="w-full border-0 bg-rum-swizzle border-b border-[#f1f1f1] p-4 focus:border-primary focus:outline-none"
-										required
+									type="email"
+									id="email"
+									name="email"
+									placeholder={$LL.placeholder.email()}
+									class="w-full border-0 bg-rum-swizzle border-b border-[#f1f1f1] p-4 focus:border-primary focus:outline-none"
+									required
 								/>
 							</div>
 						</div>
