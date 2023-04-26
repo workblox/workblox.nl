@@ -5,6 +5,7 @@
 </script>
 
 <section
+	id="faq"
 	class="relative z-20 overflow-hidden bg-dark pt-20 pb-12 lg:pt-[120px] lg:pb-[90px]"
 	use:storyblokEditable={blok}
 >

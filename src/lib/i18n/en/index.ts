@@ -117,12 +117,11 @@ const en: Translation = {
 		title: 'Get in touch.',
 		subtitle: 'We would love to hear how we can be of service to you!',
 		email: 'hello@workblox.nl',
-		phone: '+31 (0) 168 - 123 4567',
 		ourLocation: 'Our location.',
-		address: 'Wilhelminastraat 21B, 4811AC, Breda (Netherlands)'
+		address: 'Streetname 11, 4811AC, Breda (Netherlands)'
 	},
 	placeholder: {
-		phone: '0612345678',
+		phone: '+31 (0) 6 12 34 56 78',
 		email: 'email@address.com',
 		message: 'Your message.',
 		fullName: 'First and lastname'

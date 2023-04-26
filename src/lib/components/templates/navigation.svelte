@@ -1,55 +1,26 @@
 <script lang="ts">
-	import LanguageSwitcher from '$lib/components/templates/languageSwitcher.svelte';
-	let showMobileMenu = false;
-	export let data;
+		import {handleAnchorClick} from "$lib/utils/scroll.js";
+
+		export let data;
 </script>
 
 <div id="home" class="ud-header absolute top-0 left-0 z-40 flex w-full items-center bg-transparent sticky">
 	<div class="container">
 		<div class="relative -mx-4 flex items-center justify-between">
 			<div class="w-60 max-w-full px-4">
-				<a href="/" class="navbar-logo block w-full py-5" on:click={() => (showMobileMenu = false)}>
-					<img src="/assets/images/logo/logo-white.svg" alt="logo" class="header-logo w-full" />
+				<a href="/" class="navbar-logo block w-full py-5">
+					<img src="/assets/images/logo/logo-white.svg" width="146" height="36" alt="Logo Workblox" class="header-logo w-full" />
 				</a>
 			</div>
-			<div class="flex items-center justify-between px-4">
-				<div>
-					<button
-						id="navbarToggler"
-						class="absolute right-4 top-1/2 block -translate-y-1/2 rounded-lg px-3 py-[6px] ring-primary focus:ring-2 lg:hidden {showMobileMenu
-							? 'navbarTogglerActive'
-							: ''}"
-						on:click={() => (showMobileMenu = !showMobileMenu)}
-					>
-						<span class="relative my-[6px] block h-[2px] w-[30px] bg-dark" />
-						<span class="relative my-[6px] block h-[2px] w-[30px] bg-dark" />
-						<span class="relative my-[6px] block h-[2px] w-[30px] bg-dark" />
-					</button>
-					<nav
-						id="navbarCollapse"
-						class="absolute right-4 left-4 w-[calc(100%-2rem)] top-full w-full rounded-lg bg-white w-full py-5 shadow-lg lg:static lg:block lg:w-full lg:max-w-full lg:bg-transparent lg:py-0 lg:px-4 lg:shadow-none xl:px-6 {!showMobileMenu
-							? 'hidden'
-							: ''}"
-					>
-						<ul class="block lg:flex">
-							{#each data as header_item}
-								{#if header_item.url.story.slug}
-									<li class="group relative">
-										<a
-											href={header_item.url.story.slug}
-											class="ud-menu-scroll mx-8 flex py-2 text-base text-dark group-hover:text-dark lg:mr-0 lg:ml-7 lg:inline-flex lg:py-6 lg:px-0 lg:text-dark lg:group-hover:text-dark lg:group-hover:opacity-70 xl:ml-12"
-											on:click={() => (showMobileMenu = false)}
-										>
-											{header_item.label}
-										</a>
-									</li>
-								{/if}
-							{/each}
-							<LanguageSwitcher on:click={() => (showMobileMenu = false)} />
-						</ul>
-					</nav>
-				</div>
-			</div>
+			<a
+					href="/#contact"
+					on:click={handleAnchorClick}
+					class="inline-flex justify-center rounded-full border border-gray-300 shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 focus:ring-offset-gray-100 ud-menu-scroll mx-8 py-2 lg:mr-0 lg:ml-7 lg:inline-flex lg:px-0 lg:group-hover:opacity-70 lg:mt-4 lg:mb-1"
+			>
+				<span class="px-4 text-sm font-medium text-dark-800">
+					Aan de slag!
+				</span>
+			</a>
 		</div>
 	</div>
 </div>

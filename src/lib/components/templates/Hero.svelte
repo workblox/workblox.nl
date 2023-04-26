@@ -62,4 +62,3 @@
 		</div>
 	</div>
 </div>
-<!-- ====== Hero Section End -->

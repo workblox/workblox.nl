@@ -7,12 +7,7 @@
 					class="wow fadeInUp relative mx-auto max-w-[850px] overflow-hidden rounded-lg bg-dark py-20 px-8 text-center shadow-lg sm:px-12 md:px-[60px]"
 					data-wow-delay=".2s"
 				>
-					<h2
-						class="mb-8 text-3xl font-bold text-dark sm:text-4xl lg:text-[40px] xl:text-[42px]"
-					>
-						Deze pagina bestaat niet (meer).
-					</h2>
-					<h3 class="mb-8 text-xl font-normal text-dark-800 md:text-2xl">
+					<h3 class="mb-8 text-xl font-normal text-white md:text-2xl">
 						Misschien vind je hier wat je nodig hebt?
 					</h3>
 					<ul class="flex flex-wrap justify-center">
@@ -26,7 +21,7 @@
 						</li>
 						<li>
 							<a
-								href="/"
+								href="/#faq"
 								class="mx-2 my-1 inline-block rounded-md bg-[#f5f8ff] py-3 px-6 text-base font-medium text-dark hover:bg-primary hover:text-dark"
 							>
 								FAQ
@@ -34,7 +29,7 @@
 						</li>
 						<li>
 							<a
-								href="/"
+								href="/#contact"
 								class="mx-2 my-1 inline-block rounded-md bg-[#f5f8ff] py-3 px-6 text-base font-medium text-dark hover:bg-primary hover:text-dark"
 							>
 								Contact

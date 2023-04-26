@@ -312,7 +312,7 @@ type RootTranslation = {
 		 */
 		title: string
 		/**
-		 * W​e​ ​h​o​r​e​n​ ​g​r​a​a​g​ ​h​o​e​ ​w​e​ ​u​ ​v​a​n​ ​d​i​e​n​s​t​ ​k​u​n​n​e​n​ ​z​i​j​n​!
+		 * B​l​i​j​f​ ​o​p​ ​d​e​ ​h​o​o​g​t​e​ ​v​a​n​ ​d​e​ ​o​n​t​w​i​k​k​e​l​i​n​g​e​n​,​ ​s​c​h​r​i​j​f​ ​j​e​ ​h​i​e​r​ ​i​n​.
 		 */
 		subtitle: string
 		/**
@@ -320,15 +320,11 @@ type RootTranslation = {
 		 */
 		email: string
 		/**
-		 * 0​1​6​8​-​1​2​3​4​5​6​7
-		 */
-		phone: string
-		/**
 		 * O​n​z​e​ ​l​o​c​a​t​i​e​.
 		 */
 		ourLocation: string
 		/**
-		 * W​i​l​h​e​l​m​i​n​a​s​t​r​a​a​t​ ​2​1​B​,​ ​4​8​1​1​A​C​,​ ​B​r​e​d​a
+		 * S​t​r​a​a​t​n​a​a​m​ ​1​1​,​ ​4​8​1​1​A​C​,​ ​B​r​e​d​a
 		 */
 		address: string
 	}
@@ -675,7 +671,7 @@ export type TranslationFunctions = {
 		 */
 		title: () => LocalizedString
 		/**
-		 * We horen graag hoe we u van dienst kunnen zijn!
+		 * Blijf op de hoogte van de ontwikkelingen, schrijf je hier in.
 		 */
 		subtitle: () => LocalizedString
 		/**
@@ -683,15 +679,11 @@ export type TranslationFunctions = {
 		 */
 		email: () => LocalizedString
 		/**
-		 * 0168-1234567
-		 */
-		phone: () => LocalizedString
-		/**
 		 * Onze locatie.
 		 */
 		ourLocation: () => LocalizedString
 		/**
-		 * Wilhelminastraat 21B, 4811AC, Breda
+		 * Straatnaam 11, 4811AC, Breda
 		 */
 		address: () => LocalizedString
 	}

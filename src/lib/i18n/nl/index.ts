@@ -115,11 +115,10 @@ const nl: BaseTranslation = {
 	},
 	contact: {
 		title: 'Neem contact op.',
-		subtitle: 'We horen graag hoe we u van dienst kunnen zijn!',
+		subtitle: 'Blijf op de hoogte van de ontwikkelingen, schrijf je hier in.',
 		email: 'hello@workblox.nl',
-		phone: '0168-1234567',
 		ourLocation: 'Onze locatie.',
-		address: 'Wilhelminastraat 21B, 4811AC, Breda'
+		address: 'Straatnaam 11, 4811AC, Breda'
 	},
 	placeholder: {
 		phone: '0612345678',
