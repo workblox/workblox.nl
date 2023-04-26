@@ -119,10 +119,6 @@
 
 	.imageCard {
 		box-shadow: rgba(0, 0, 0, 0.7) 0 0 0 1000000px inset;
-
-		&[active] {
-			transform: scale(1.2);
-		}
 	}
 
 	.bullet-button {

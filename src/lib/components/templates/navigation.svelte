@@ -1,7 +1,5 @@
 <script lang="ts">
-		import {handleAnchorClick} from "$lib/utils/scroll.js";
-
-		export let data;
+	import {handleAnchorClick} from "$lib/utils/scroll.js";
 </script>
 
 <div id="home" class="ud-header absolute top-0 left-0 z-40 flex w-full items-center bg-transparent sticky">
