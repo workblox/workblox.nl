@@ -7,7 +7,7 @@
 	let slideElement;
 	let slideElements;
 
-	export let activeSlideIndex = 0;
+	let activeSlideIndex = 0;
 
 	onMount(() => {
 		slideElements = slideElement.querySelectorAll('.imageCard');
@@ -19,7 +19,7 @@
 			if (!isElementInViewport) return;
 			activeSlideIndex = i;
 		});
-	}, 150);
+	}, 25);
 
 	function isInViewport(element) {
 		const rect = element.getBoundingClientRect();
@@ -40,34 +40,44 @@
 		} else {
 			activeSlideIndex = number;
 		}
-		slideElements[activeSlideIndex].scrollIntoView({ behavior: 'smooth', block: 'center', inline: 'center' })
+		slideElements[activeSlideIndex].scrollIntoView({ behavior: 'auto', block: 'center', inline: 'center' });
 	}
 </script>
 
 
-<div bind:this={slideElement}>
+<div class="mt-8" bind:this={slideElement}>
 	<div
 		class="image-slider custom-breakout-correction relative flex gap-4 snap-x snap-mandatory overflow-x-auto mb-10 hide-scroll-bar"
 		on:scroll={(event) => {handleScroll(event)}}
 	>
 		{#each slides as slide, i}
-			<div
-				class="imageCard lg:flex-row pt-6 px-6 lg:px-12 lg:pt-12 items-center relative inline-flex rounded-2xl overflow-hidden bg-cover bg-center snap-center flex flex-col gap-6 justify-between mt-8 lg:mt-0 w-[85%] md:w-[60vw] xl:w-[70vw] 2xl:w-[55vw] shrink-0 border border-gray-200 rounded-lg shadow"
-				style="background-image: url({slide.backgroundImage.filename + '/m/990x0'});"
-			>
-				<div class="flex flex-col text-rum-swizzle pt-4 lg:pt-20 mb-4">
-					<span class="text-lg 2xl:text-3xl font-semibold">{slide.text}</span>
-					<span class="font-semibold mt-6">{slide.title}</span>
-					<span class="font-light">{slide.subtitle}</span>
-				</div>
+			<div class="relative snap-center z-0 inline-flex rounded-2xl overflow-hidden lg:mt-0 w-[85%] md:w-[60vw] xl:w-[70vw] 2xl:w-[55vw] shrink-0 border border-gray-200 rounded-lg shadow">
 				<img
-					class="lg:self-end"
-					src="{slide.featuredImage.filename + '/m/670x0'}"
-					alt="{slide.featuredImage.alt}"
-					loading="{i > 2 ? 'lazy' : 'eager'}"
-					width="229"
-					height="296"
+						class="absolute w-full h-full object-cover"
+						src="{slide.backgroundImage.filename + '/m/990x0'}"
+						alt="{slide.backgroundImage.alt}"
+						loading="{i > 2 ? 'lazy' : 'eager'}"
+						width="990"
+						height="660"
 				/>
+				<div
+					class="imageCard z-10 lg:flex-row pt-6 px-6 lg:px-12 lg:pt-12 items-center flex flex-col gap-6 justify-between"
+				>
+					<div class="flex flex-col text-rum-swizzle pt-4 lg:pt-20 mb-4">
+						<span class="text-lg 2xl:text-3xl font-semibold">{slide.text}</span>
+						<span class="font-semibold mt-6">{slide.title}</span>
+						<span class="font-light">{slide.subtitle}</span>
+					</div>
+					<picture class="lg:self-end">
+						<source media="(max-width: 375px)" srcset="{slide.featuredImage.filename + '/m/0x200/top'}">
+						<source media="(min-width: 376px)" srcset="{slide.featuredImage.filename + '/m/670x0'}">
+						<img
+							src="{slide.featuredImage.filename + '/m/670x0'}"
+						 	alt="{slide.featuredImage.alt}"
+							sizes=""
+						 />
+					</picture>
+				</div>
 			</div>
 		{/each}
 	</div>
@@ -109,6 +119,8 @@
 	}
 
 	.image-slider {
+		scroll-behavior: smooth;
+
 		-ms-overflow-style: none; /* Internet Explorer 10+ */
 		scrollbar-width: none; /* Firefox */
 

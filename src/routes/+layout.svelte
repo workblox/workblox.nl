@@ -32,7 +32,7 @@
 	</script>
 </svelte:head>
 
-<Navigation data={data.header}/>
+<Navigation />
 <slot />
 <Footer data={data.footer} />
 
