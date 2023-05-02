@@ -29,7 +29,7 @@
 						</li>
 						<li>
 							<a
-								href="/#contact"
+								href="/contact"
 								class="mx-2 my-1 inline-block rounded-md bg-[#f5f8ff] py-3 px-6 text-base font-medium text-dark hover:bg-primary hover:text-dark"
 							>
 								Contact

@@ -6,7 +6,7 @@
 <footer class="wow fadeInUp relative z-10 bg-rice-flower pt-20 lg:pt-[120px]">
 	<div class="container">
 		<div class="-mx-4 flex flex-wrap">
-			<div class="w-full px-4 lg:w-4/12 xl:w-3/12">
+			<div class="w-full px-4 lg:w-6/12">
 				<div class="mb-10 md:mb-16 w-full">
 					<a href="/" class="mb-6 inline-block max-w-[160px]">
 						<img src="/assets/images/logo/logo-white.svg" alt="logo" class="max-w-full" />
@@ -19,22 +19,6 @@
 					</Anchor>
 				</div>
 			</div>
-			{#each data.lists as linkList}
-				<div class="lg:block w-full px-4 sm:w-1/2 md:w-1/2 lg:w-2/12 xl:w-2/12">
-					<div class="mb-10 w-full">
-						<h4 class="mb-9 text-lg font-semibold text-dark">{linkList.title}</h4>
-						<ul>
-							{#each linkList.items as linkItem}
-								<li>
-									<a href="{linkItem.url.url}" class="mb-2 inline-block text-base leading-loose text-dark">
-										{linkItem.label}
-									</a>
-								</li>
-							{/each}
-						</ul>
-					</div>
-				</div>
-			{/each}
 		</div>
 	</div>
 

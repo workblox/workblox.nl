@@ -21,6 +21,7 @@
 					width="229"
 					height="296"
 					class="order-2 lg:hidden mx-auto max-w-full"
+					loading="eager"
 				/>
 				{#if blok.imageTablet}
 					<img
@@ -29,11 +30,13 @@
 						width="272"
 						height="516"
 						class="hidden lg:flex xl:hidden"
+						loading="eager"
 					/>
 				{/if}
 				<img
 					src="{blok.imageDesktop.filename + '/m/1506x0'}"
 					alt="{blok.imageDesktop.alt}"
+					loading="eager"
 					width="753"
 					height="616"
 					class="hidden xl:flex -ml-[15vw] hidden mx-auto max-w-full"

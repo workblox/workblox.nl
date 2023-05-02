@@ -10,29 +10,28 @@
 	let activeSlideIndex = 0;
 
 	onMount(() => {
-		slideElements = slideElement.querySelectorAll('.imageCard');
+		slideElements = slideElement.querySelectorAll('[data-role="slide"]');
 	})
 
-	const handleScroll = debounce(() => {
+	const handleScroll = debounce((): void => {
 		slideElements.forEach((element, i) => {
 			const isElementInViewport = isInViewport(element);
 			if (!isElementInViewport) return;
 			activeSlideIndex = i;
 		});
-	}, 25);
+	}, 200);
 
-	function isInViewport(element) {
+	function isInViewport(element): boolean {
 		const rect = element.getBoundingClientRect();
-		const windowInnerHeight = (window.innerHeight || document.documentElement.clientHeight);
 		return (
-				rect.top >= -rect.height &&
+				rect.top >= 0 &&
 				rect.left >= 0 &&
-				rect.top <= windowInnerHeight &&
+				rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
 				rect.right <= (window.innerWidth || document.documentElement.clientWidth)
 		);
 	}
 
-	function doNavigate(number: number) {
+	function doNavigate(number: number): void {
 		if (number > slideElements.length - 1) {
 			activeSlideIndex = 0;
 		} else if (number < 0) {
@@ -40,7 +39,7 @@
 		} else {
 			activeSlideIndex = number;
 		}
-		slideElements[activeSlideIndex].scrollIntoView({ behavior: 'auto', block: 'center', inline: 'center' });
+		slideElements[activeSlideIndex].scrollIntoView({ behavior: 'auto', block: 'center', inline: 'nearest' });
 	}
 </script>
 
@@ -51,7 +50,11 @@
 		on:scroll={(event) => {handleScroll(event)}}
 	>
 		{#each slides as slide, i}
-			<div class="relative snap-center z-0 inline-flex rounded-2xl overflow-hidden lg:mt-0 w-[85%] md:w-[60vw] xl:w-[70vw] 2xl:w-[55vw] shrink-0 border border-gray-200 rounded-lg shadow">
+			<div
+				class="relative snap-center z-0 inline-flex rounded-2xl overflow-hidden lg:mt-0 w-[85%] md:w-[60vw] xl:w-[70vw] 2xl:w-[55vw] shrink-0 border border-gray-200 rounded-lg shadow"
+				id="slide-{i}"
+				data-role="slide"
+			>
 				<img
 						class="absolute w-full h-full object-cover"
 						src="{slide.backgroundImage.filename + '/m/990x0'}"
@@ -61,7 +64,7 @@
 						height="660"
 				/>
 				<div
-					class="imageCard z-10 lg:flex-row pt-6 px-6 lg:px-12 lg:pt-12 items-center flex flex-col gap-6 justify-between"
+					class="image-card z-10 lg:flex-row pt-6 px-6 lg:px-12 lg:pt-12 items-center flex flex-col gap-6 justify-between"
 				>
 					<div class="flex flex-col text-rum-swizzle pt-4 lg:pt-20 mb-4">
 						<span class="text-lg 2xl:text-3xl font-semibold">{slide.text}</span>
@@ -74,7 +77,6 @@
 						<img
 							src="{slide.featuredImage.filename + '/m/670x0'}"
 						 	alt="{slide.featuredImage.alt}"
-							sizes=""
 						 />
 					</picture>
 				</div>
@@ -84,26 +86,26 @@
 	<div class="container flex justify-center lg:justify-between">
 		<div class="flex gap-2">
 			{#each slides as slide, i}
-				<button
+				<a
+					href="#slide-{i}"
 					class="bullet-button"
-					type="button"
 					data-index={i}
 					aria-label="Slide {i}"
 					active={i === activeSlideIndex || null}
 					aria-current={i === activeSlideIndex || null}
-					on:click={() => doNavigate(i)}
+					on:click|preventDefault={() => doNavigate(i)}
 				/>
 			{/each}
 		</div>
 		<div class="hidden lg:flex gap-2">
-			<button class="prevButton" type="button" on:click={() => doNavigate(activeSlideIndex - 1)}>‹</button>
-			<button class="nextButton" type="button" on:click={() => doNavigate(activeSlideIndex + 1)}>›</button>
+			<button class="prev-button" type="button" on:click={() => doNavigate(activeSlideIndex - 1)}>‹</button>
+			<button class="next-button" type="button" on:click={() => doNavigate(activeSlideIndex + 1)}>›</button>
 		</div>
 	</div>
 </div>
 
 <style lang="postcss">
-	.prevButton, .nextButton {
+	.prev-button, .next-button {
 		font-size: 2.5rem;
 		line-height: 2.5rem;
 		width: 2rem;
@@ -129,7 +131,7 @@
 		}
 	}
 
-	.imageCard {
+	.image-card {
 		box-shadow: rgba(0, 0, 0, 0.7) 0 0 0 1000000px inset;
 	}
 

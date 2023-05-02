@@ -1,7 +1,6 @@
 <script lang="ts">
 	import { storyblokEditable } from "@storyblok/svelte";
 	import CardSmall from '$lib/components/atoms/cardSmall.svelte';
-	import DragAndDropSvg from '$lib/assets/svg/dragdrop.svelte';
 	export let blok;
 </script>
 
@@ -11,21 +10,18 @@
 >
 	<div class="container">
 		<div class="-mx-4 flex flex-wrap">
-			<div class="w-full px-4">
-				<div class="mb-12 max-w-[800px] lg:mb-20">
-					<h2 class="mb-4 text-3xl font-semibold text-dark sm:text-4xl md:text-[42px]">
+			<div class="w-full px-4 flex flex-col lg:flex-row lg:gap-8">
+				<div class="mb-2 lg:w-6/12 xl:w-7 pr-4 lg:mb-20">
+					<h2 class="mb-4 text-3xl font-semibold text-dark sm:text-4xl md:text-[40px]">
 						{blok.title}
 					</h2>
 				</div>
-				<div class="mb-12 flex flex-col lg:flex-row lg:mb-20">
-					{#each blok.smallCards as { title, subtitle }, i}
+				<div class="my-12 lg:mb-12 lg:my-0 lg:w-6/12 xl:w-5/12 flex flex-col lg:pl-4 gap-6">
+					{#each blok.smallCards as { title, subtitle, icon }, i}
 					<CardSmall
 						title={title}
-						subtitle={subtitle}
-						class={i > 0 ? 'lg:ml-4' : ''}
-					>
-							<slot name="icon"><DragAndDropSvg /></slot>
-						</CardSmall>
+						image={icon}
+					></CardSmall>
 					{/each}
 				</div>
 			</div>
