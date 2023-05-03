@@ -32,6 +32,7 @@
 	}
 
 	function doNavigate(number: number): void {
+		console.log(number);
 		if (number > slideElements.length - 1) {
 			activeSlideIndex = 0;
 		} else if (number < 0) {
@@ -39,46 +40,44 @@
 		} else {
 			activeSlideIndex = number;
 		}
-		slideElements[activeSlideIndex].scrollIntoView({ behavior: 'auto', block: 'center', inline: 'nearest' });
+		slideElements[activeSlideIndex].scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'start' });
 	}
 </script>
 
 
 <div class="mt-8" bind:this={slideElement}>
 	<div
-		class="image-slider custom-breakout-correction relative flex gap-4 snap-x snap-mandatory overflow-x-auto mb-10 hide-scroll-bar"
+		class="image-slider custom-breakout-correction relative flex gap-4 snap-x snap-mandatory overflow-x-auto mb-6 lg:mb-10 hide-scroll-bar"
 		on:scroll={(event) => {handleScroll(event)}}
 	>
 		{#each slides as slide, i}
 			<div
-				class="relative snap-center z-0 inline-flex rounded-2xl overflow-hidden lg:mt-0 w-[85%] md:w-[60vw] xl:w-[70vw] 2xl:w-[55vw] shrink-0 border border-gray-200 rounded-lg shadow"
+				class="relative snap-center z-0 inline-flex rounded-2xl overflow-hidden lg:mt-0 w-[85%] md:w-[60vw] xl:w-[70vw] 2xl:w-[55vw] h-[70vh] md:h-[550px] lg:h-[450px] shrink-0 border border-gray-200 rounded-lg shadow"
 				id="slide-{i}"
 				data-role="slide"
 			>
 				<img
-						class="absolute w-full h-full object-cover"
-						src="{slide.backgroundImage.filename + '/m/990x0'}"
-						alt="{slide.backgroundImage.alt}"
-						loading="{i > 2 ? 'lazy' : 'eager'}"
-						width="990"
-						height="660"
+					class="absolute w-full h-full object-cover"
+					src="{slide.backgroundImage.filename + '/m/990x0'}"
+					alt="{slide.backgroundImage.alt}"
+					loading="{i > 2 ? 'lazy' : 'eager'}"
+					width="990"
+					height="660"
 				/>
-				<div
-					class="image-card z-10 lg:flex-row pt-6 px-6 lg:px-12 lg:pt-12 items-center flex flex-col gap-6 justify-between"
-				>
-					<div class="flex flex-col text-rum-swizzle pt-4 lg:pt-20 mb-4">
-						<span class="text-lg 2xl:text-3xl font-semibold">{slide.text}</span>
-						<span class="font-semibold mt-6">{slide.title}</span>
-						<span class="font-light">{slide.subtitle}</span>
+				<div class="image-card flex flex-col lg:flex-row gap-6 justify-between w-full z-10 pt-6 px-6 lg:px-12 lg:pt-12">
+					<div class="flex flex-col justify-between text-rum-swizzle lg:pt-16 lg:mb-4">
+						<span class="text-[16px] md:text-xl lg:text-2xl 2xl:text-3xl font-semibold">{slide.text}</span>
+						<div class="flex flex-col">
+							<span class="font-semibold mt-6">{slide.title}</span>
+							<span class="font-light">{slide.subtitle}</span>
+						</div>
 					</div>
-					<picture class="lg:self-end">
-						<source media="(max-width: 375px)" srcset="{slide.featuredImage.filename + '/m/0x200/top'}">
-						<source media="(min-width: 376px)" srcset="{slide.featuredImage.filename + '/m/670x0'}">
-						<img
-							src="{slide.featuredImage.filename + '/m/670x0'}"
-						 	alt="{slide.featuredImage.alt}"
-						 />
-					</picture>
+
+					<img
+						class="object-cover self-center lg:self-end sm:h-[80%] lg:h-[85%] xl:h-full"
+						src="{slide.featuredImage.filename + '/m/400x0'}"
+						alt="{slide.featuredImage.alt}"
+					/>
 				</div>
 			</div>
 		{/each}
@@ -86,10 +85,8 @@
 	<div class="container flex justify-center lg:justify-between">
 		<div class="flex gap-2">
 			{#each slides as slide, i}
-				<a
-					href="#slide-{i}"
+				<button
 					class="bullet-button"
-					data-index={i}
 					aria-label="Slide {i}"
 					active={i === activeSlideIndex || null}
 					aria-current={i === activeSlideIndex || null}
@@ -98,25 +95,28 @@
 			{/each}
 		</div>
 		<div class="hidden lg:flex gap-2">
-			<button class="prev-button" type="button" on:click={() => doNavigate(activeSlideIndex - 1)}>‹</button>
-			<button class="next-button" type="button" on:click={() => doNavigate(activeSlideIndex + 1)}>›</button>
+			<button class="prev-button" type="button" on:click={() => doNavigate(activeSlideIndex - 1)}>
+				<img width="19" height="30" alt="slide navigate left" src="/assets/images/navigation/chevron-left.svg"/>
+			</button>
+			<button class="next-button" type="button" on:click={() => doNavigate(activeSlideIndex + 1)}>
+				<img width="19" height="30" alt="slide navigate right" src="/assets/images/navigation/chevron-right.svg"/>
+			</button>
 		</div>
 	</div>
 </div>
 
 <style lang="postcss">
 	.prev-button, .next-button {
-		font-size: 2.5rem;
-		line-height: 2.5rem;
+		display: flex;
+		padding: 0.5rem;
 		width: 2rem;
 		height: 2rem;
-		display: inline-flex;
 		align-items: center;
 		justify-content: center;
 		transition: transform 0.2s ease-in-out;
 
 		&:hover {
-			transform: scale(1.4);
+			transform: scale(1.2);
 		}
 	}
 
@@ -143,7 +143,6 @@
 		text-indent: 100%;
 		white-space: nowrap;
 		overflow: hidden;
-		outline: none;
 		box-sizing: border-box;
 		transition: transform 0.2s ease-in-out;
 		border: 2px solid black;

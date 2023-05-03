@@ -63,7 +63,7 @@
 							/>
 						</div>
 					</div>
-					<div class="mb-0">
+					<div class="mb-0 flex justify-end">
 						<button
 							type="submit"
 							class="text-xl uppercase font-medium flex items-center"

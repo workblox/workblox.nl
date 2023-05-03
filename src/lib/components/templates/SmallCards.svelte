@@ -11,7 +11,7 @@
 	<div class="container">
 		<div class="-mx-4 flex flex-wrap">
 			<div class="w-full px-4 flex flex-col lg:flex-row lg:gap-8">
-				<div class="mb-2 lg:w-6/12 xl:w-7 pr-4 lg:mb-20">
+				<div class="mb-2 lg:w-6/12 xl:w-7/12 pr-4 lg:mb-20">
 					<h2 class="mb-4 text-3xl font-semibold text-dark sm:text-4xl md:text-[40px]">
 						{blok.title}
 					</h2>

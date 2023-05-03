@@ -7,12 +7,12 @@
 
 <div
 	use:storyblokEditable={blok}
-	class="relative overflow-hidden bg-primary border-b pt-[120px] md:pt-[130px] lg:py-[160px] border-b-dark md:h-full"
+	class="relative overflow-hidden bg-primary border-b pt-[130px] md:pt-[130px] lg:py-[160px] border-b-dark md:h-full"
 >
 	<div class="container md:mx-auto h-full">
-		<StarSvg class="h-6 absolute top-[12%] lg:top-[24%] left-[20%] lg:left-[35%] inline-flex" />
-		<StarSvg class="h-6 absolute top-[8%] lg:top-[14%] right-[27%] inline-flex" />
-		<StarSvg class="h-6 absolute top-[30%] right-[10%] inline-flex" />
+		<StarSvg class="h-6 absolute top-[12%] lg:top-[24%] left-[23%] lg:left-[42%] inline-flex" />
+		<StarSvg class="h-6 absolute top-[12%] lg:top-[12%] right-[27%] inline-flex" />
+		<StarSvg class="h-6 absolute top-[27%] right-[10%] inline-flex" />
 		<div class="-mx-4 flex flex-wrap items-center h-full">
 			<div class="w-full flex flex-col lg:flex-row px-4 h-full md:h-auto">
 				<img
