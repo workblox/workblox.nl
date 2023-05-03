@@ -1,6 +1,5 @@
 <script lang="ts">
 	import { MetaTags } from 'svelte-meta-tags';
-
 	import { page } from '$app/stores';
 	export let blok;
 </script>

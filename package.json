@@ -5,7 +5,7 @@
 	"scripts": {
 		"dev": "npm-run-all --parallel vite-dev typesafe-i18n",
 		"vite-dev": "vite dev --open",
-		"build": "vite build",
+		"build": "vite build && npx svelte-sitemap --domain https://workblox.nl",
 		"preview": "vite preview",
 		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
