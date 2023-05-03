@@ -32,7 +32,6 @@
 	}
 
 	function doNavigate(number: number): void {
-		console.log(number);
 		if (number > slideElements.length - 1) {
 			activeSlideIndex = 0;
 		} else if (number < 0) {
