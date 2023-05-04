@@ -24,10 +24,10 @@
 	function isInViewport(element): boolean {
 		const rect = element.getBoundingClientRect();
 		return (
-				rect.top >= 0 &&
-				rect.left >= 0 &&
-				rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-				rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+			rect.top >= 0 &&
+			rect.left >= 0 &&
+			rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+			rect.right <= (window.innerWidth || document.documentElement.clientWidth)
 		);
 	}
 
@@ -59,7 +59,7 @@
 					class="absolute w-full h-full object-cover"
 					src="{slide.backgroundImage.filename + '/m/990x0'}"
 					alt="{slide.backgroundImage.alt}"
-					loading="{i > 2 ? 'lazy' : 'eager'}"
+					loading="{i < 3 ? 'eager'  : 'lazy'}"
 					width="990"
 					height="660"
 				/>
@@ -76,6 +76,9 @@
 						class="object-cover self-center lg:self-end sm:h-[80%] lg:h-[85%] xl:h-full"
 						src="{slide.featuredImage.filename + '/m/400x0'}"
 						alt="{slide.featuredImage.alt}"
+						height="530"
+						width="440"
+						loading="{i < 3 ? 'eager'  : 'lazy'}"
 					/>
 				</div>
 			</div>

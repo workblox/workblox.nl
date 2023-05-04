@@ -1,7 +1,7 @@
 <!-- ====== About Section Start -->
 <section id="about" class="bg-[#f3f4fe] pt-20 pb-20 lg:pt-[120px] lg:pb-[120px]">
 	<div class="container">
-		<div class="wow fadeInUp bg-dark" data-wow-delay=".2s">
+		<div class=" bg-dark" >
 			<div class="-mx-4 flex flex-wrap">
 				<div class="w-full px-4">
 					<div class="items-center justify-between overflow-hidden border lg:flex">

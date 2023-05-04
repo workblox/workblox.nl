@@ -21,12 +21,12 @@
 		</div>
 
 		<div class="-mx-4 flex flex-wrap">
-			<div class="w-full px-4 lg:w-1/2">
+			<div class="w-full px-4 lg:w-1/2 min-h-full">
 				{#each blok.items.slice(0, Math.ceil(blok.items.length / 2)) as faqItem}
 					<Faq title={faqItem.question} answer={faqItem.answer} />
 				{/each}
 			</div>
-			<div class="w-full px-4 lg:w-1/2">
+			<div class="w-full px-4 lg:w-1/2 min-h-full">
 				{#each blok.items.slice(Math.ceil(blok.items.length / 2)) as faqItem}
 					<Faq title={faqItem.question} answer={faqItem.answer} />
 				{/each}

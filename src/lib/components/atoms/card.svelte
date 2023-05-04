@@ -31,5 +31,10 @@
 		</li>
 	{/each}
 	</ul>
-	<Image src={image.filename + '/m/'}></Image>
+	<img
+		src={image.filename + '/m/'}
+		alt="{image.alt}"
+		height="{image.filename.split('/')[5].split('x')[0]}"
+		width="{image.filename.split('/')[5].split('x')[1]}"
+	/>
 </div>

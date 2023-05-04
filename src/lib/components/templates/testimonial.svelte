@@ -19,9 +19,9 @@
 		<div class="flex flex-wrap">
 			<div class="w-full px-4 md:w-1/2 lg:w-1/3">
 				<div
-					class="ud-single-testimonial wow fadeInUp mb-12 bg-dark p-8 shadow-testimonial"
-					data-wow-delay=".1s
-              "
+					class="ud-single-testimonial  mb-12 bg-dark p-8 shadow-testimonial"
+
+
 				>
 					<div class="ud-testimonial-ratings mb-3 flex items-center">
 						<span class="mr-1 text-[#fbb040]">
@@ -79,9 +79,9 @@
 			</div>
 			<div class="w-full px-4 md:w-1/2 lg:w-1/3">
 				<div
-					class="ud-single-testimonial wow fadeInUp mb-12 bg-dark p-8 shadow-testimonial"
+					class="ud-single-testimonial  mb-12 bg-dark p-8 shadow-testimonial"
 					data-wow-delay=".15s
-              "
+
 				>
 					<div class="ud-testimonial-ratings mb-3 flex items-center">
 						<span class="mr-1 text-[#fbb040]">
@@ -139,9 +139,9 @@
 			</div>
 			<div class="w-full px-4 md:w-1/2 lg:w-1/3">
 				<div
-					class="ud-single-testimonial wow fadeInUp mb-12 bg-dark p-8 shadow-testimonial"
+					class="ud-single-testimonial  mb-12 bg-dark p-8 shadow-testimonial"
 					data-wow-delay=".2s
-              "
+
 				>
 					<div class="ud-testimonial-ratings mb-3 flex items-center">
 						<span class="mr-1 text-[#fbb040]">
@@ -200,7 +200,7 @@
 		</div>
 		<div class="flex flex-wrap">
 			<div class="mx-4 w-full">
-				<div class="wow fadeInUp" data-wow-delay=".2s">
+				<div class="" >
 					<div class="ud-title mb-8">
 						<h6 class="relative inline-flex items-center text-xs font-normal text-body-color">
 							Some Of Our Clients

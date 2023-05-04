@@ -22,9 +22,9 @@
 		<div class="flex flex-wrap items-center justify-center">
 			<div class="w-full md:w-1/2 lg:w-1/3">
 				<div
-					class="wow fadeInUp relative z-10 mb-10 overflow-hidden rounded-xl border border-primary border-opacity-20 bg-rum-swizzle py-10 px-8 text-center shadow-pricing sm:p-12 lg:py-10 lg:px-6 xl:p-12"
+					class=" relative z-10 mb-10 overflow-hidden rounded-xl border border-primary border-opacity-20 bg-rum-swizzle py-10 px-8 text-center shadow-pricing sm:p-12 lg:py-10 lg:px-6 xl:p-12"
 					data-wow-delay=".15s
-              "
+
 				>
 					<span class="mb-2 block text-base font-medium uppercase text-dark"> STARTING FROM </span>
 					<h2 class="mb-9 text-[28px] font-semibold text-dark">$ 19.99/mo</h2>
@@ -56,9 +56,9 @@
 			</div>
 			<div class="w-full md:w-1/2 lg:w-1/3">
 				<div
-					class="wow fadeInUp relative z-10 mb-10 overflow-hidden rounded-xl bg-primary bg-gradient-to-b from-primary to-[#179BEE] py-10 px-8 text-center shadow-pricing sm:p-12 lg:py-10 lg:px-6 xl:p-12"
-					data-wow-delay=".1s
-              "
+					class=" relative z-10 mb-10 overflow-hidden rounded-xl bg-primary bg-gradient-to-b from-primary to-[#179BEE] py-10 px-8 text-center shadow-pricing sm:p-12 lg:py-10 lg:px-6 xl:p-12"
+
+
 				>
 					<span
 						class="mb-5 inline-block rounded-full border border-white bg-rum-swizzle py-2 px-6 text-base font-semibold uppercase text-dark"
@@ -88,9 +88,9 @@
 			</div>
 			<div class="w-full md:w-1/2 lg:w-1/3">
 				<div
-					class="wow fadeInUp relative z-10 mb-10 overflow-hidden rounded-xl border border-primary border-opacity-20 bg-rum-swizzle py-10 px-8 text-center shadow-pricing sm:p-12 lg:py-10 lg:px-6 xl:p-12"
+					class=" relative z-10 mb-10 overflow-hidden rounded-xl border border-primary border-opacity-20 bg-rum-swizzle py-10 px-8 text-center shadow-pricing sm:p-12 lg:py-10 lg:px-6 xl:p-12"
 					data-wow-delay=".15s
-              "
+
 				>
 					<span class="mb-2 block text-base font-medium uppercase text-dark"> STARTING FROM </span>
 					<h2 class="mb-9 text-[28px] font-semibold text-dark">$ 70.99/mo</h2>

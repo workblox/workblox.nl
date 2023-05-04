@@ -4,8 +4,8 @@
 		<div class="-mx-4 flex flex-wrap">
 			<div class="w-full px-4">
 				<div
-					class="wow fadeInUp relative mx-auto max-w-[850px] overflow-hidden rounded-lg bg-dark py-20 px-8 text-center shadow-lg sm:px-12 md:px-[60px]"
-					data-wow-delay=".2s"
+					class=" relative mx-auto max-w-[850px] overflow-hidden rounded-lg bg-dark py-20 px-8 text-center shadow-lg sm:px-12 md:px-[60px]"
+
 				>
 					<h3 class="mb-8 text-xl font-normal text-white md:text-2xl">
 						Misschien vind je hier wat je nodig hebt?

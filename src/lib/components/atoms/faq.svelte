@@ -5,12 +5,8 @@
 	let show = false;
 </script>
 
-<div
-	class="single-faq wow fadeInUp mb-8 w-full rounded-lg border border-[#F3F4FE] bg-dark p-5 sm:p-8"
-	data-wow-delay=".1s
-              "
->
-	<button class="faq-btn flex w-full items-center text-left" on:click={() => (show = !show)}>
+<div class="mb-8 w-full rounded-lg border border-[#F3F4FE] bg-dark p-5 flex-1">
+	<button class="flex w-full items-center text-left" on:click={() => (show = !show)}>
 		<span class="w-full text-base font-semibold text-white sm:text-lg">
 			{title}
 		</span>

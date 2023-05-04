@@ -18,7 +18,7 @@
 
 		<div class="-mx-4 flex flex-wrap justify-center">
 			<div class="w-full px-4 sm:w-1/2 lg:w-1/4">
-				<div class="wow fadeInUp mb-10" data-wow-delay=".1s">
+				<div class=" mb-10" data-wow-delay=".1s">
 					<div class="h-170px] relative z-10 mx-auto mb-6 w-[170px] rounded-full">
 						<img src="/assets/images/team/team-01.png" alt="photo1" class="w-full rounded-full" />
 						<span class="absolute top-0 left-0 z-[-1]">
@@ -483,7 +483,7 @@
 				</div>
 			</div>
 			<div class="w-full px-4 sm:w-1/2 lg:w-1/4">
-				<div class="wow fadeInUp mb-10" data-wow-delay=".15s">
+				<div class=" mb-10" data-wow-delay=".15s">
 					<div class="h-170px] relative z-10 mx-auto mb-6 w-[170px] rounded-full">
 						<img src="/assets/images/team/team-02.png" alt="photo2" class="w-full rounded-full" />
 						<span class="absolute top-0 left-0 z-[-1]">

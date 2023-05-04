@@ -3,13 +3,13 @@
 	export let data;
 </script>
 
-<footer class="wow fadeInUp relative z-10 bg-rice-flower pt-20 lg:pt-[120px]">
+<footer class=" relative z-10 bg-rice-flower pt-20 lg:pt-[120px]">
 	<div class="container">
 		<div class="-mx-4 flex flex-wrap">
 			<div class="w-full px-4 lg:w-6/12">
 				<div class="mb-10 md:mb-16 w-full">
 					<a href="/" class="mb-6 inline-block max-w-[160px]">
-						<img src="/assets/images/logo/logo-white.svg" alt="logo" class="max-w-full" />
+						<img src="/assets/images/logo/logo-white.svg" width="146" height="36" loading="lazy" alt="logo" class="max-w-full" />
 					</a>
 					<p class="mb-7 text-dark whitespace-pre-line">
 						{data.description}
