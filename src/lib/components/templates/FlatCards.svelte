@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { storyblokEditable } from "@storyblok/svelte";
-	import CardSmall from '$lib/components/atoms/cardSmall.svelte';
+	import CardFlat from '$lib/components/atoms/cardFlat.svelte';
 	export let blok;
 </script>
 
@@ -18,10 +18,10 @@
 				</div>
 				<div class="my-12 lg:mb-12 lg:my-0 lg:w-6/12 xl:w-5/12 flex flex-col lg:pl-4 gap-6">
 					{#each blok.smallCards as { title, subtitle, icon }, i}
-					<CardSmall
-						title={title}
-						image={icon}
-					></CardSmall>
+						<CardFlat
+							title={title}
+							image={icon}
+						/>
 					{/each}
 				</div>
 			</div>

@@ -5,9 +5,9 @@ import { setLocale } from '$lib/i18n/i18n-svelte';
 import { detectLocale } from '$lib/i18n/i18n-util';
 import type {LoadEvent} from "@sveltejs/kit";
 import Hero from "$lib/components/templates/Hero.svelte";
-import SmallCardsTemplate from "$lib/components/templates/SmallCards.svelte";
-import ListCardSliderTemplate from "$lib/components/templates/ListCardSlider.svelte";
-import FeatureCardSliderTemplate from "$lib/components/templates/FeatureCardSliderTemplate.svelte";
+import FlatCardsTemplate from "$lib/components/templates/FlatCards.svelte";
+import BlockCardsTemplate from "$lib/components/templates/BlockCards.svelte";
+import FeatureCardsSliderTemplate from "$lib/components/templates/FeatureCardsSlider.svelte";
 import FaqTemplate from "$lib/components/templates/Faq.svelte";
 import SeoMeta from "$lib/components/templates/SeoMeta.svelte";
 import Page from "$lib/components/templates/Page.svelte";
@@ -26,9 +26,9 @@ export const load = (async (event: LoadEvent) => {
 			page: Page,
 			footer: Footer,
 			navigation: Navigation,
-			smallCardsTemplate: SmallCardsTemplate,
-			listCardSliderTemplate: ListCardSliderTemplate,
-			featureCardSliderTemplate: FeatureCardSliderTemplate,
+			flatCardsTemplate: FlatCardsTemplate,
+			blockCardsTemplate: BlockCardsTemplate,
+			featureCardsSlider: FeatureCardsSliderTemplate,
 			faqTemplate: FaqTemplate,
 			seo_meta: SeoMeta,
 			contactForm: ContactForm
@@ -44,7 +44,7 @@ export const load = (async (event: LoadEvent) => {
 		language: locale,
 		resolve_links: 'url'
 	});
-	
+
 	return {
 		storyblokApi: storyblokApi,
 		header: dataConfig.data.story.content.header_menu,

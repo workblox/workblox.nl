@@ -19,7 +19,6 @@
 				</div>
 			</div>
 		</div>
-
 		<div class="-mx-4 flex flex-wrap">
 			<div class="w-full px-4 lg:w-1/2 min-h-full">
 				{#each blok.items.slice(0, Math.ceil(blok.items.length / 2)) as faqItem}
@@ -34,4 +33,3 @@
 		</div>
 	</div>
 </section>
-<!-- ====== Faq Section End -->

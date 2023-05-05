@@ -3,6 +3,7 @@
 	import '../app.postcss';
 	import Navigation from '$lib/components/templates/navigation.svelte';
 	import Footer from '$lib/components/templates/footer.svelte';
+
 	export let data;
 
 	import { page } from '$app/stores';
@@ -31,6 +32,7 @@
 		gtag('config', 'G-KWEP5KJRXB');
 	</script>
 </svelte:head>
+
 
 <Navigation />
 <slot />

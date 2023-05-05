@@ -1,7 +1,6 @@
 <script lang="ts">
 	import { storyblokEditable } from "@storyblok/svelte";
-
-	import Card from '$lib/components/atoms/card.svelte';
+	import CardBlock from '$lib/components/atoms/cardBlock.svelte';
 	export let blok;
 </script>
 
@@ -19,23 +18,23 @@
 				</div>
 				<div class="block-top-box-container lg:mb-4 xl:mb-8">
 					{#each blok.list.slice(0, 3) as { title, list, type, image}, i}
-						<Card
+						<CardBlock
 							title={title}
 							items={list}
 							type={type}
 							image={image}
-							index="{i}"
+							index={i}
 						/>
 					{/each}
 				</div>
 				<div class="block-bottom-box-container">
 					{#each blok.list.slice(3, 5) as { title, list, type, image}, i}
-						<Card
+						<CardBlock
 							title={title}
 							items={list}
 							type={type}
 							image={image}
-							index="{i + 3}"
+							index={i + 3}
 						/>
 					{/each}
 				</div>

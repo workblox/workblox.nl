@@ -1,23 +1,22 @@
 <script lang="ts">
 	export let title;
 	export let index;
-	export let type = 'green';
 	export let items = [];
-	export let image = '';
+	export let image;
 
 	const typeClassMap =[
-		['bg-[#EBFFDB]', 'block1'],
-		['bg-[#D5E9F8]', 'block2'],
-		['bg-[#FFFBA0]', 'block3'],
-		['bg-[#C5B6F0]', 'block4'],
-		['bg-[#FEF4DB]', 'block5']
+		['card-block1', 'bg-[#EBFFDB]'],
+		['card-block2', 'bg-[#D5E9F8]'],
+		['card-block3', 'bg-[#FFFBA0]'],
+		['card-block4', 'bg-[#C5B6F0]'],
+		['card-block5', 'bg-[#FEF4DB]']
 	];
 </script>
 
 <div
-	class="block {typeClassMap[index].join(' ')} snap-center flex gap-6 justify-between mt-8 lg:mt-0 shrink-0 border border-gray-200 rounded-lg shadow p-6"
+	class="card-block {typeClassMap[index].join(' ')} snap-center flex gap-6 justify-between mt-8 lg:mt-0 shrink-0 border border-gray-200 rounded-lg shadow p-6"
 >
-	<div class="flex block-content">
+	<div class="flex card-block__content">
 		<h4 class="font-medium text-2xl text-dark md:text-[28px] pb-8">{title}</h4>
 		<ul class="mb-8 space-y-4 text-left text-gray-500 dark:text-gray-400">
 			{#each items as item}
@@ -31,7 +30,7 @@
 		</ul>
 	</div>
 
-	<div class="block-image flex h-full items-center justify-center">
+	<div class="card-block__image flex h-full items-center justify-center">
 		<img
 			class="object-cover"
 			src={image.filename + '/m/'}
@@ -44,52 +43,52 @@
 
 
 <style lang="postcss">
-	.block-image {
+	.card-block__image {
 		align-self: center;
-		width: 300px;
+		height: 246px;
 	}
 
-	.block-content {
+	.card-block__content {
 		display: flex;
 		flex-flow: column nowrap;
 	}
 
-	.block {
+	.card-block {
 		display: flex;
 		flex-flow: column nowrap;
 	}
 
-	.block1 {
+	.card-block1 {
 		@media (min-width: 960px) {
 			grid-area: 1 / 1 / 5 / 3;
 		}
 
-		.block-image {
+		.card-block__image {
 			max-width: 100%;
 		}
 	}
 
-	.block2 {
+	.card-block2 {
 		@media (min-width: 960px) {
 			flex-flow: row nowrap;
 			grid-area: 1 / 3 / 3 / 7;
 		}
 	}
 
-	.block3 {
+	.card-block3 {
 		@media (min-width: 960px) {
 			flex-flow: row nowrap;
 			grid-area: 3 / 3 / 5 / 7;
 		}
 	}
 
-	.block4 {
+	.card-block4 {
 		@media (min-width: 960px) {
 			grid-area: 1 / 1 / 5 / 4;
 		}
 	}
 
-	.block5 {
+	.card-block5 {
 		@media (min-width: 960px) {
 			grid-area: 1 / 4 / 5 / 7;
 		}
