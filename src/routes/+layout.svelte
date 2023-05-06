@@ -1,6 +1,5 @@
 <script lang="ts">
 	import '../app.postcss';
-	import '../app.postcss';
 	import Navigation from '$lib/components/templates/navigation.svelte';
 	import Footer from '$lib/components/templates/footer.svelte';
 
@@ -32,7 +31,6 @@
 		gtag('config', 'G-KWEP5KJRXB');
 	</script>
 </svelte:head>
-
 
 <Navigation />
 <slot />

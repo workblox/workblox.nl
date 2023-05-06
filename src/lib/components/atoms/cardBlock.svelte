@@ -34,7 +34,7 @@
 		<img
 			class="object-cover"
 			src={image.filename + '/m/'}
-			alt="{image.alt}"
+			alt={image.alt.length ? image.alt : title }
 			height="{image.filename.split('/')[5].split('x')[0]}"
 			width="{image.filename.split('/')[5].split('x')[1]}"
 		/>
@@ -46,6 +46,7 @@
 	.card-block__image {
 		align-self: center;
 		height: 246px;
+		width: 260px;
 	}
 
 	.card-block__content {

@@ -8,6 +8,7 @@ import Hero from "$lib/components/templates/Hero.svelte";
 import FlatCardsTemplate from "$lib/components/templates/FlatCards.svelte";
 import BlockCardsTemplate from "$lib/components/templates/BlockCards.svelte";
 import FeatureCardsSliderTemplate from "$lib/components/templates/FeatureCardsSlider.svelte";
+import KeyCardsTemplate from "$lib/components/templates/KeyCards.svelte";
 import FaqTemplate from "$lib/components/templates/Faq.svelte";
 import SeoMeta from "$lib/components/templates/SeoMeta.svelte";
 import Page from "$lib/components/templates/Page.svelte";
@@ -29,6 +30,7 @@ export const load = (async (event: LoadEvent) => {
 			flatCardsTemplate: FlatCardsTemplate,
 			blockCardsTemplate: BlockCardsTemplate,
 			featureCardsSlider: FeatureCardsSliderTemplate,
+			keyCardsTemplate: KeyCardsTemplate,
 			faqTemplate: FaqTemplate,
 			seo_meta: SeoMeta,
 			contactForm: ContactForm
