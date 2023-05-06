@@ -39,7 +39,7 @@
 					loading="eager"
 					width="753"
 					height="616"
-					class="hidden xl:flex -ml-[15vw] hidden mx-auto max-w-full"
+					class="hidden xl:flex -ml-[18vw] hidden mx-auto max-w-full"
 				/>
 				<div class="flex order-1 lg:ml-24 2xl:ml-40 justify-end xl:justify-start xl:pt-28 items-start flex-col">
 					<h1

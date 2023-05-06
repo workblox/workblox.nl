@@ -31,7 +31,7 @@
         </div>
 
         <img
-            class="object-cover self-center lg:self-end sm:h-[80%] lg:h-[85%] xl:h-full"
+            class="w-auto object-cover self-center lg:self-end sm:h-[80%] lg:h-[85%] xl:h-full"
             src="{featuredImage.filename + '/m/400x0'}"
             alt="{featuredImage.alt}"
             height="530"

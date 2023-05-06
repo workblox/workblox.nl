@@ -7,7 +7,7 @@
 
 <section
 	id="contact"
-	class="relative overflow-hidden bg-primary border-b pt-[120px] md:pt-[130px] pt-[160px] pb-[100px] border-b-dark md:h-full"
+	class="relative overflow-hidden bg-primary border-b pt-[108px] md:pt-[130px] pt-[160px] pb-[100px] border-b-dark md:h-full"
 	use:storyblokEditable={blok}
 >
 	<div class="absolute top-0 left-0 z-[-1] h-1/2 w-full bg-rum-swizzle lg:h-[45%] xl:h-1/2"></div>
