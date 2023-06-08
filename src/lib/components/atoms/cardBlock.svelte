@@ -6,18 +6,18 @@
 
 	const typeClassMap =[
 		['card-block1', 'bg-[#EBFFDB]'],
-		['card-block2', 'bg-[#D5E9F8]'],
-		['card-block3', 'bg-[#FFFBA0]'],
-		['card-block4', 'bg-[#C5B6F0]'],
+		['card-block2', 'bg-[#FFFBA0]'],
+		['card-block3', 'bg-[#C5B6F0]'],
+		['card-block4', 'bg-[#D5E9F8]'],
 		['card-block5', 'bg-[#FEF4DB]']
 	];
 </script>
 
 <div
-	class="card-block {typeClassMap[index].join(' ')} snap-center flex gap-6 justify-between mt-8 lg:mt-0 shrink-0 border border-gray-200 rounded-lg shadow p-6"
+	class="card-block {typeClassMap[index].join(' ')} snap-center flex gap-6 justify-between mt-8 lg:mt-0 shrink-0 border border-gray-200 rounded-lg shadow pt-10 px-10"
 >
 	<div class="flex card-block__content">
-		<h4 class="font-medium text-2xl text-dark md:text-[28px] pb-8">{title}</h4>
+		<h4 class="font-medium text-2xl text-dark md:text-[32px] pb-8">{title}</h4>
 		<ul class="mb-8 space-y-4 text-left text-gray-500 dark:text-gray-400">
 			{#each items as item}
 				<li class="flex items-center space-x-3">
@@ -45,7 +45,6 @@
 <style lang="postcss">
 	.card-block__image {
 		align-self: center;
-		height: 246px;
 		width: 260px;
 	}
 

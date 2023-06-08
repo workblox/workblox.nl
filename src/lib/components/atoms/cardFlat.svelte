@@ -12,9 +12,9 @@
 	<div class="flex flex-shrink-0">
 		<img width="44" height="44" src="{image.filename}" alt="{image.alt}" loading="lazy">
 	</div>
-	<div class="flex flex-col justify-between p-4 leading-normal">
+	<div class="flex flex-col justify-between p-5 leading-normal">
 		<div>
-			<span class="text-base font-semibold tracking-tight text-black">
+			<span class="text-xl font-semibold tracking-tight text-black">
 				{title}
 			</span>
 		</div>
