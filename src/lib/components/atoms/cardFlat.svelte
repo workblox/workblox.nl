@@ -7,10 +7,10 @@
 </script>
 
 <div
-	class="{`${clazz}`} flex flex-row w-full items-center lg:mt-0 bg-spring-wood border border-gray-200 rounded-lg shadow py-4 pl-4 pr-12"
+	class="{`${clazz}`} flex flex-row w-full items-center lg:mt-0 bg-spring-wood border border-gray-200 rounded-lg shadow py-5 pl-5 pr-12"
 >
 	<div class="flex flex-shrink-0">
-		<img width="44" height="44" src="{image.filename}" alt="{image.alt}" loading="lazy">
+		<img width="70" height="70" src="{image.filename}" alt="{image.alt}" loading="lazy">
 	</div>
 	<div class="flex flex-col justify-between p-5 leading-normal">
 		<div>
