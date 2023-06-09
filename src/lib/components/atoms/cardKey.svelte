@@ -1,7 +1,6 @@
 <script lang="ts">
 	export let title;
 	export let subtitle;
-	export let image;
 	export let index;
 
 	const typeClassMap = [
@@ -22,7 +21,7 @@
 <div
 	class="{typeClassMap[index]} card{index + 1} w-full flex flex-col border border-gray-200 rounded-lg shadow p-6"
 >
-	<img src="{imageSrcMap[index]}" width="42" height="42" />
+	<img src="{imageSrcMap[index]}" alt="{title}" width="42" height="42" />
 	<div class="flex flex-col mt-[120px]">
 		<data value="{index + 1}" class="font-bold text-[34px]">{index + 1}</data>
 		<h4 class="font-medium text-3xl pb-5 mb-5 border-b-2">{title}</h4>
