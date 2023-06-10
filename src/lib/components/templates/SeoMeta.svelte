@@ -8,9 +8,9 @@
 	title={blok.title}
 	titleTemplate="%s | Workblox"
 	description={blok.description}
-	canonical={$page.url.href}
+	canonical="https://workblox.nl{$page.url.pathname}"
 	openGraph={{
-		url: $page.url.href,
+		url: "https://workblox.nl" + $page.url.pathname,
 		title: blok.ogTitle,
 		description: blok.ogDescription,
 		site_name: 'Workblox.nl'
