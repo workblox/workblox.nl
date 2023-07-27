@@ -1,9 +1,17 @@
 <script lang="ts">
 	import {onMount} from "svelte";
 	import {debounce} from "$lib/utils/debounce";
-
 	import CardFeature from '$lib/components/atoms/cardFeature.svelte';
+	import { page } from '$app/stores';
+
 	export let slides = [];
+
+	const utmCampaignId = new URLSearchParams($page.url.search).get('utm_campaign');
+	const indexOfSlideToMove = slides.findIndex((slide) => slide.id == utmCampaignId)
+
+	if (indexOfSlideToMove > 0) {
+		slides.unshift(slides.splice(indexOfSlideToMove, 1)[0]);
+	}
 
 	let slideElement;
 	let slideElements;
@@ -50,8 +58,9 @@
 		class="image-slider custom-breakout-correction relative flex gap-4 snap-x snap-mandatory overflow-x-auto mb-6 lg:mb-10 hide-scroll-bar"
 		on:scroll={(event) => {handleScroll(event)}}
 	>
-		{#each slides as { title, subtitle, text, backgroundImage, featuredImage }, i}
+		{#each slides as { id, title, subtitle, text, backgroundImage, featuredImage }, i}
 			<CardFeature
+				id="{id}"
 				title={title}
 				subtitle={subtitle}
 				text={text}
