@@ -6,19 +6,19 @@
 
 	export let slides = [];
 
-	const utmCampaignId = new URLSearchParams($page.url.search).get('utm_campaign');
-	const indexOfSlideToMove = slides.findIndex((slide) => slide.id == utmCampaignId)
-
-	if (indexOfSlideToMove > 0) {
-		slides.unshift(slides.splice(indexOfSlideToMove, 1)[0]);
-	}
-
 	let slideElement;
 	let slideElements;
 
 	let activeSlideIndex = 0;
 
 	onMount(() => {
+		const utmCampaignId = new URLSearchParams($page.url.search).get('utm_campaign');
+		const indexOfSlideToMove = slides.findIndex((slide) => slide.id == utmCampaignId)
+
+		if (indexOfSlideToMove > 0) {
+			slides.unshift(slides.splice(indexOfSlideToMove, 1)[0]);
+		}
+		
 		slideElements = slideElement.querySelectorAll('[data-role="slide"]');
 	})
 
