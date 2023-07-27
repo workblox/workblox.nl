@@ -36,11 +36,10 @@
                     </h2>
                 </div>
                 <div class="card-key-container w-full">
-                {#each blok.items as { title, subtitle, image }, i}
+                {#each blok.items as { title, subtitle }, i}
                     <CardKey
                         title={title}
                         subtitle={subtitle}
-                        image={image}
                         index={i}
                     >
                     </CardKey>

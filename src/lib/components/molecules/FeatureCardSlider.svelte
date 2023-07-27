@@ -15,10 +15,12 @@
 		const utmCampaignId = new URLSearchParams($page.url.search).get('utm_campaign');
 		const indexOfSlideToMove = slides.findIndex((slide) => slide.id == utmCampaignId)
 
+		console.log(indexOfSlideToMove);
 		if (indexOfSlideToMove > 0) {
 			slides.unshift(slides.splice(indexOfSlideToMove, 1)[0]);
+			slides = slides;
 		}
-		
+
 		slideElements = slideElement.querySelectorAll('[data-role="slide"]');
 	})
 
@@ -58,9 +60,8 @@
 		class="image-slider custom-breakout-correction relative flex gap-4 snap-x snap-mandatory overflow-x-auto mb-6 lg:mb-10 hide-scroll-bar"
 		on:scroll={(event) => {handleScroll(event)}}
 	>
-		{#each slides as { id, title, subtitle, text, backgroundImage, featuredImage }, i}
+		{#each slides as { title, subtitle, text, backgroundImage, featuredImage }, i}
 			<CardFeature
-				id="{id}"
 				title={title}
 				subtitle={subtitle}
 				text={text}
