@@ -3,5 +3,5 @@
 	import Banner from '$lib/components/templates/banner.svelte'
 </script>
 
-<Banner />
+<Banner title="Pagina niet gevonden."  />
 <Block404 />

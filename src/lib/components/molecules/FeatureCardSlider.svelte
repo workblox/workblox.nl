@@ -15,7 +15,6 @@
 		const utmCampaignId = new URLSearchParams($page.url.search).get('utm_campaign');
 		const indexOfSlideToMove = slides.findIndex((slide) => slide.id == utmCampaignId)
 
-		console.log(indexOfSlideToMove);
 		if (indexOfSlideToMove > 0) {
 			slides.unshift(slides.splice(indexOfSlideToMove, 1)[0]);
 			slides = slides;
