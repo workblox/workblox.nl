@@ -2,7 +2,6 @@
 	import '../app.postcss';
 	import Navigation from '$lib/components/templates/navigation.svelte';
 	import Footer from '$lib/components/templates/footer.svelte';
-	import '@beyonk/gdpr-cookie-consent-banner/style.css';
 	import { Banner as GdprBanner } from '@beyonk/gdpr-cookie-consent-banner';
 
 	const showEditIcon = true;
@@ -48,9 +47,9 @@
 	heading=""
 	description="Om u de beste gebruikservaring te kunnen bieden, gebruiken wij cookies. Voor meer inhoudelijke informatie en het onderscheid die wij hier in maken, verwijzen wij u door naar ons <a href='/cookie-policy'>cookiebeleid.</a>"
 	{showEditIcon}
-	acceptLabel='Accepteer cookies'
+	acceptLabel='✓ Accepteren'
 	rejectLabel=''
-	settingsLabel= 'Cookie voorkeuren'
+	settingsLabel= 'Voorkeuren'
 	closeLabel= 'Sluiten'
 	editLabel= 'Pas instellingen aan'
 	{choices}

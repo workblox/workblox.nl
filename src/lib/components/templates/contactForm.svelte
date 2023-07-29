@@ -33,11 +33,19 @@
 							<label for="branche" class="block text-xs text-dark mb-2">Branche*</label>
 							<select id="branche" name="branche" class="w-full border-0 bg-rum-swizzle border-b border-[#f1f1f1] p-4 focus:border-primary focus:outline-none" required>
 								<option value="" disabled selected hidden>Kies uw branche</option>
-								<option value="health">Zorg en welzijn</option>
-								<option value="advisory">Adviseur / coach</option>
-								<option value="online">ICT / online diensten</option>
+								<option value="coach">Advies / consultancy</option>
 								<option value="construction">Bouw en constructie</option>
+								<option value="sustainability">Duurzaamheid</option>
 								<option value="events">Evenementen</option>
+								<option value="financial">Financiën</option>
+								<option value="healthcare">Gezondheidszorg</option>
+								<option value="legal">Juridisch</option>
+								<option value="marketing">Marketing</option>
+								<option value="education">Onderwijs</option>
+								<option value="online">Online diensten / ICT</option>
+								<option value="tourism">Toerisme</option>
+								<option value="sales">Verkoop</option>
+								<option value="other">Anders...</option>
 							</select>
 						</div>
 						<div class="w-full lg:w-4/12">
