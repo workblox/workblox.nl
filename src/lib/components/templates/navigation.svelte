@@ -11,7 +11,7 @@
 				class="inline-flex justify-center rounded-full border shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 py-2 lg:mr-0 lg:ml-7 lg:inline-flex lg:px-0 lg:group-hover:opacity-70 lg:mt-4 lg:mb-1"
 			>
 				<span class="px-4 text-sm lg:text-md lg:font-medium text-dark-800">
-					Meld je aan
+					Probeer gratis
 				</span>
 			</a>
 		</div>
