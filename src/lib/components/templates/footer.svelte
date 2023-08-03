@@ -72,7 +72,6 @@
 							<a
 								href="{bottomLink.url.url}"
 								rel="nofollow noopner noreferrer"
-								target="_blank"
 								class="text-dark hover:underline {i > 0 ? 'ml-4' : ''}"
 
 							>
