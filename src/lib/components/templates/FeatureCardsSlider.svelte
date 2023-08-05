@@ -7,7 +7,7 @@
 
 
 <section
-    class="pt-20 bg-[#FFFBA0] pb-8 lg:pt-[120px] lg:pb-[70px] border-b"
+    class="pt-20 bg-[#FFFBA0] pb-8 lg:pt-[120px] lg:pb-[70px] border-b overflow-x-hidden"
      use:storyblokEditable={blok}
 >
     <div class="container">
